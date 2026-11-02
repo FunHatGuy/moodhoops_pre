@@ -1,0 +1,361 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_KPHCTM": {
+      "type": "section-background",
+      "name": "Background Section",
+      "settings": {
+        "rich_text": "<h1>Designer Downloads</h1>",
+        "background_image": "{{ page.metafields.custom.image_banner.value }}",
+        "enable_eager_loading": true,
+        "background_position_x": 50,
+        "background_position_y": 50,
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_X8z4CF": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_CbQWFY": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "Download Latest Update File",
+            "action_button_link": "https://cdn.shopify.com/s/files/1/0756/0996/4758/files/FutureHoop_Designer_Latest_Update.zip?v=1749237594",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>FutureHoop Designer Software Update</h2>",
+            "description": "<p>Last Updated: 02/10/2023</p><p>Note that after downloading the .zip file above you must unzip it to get the software update file inside. The update file itself is called mh_application.hex.</p><p>The hoop battery needs to be charged for the update to work. The update only occurs when the hoop started on battery power.</p><p>Refer to the online manual for details on <a href=\"/a/docs/futurehoop-designer-manual/designer-downloading-and\" title=\"/a/docs/futurehoop-designer-manual/designer-downloading-and\">How to Update Your Hoop Software</a>.</p>",
+            "background_color": "#6fbde2",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_fEkVDh": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "Download Default Pattern Collection",
+            "action_button_link": "https://cdn.shopify.com/s/files/1/0756/0996/4758/files/FutureHoop_Designer_Default_Pattern_Collection_Latest.zip?v=1749237697",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>FutureHoop Designer Default Pattern Collection</h2>",
+            "description": "<p>Last Updated: 07/15/2020</p><p>Note that after downloading the .zip file above you must unzip it to view the .bmp pattern files. This download includes patterns and the Options.txt file needed to run your hoop. Please refer to the manual for more info on bitmap files.</p><p>Refer to the online manual to view a video on <a href=\"/a/docs/futurehoop-designer-manual/designer-update-pattern-2\" title=\"/a/docs/futurehoop-designer-manual/designer-update-pattern-2\">How to Upload the Default Pattern Collection onto your hoop</a>.</p>",
+            "background_color": "#e0a6d6",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_9xaPnx": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "Download Pattern Library",
+            "action_button_link": "https://cdn.shopify.com/s/files/1/0756/0996/4758/files/FuturePoi_Designer_Latest_Update.zip?v=1749237795",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Designer Pattern Library</h2>",
+            "description": "<p>Last Updated: 03/09/2019</p><p>A bunch of bitmaps that aren't in the default collection but you might want to use them to customize your experience.</p>",
+            "background_color": "#57deb2",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_TT94WC": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "Download Latest Update File",
+            "action_button_link": "https://cdn.shopify.com/s/files/1/0756/0996/4758/files/MoodHoops_Pattern_Library_Latest.zip?v=1749237795",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>FuturePoi / FutureStaff Designer Software Update</h2>",
+            "description": "<p>Last Updated: 04/03/2019</p><p>Note that after downloading the .zip file above you must unzip it to get the software update file inside. The update file itself is called mh_application.hex. Please refer to the manual for details on <a href=\"/a/docs/futurehoop-designer-futurepoi-designer-futurestaff-designer/update-your-poi-staff-software\" title=\"/a/docs/futurehoop-designer-futurepoi-designer-futurestaff-designer/update-your-poi-staff-software\">How to Update Your Poi</a>.</p>",
+            "background_color": "#57deb2",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_3hzMPh": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "Download Default Pattern Collection",
+            "action_button_link": "https://cdn.shopify.com/s/files/1/0756/0996/4758/files/FuturePoi_Designer_Default_Pattern_Collection_Latest.zip?v=1749238016",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>FuturePoi / FutureStaff Pattern Collection</h2>",
+            "description": "<p>Last Updated: 08/06/2020</p><p>Note that after downloading the .zip file above you must unzip it to view the .bmp pattern files. Please refer to the manual for more info on bitmap files.</p>",
+            "background_color": "#6e9aec",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_xRyy67": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "Download Pattern Library",
+            "action_button_link": "https://cdn.shopify.com/s/files/1/0756/0996/4758/files/MoodHoops_Pattern_Library_Latest_5338a2b0-b058-46e3-b72c-9ab6d55f5608.zip?v=1749238056",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Designer Pattern Library</h2>",
+            "description": "<p>Last Updated: 03/09/2019</p><p>A bunch of bitmaps that aren't in the default collection but you might want to use them to customize your experience.</p>",
+            "background_color": "#a23ae2",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_CbQWFY",
+        "image_fEkVDh",
+        "image_9xaPnx",
+        "image_TT94WC",
+        "image_3hzMPh",
+        "image_xRyy67"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-2",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_button_list_MLayiG": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_RnTWyf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurepoi-designer-moodhoops-1.jpg",
+            "background_position": "center",
+            "background_position_mobile": "center"
+          }
+        },
+        "button_e6t9rw": {
+          "type": "button",
+          "settings": {
+            "text": "Online Manual",
+            "url": "/a/docs/docs-category/docs"
+          }
+        },
+        "button_dhrhbc": {
+          "type": "button",
+          "settings": {
+            "text": "Help Docs",
+            "url": "/a/docs/docs-category/help"
+          }
+        },
+        "button_RiXck4": {
+          "type": "button",
+          "settings": {
+            "text": "Service/Repair",
+            "url": "/pages/troubleshooting-futurehoop-designer"
+          }
+        }
+      },
+      "block_order": [
+        "image_RnTWyf",
+        "button_e6t9rw",
+        "button_dhrhbc",
+        "button_RiXck4"
+      ],
+      "name": "[MH] Banner buttons list",
+      "settings": {
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "banner_height": 200,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary inv",
+        "text_alignment": "center",
+        "title": "<h2>Designer Support</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_8nr3eX": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_gk6W3m": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Do you have custom patterns or modes that you’d like to share with all your fellow hoopers? Send us an email at customerservice@moodhoops.com</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "content_gk6W3m"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "width": "wide",
+        "height_mobile": "xs",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_KPHCTM",
+    "mh_section_banner_columns_X8z4CF",
+    "mh_section_banner_button_list_MLayiG",
+    "section_rich_text_8nr3eX"
+  ]
+}

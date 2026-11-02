@@ -1,0 +1,257 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h2",
+            "text_alignment": "center"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "center",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "disabled": true,
+          "settings": {}
+        },
+        "extra_details_TDJBQG": {
+          "type": "extra_details",
+          "disabled": true,
+          "settings": {
+            "details_text": "{{ collection.metafields.custom.extra_details_richtext | metafield_tag }}",
+            "details_alignment": "center"
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "disabled": true,
+          "settings": {}
+        },
+        "extra_details_dFnXJd": {
+          "type": "extra_details",
+          "disabled": true,
+          "settings": {
+            "details_text": "{{ collection.metafields.custom.extra_details_richtext | metafield_tag }}",
+            "details_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "extra_details_TDJBQG",
+        "product_grid",
+        "extra_details_dFnXJd"
+      ],
+      "disabled": true,
+      "settings": {
+        "show_out_of_stock": true,
+        "disable_collection_sort_view": true,
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "products_per_row": 4,
+        "secondary_products_per_row": 4,
+        "custom_product_image_ratio": 100,
+        "fill_images": true,
+        "images_padding": 0,
+        "images_vertical_position": 0,
+        "enable_image_choice": true,
+        "image_choice_1": "Model",
+        "image_choice_2": "Product",
+        "product_image": "second",
+        "show_collection_image": false,
+        "enable_filters": true,
+        "enable_menu": false,
+        "enable_collections": false,
+        "filters_menu_alignment": "left",
+        "filters_layout": "drawer",
+        "filter_menu": "main-menu",
+        "collections_menu": [],
+        "filter_sticky": true,
+        "filters_show_more_limit": 7,
+        "enable_custom_filters_font_size": true,
+        "filters_font_size": "16px",
+        "image_swatches_size": "xs",
+        "image_swatches_fill_images": true,
+        "image_swatches_show_in_circle": true,
+        "filter_mobile_sticky": true,
+        "fix_zindex": 1
+      }
+    },
+    "mh_featured_products_arjQHt": {
+      "type": "mh-featured-products",
+      "blocks": {
+        "collection_products_pnqLwk": {
+          "type": "collection_products",
+          "settings": {
+            "collection": "fitness-hoops",
+            "show_collection_title": false,
+            "custom_collection_title": "",
+            "title_font_size": 28,
+            "title_alignment": "left",
+            "margin_bottom": 0,
+            "show_unavailable_products_block": false,
+            "collection_richtext": "",
+            "collection_richtext_alignment": "center",
+            "show_collection_richtext": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_products_pnqLwk"
+      ],
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "{{ collection.metafields.custom.extra_details_richtext | metafield_tag }}",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 30,
+        "color_palette": "",
+        "enable_lazy_section": false,
+        "header_content": "",
+        "header_text_align": "left",
+        "enable_custom_header_color": false,
+        "custom_header_color": "rgba(0,0,0,0)",
+        "products": [],
+        "show_unavailable_products_section": false,
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px 40px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_section_banner_columns_aCRFwx": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_yXXyYk": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/Jenn-Iacono-Sunset-on-a-beach-510x337.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>Exercise that’s Fun</h2>",
+            "description": "<h3>Weighted hoops are a fun way to ease into your workout time.</h3><p>Enjoy hooping at home, outdoors or any location you desire without having to go to the gym.</p><p>Hooping paired with music is the perfect way to balance exercise with dancing.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_ta4DeC": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/cropped-techswan-josh-ohilippi-fire-hoop-red-polypro-sponsored-moodhoops.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>Get your workout on!</h2>",
+            "description": "<h3>Burn calories</h3><p>Build core strength</p><p>Define your waistline</p><p>Increase hand to eye coordination</p><p>Tone and strengthen to build lean muscles</p><p>Express yourself through creative movement</p><p>Boost self-confidence</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_yXXyYk",
+        "image_ta4DeC"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-2",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "Fitness Hoop Benefits",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr",
+        "tablet_columns_template": "1fr 1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 500,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-collection",
+    "mh_featured_products_arjQHt",
+    "mh_section_banner_columns_aCRFwx"
+  ]
+}

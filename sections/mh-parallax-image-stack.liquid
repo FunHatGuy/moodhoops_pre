@@ -1,0 +1,229 @@
+<article class='palette-{{ section.settings.color_palette }} module-color-palette mh-parallax-image-stack'>
+  <div class='parallax-image-stack'>
+    {% assign spacing = section.settings.image_spacing | default: 0 %}
+    {% for block in section.blocks %}
+      <div
+        class='parallax-image-stack__item {% if block.settings.enable_parallax %}parallax-enabled{% endif %} align-{{ block.settings.content_alignment }}'
+        style='
+          --mh-pis-bg-image: url({{ block.settings.image | image_url: width: 2000 }});
+          --mh-pis-image-height: {{ block.settings.image_height | default: 400 }}px;
+          {% unless forloop.last %}
+            --mh-pis-margin-bottom: {{ spacing }}px;
+          {% endunless %}
+        '
+      >
+        <div
+          class='parallax-image-stack__overlay'
+          style='--mh-pis-overlay-opacity: {{ block.settings.overlay_opacity | default: 0 }}%;'
+        ></div>
+        <div class='parallax-image-stack__content'>
+          {{ block.settings.description }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</article>
+
+{% stylesheet %}
+  .mh-parallax-image-stack .parallax-image-stack {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mh-parallax-image-stack .parallax-image-stack__item {
+    position: relative;
+    width: 100%;
+    background-image: var(--mh-pis-bg-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    overflow: hidden;
+    height: var(--mh-pis-image-height, 400px);
+    margin-bottom: var(--mh-pis-margin-bottom, 0);
+  }
+
+  .mh-parallax-image-stack .parallax-enabled {
+    background-attachment: fixed;
+  }
+
+  .mh-parallax-image-stack .parallax-image-stack__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, var(--mh-pis-overlay-opacity, 0));
+  }
+
+  .mh-parallax-image-stack .parallax-image-stack__content {
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .mh-parallax-image-stack .align-top-left {
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mh-parallax-image-stack .align-top-center {
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mh-parallax-image-stack .align-top-right {
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .mh-parallax-image-stack .align-center-left {
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mh-parallax-image-stack .align-center {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mh-parallax-image-stack .align-center-right {
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .mh-parallax-image-stack .align-bottom-left {
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .mh-parallax-image-stack .align-bottom-center {
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mh-parallax-image-stack .align-bottom-right {
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  .mh-parallax-image-stack h1,
+  .mh-parallax-image-stack h2,
+  .mh-parallax-image-stack h3 {
+    text-shadow: 2px 2px 0px rgba(100, 100, 100, 1);
+    -webkit-text-shadow:
+      1px 1px 1px #000,
+      0px 1px 1px #646464;
+    text-shadow:
+      1px 1px 1px #000,
+      0px 1px 1px #646464;
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "[MH] Parallax Image Stack",
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color palette",
+      "default": "scheme-2"
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "label": "Spacing between images",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "label": "Overlay opacity",
+          "min": 0,
+          "max": 80,
+          "step": 5,
+          "unit": "%",
+          "default": 0
+        },
+        {
+          "type": "checkbox",
+          "id": "enable_parallax",
+          "label": "Enable parallax effect",
+          "default": true
+        },
+        {
+          "type": "range",
+          "id": "image_height",
+          "label": "Image height",
+          "min": 100,
+          "max": 1000,
+          "step": 10,
+          "unit": "px",
+          "default": 400
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Text",
+          "default": "<p>Add your text here</p>"
+        },
+        {
+          "type": "select",
+          "id": "content_alignment",
+          "label": "Text alignment (vertical + horizontal)",
+          "options": [
+            { "value": "top-left", "label": "Top left" },
+            { "value": "top-center", "label": "Top center" },
+            { "value": "top-right", "label": "Top right" },
+            { "value": "center-left", "label": "Center left" },
+            { "value": "center", "label": "Center" },
+            { "value": "center-right", "label": "Center right" },
+            { "value": "bottom-left", "label": "Bottom left" },
+            { "value": "bottom-center", "label": "Bottom center" },
+            { "value": "bottom-right", "label": "Bottom right" }
+          ],
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "[MH] Parallax Image Stack",
+      "category": "MH Custom",
+      "blocks": [{ "type": "image" }, { "type": "image" }, { "type": "image" }]
+    }
+  ]
+}
+{% endschema %}

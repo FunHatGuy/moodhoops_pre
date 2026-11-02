@@ -1,0 +1,368 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_instagram_grid_aLyEeT": {
+      "type": "mh-instagram-grid",
+      "blocks": {
+        "instagram_embed_r97hiJ": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BkOsM9sAZ4N/"
+          }
+        },
+        "instagram_embed_rRcYeV": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BgynZcKjZoX/"
+          }
+        },
+        "instagram_embed_EjNHp3": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bu850DYhpL4"
+          }
+        },
+        "instagram_embed_T9DXXE": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BwGEFa8A5Bq/"
+          }
+        }
+      },
+      "block_order": [
+        "instagram_embed_r97hiJ",
+        "instagram_embed_rRcYeV",
+        "instagram_embed_EjNHp3",
+        "instagram_embed_T9DXXE"
+      ],
+      "name": "[MH] Instagram Grid",
+      "settings": {
+        "enable_lazy_loading": false,
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_padding": "10px 0",
+        "section_background": "rgba(0,0,0,0)",
+        "title": "",
+        "heading_tag": "h2",
+        "title_alignment": "center",
+        "title_color": "",
+        "description": "",
+        "description_alignment": "center",
+        "footer_text": "",
+        "footer_alignment": "center",
+        "grid_columns": "1fr 1fr",
+        "grid_columns_tablet": "1fr",
+        "grid_columns_mobile": "1fr",
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "border_radius": 0
+      }
+    },
+    "mh_instagram_grid_Chg37d": {
+      "type": "mh-instagram-grid",
+      "blocks": {
+        "instagram_embed_fHzVB3": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BQD0HUQF8QS/"
+          }
+        },
+        "instagram_embed_CqWEAB": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/5uj5KJE6Zl/"
+          }
+        },
+        "instagram_embed_wgCeyk": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bs9LdYIHcTn/"
+          }
+        },
+        "instagram_embed_j8TmMi": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BKXb1tWgV79/"
+          }
+        },
+        "instagram_embed_qGdLQ3": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bwon76nlP4J/"
+          }
+        },
+        "instagram_embed_pU9qKk": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BYLI6EqluxT/"
+          }
+        },
+        "instagram_embed_bEyHFQ": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bu-OUL7n_dJ/"
+          }
+        },
+        "instagram_embed_mCtKpA": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/5u-OB8yham/"
+          }
+        },
+        "instagram_embed_kng63a": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/5u-WX7Sha3/"
+          }
+        },
+        "instagram_embed_BAqLmc": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BHT0isrDd5h/"
+          }
+        },
+        "instagram_embed_R7jRLx": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BU4txZwhK4F/"
+          }
+        },
+        "instagram_embed_qVadD6": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BaFiQmlhiLC/"
+          }
+        },
+        "instagram_embed_bm7CgH": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BhgKlI1Fz_5/"
+          }
+        },
+        "instagram_embed_rNdxcA": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BXjqFDCAfzz/embed/captioned/?cr=1&v=13&wp=1316&rd=https%3A%2F%2Fmoodhoops.com&rp=%2Fflame-effects%2F#%7B%22ci%22%3A18%2C%22os%22%3A64386.5%7D"
+          }
+        },
+        "instagram_embed_b3FLQQ": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bf7HmlGh4Iy/"
+          }
+        },
+        "instagram_embed_qjnPqF": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BXoiWQ8gbFA/"
+          }
+        },
+        "instagram_embed_YEf78V": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BpaIiE9AeY9/"
+          }
+        },
+        "instagram_embed_Dh3qnE": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BK5fHu0h83V/"
+          }
+        },
+        "instagram_embed_DTRE7a": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BrsiElHB3vk/"
+          }
+        },
+        "instagram_embed_FXwRP4": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BUaljHuBQGg/"
+          }
+        },
+        "instagram_embed_t8gxpa": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BqdEUrihCc-/"
+          }
+        },
+        "instagram_embed_KWFW7t": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BrTjkiQhHmt/"
+          }
+        },
+        "instagram_embed_eDzYgF": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bto68GuhiUl/"
+          }
+        },
+        "instagram_embed_baiNYj": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BwY7TrEHgiz/"
+          }
+        },
+        "instagram_embed_xd3nLw": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bsf7iAuAwux/"
+          }
+        },
+        "instagram_embed_hxcwwb": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BsySezuhF4p/"
+          }
+        },
+        "instagram_embed_dW3Paj": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bst8EhghKoD/"
+          }
+        },
+        "instagram_embed_PUdF94": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bn1zhX-nvoU/"
+          }
+        },
+        "instagram_embed_7NR6Ga": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BftlA2FHtpz/"
+          }
+        },
+        "instagram_embed_gV6GEB": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BqyBuaWhq_y/"
+          }
+        },
+        "instagram_embed_LVqgEA": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BwH7tTRlHHs/"
+          }
+        },
+        "instagram_embed_xDYGji": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/Bi14zRSFqcg/"
+          }
+        },
+        "instagram_embed_zdGA9p": {
+          "type": "instagram_embed",
+          "settings": {
+            "instagram_url": "https://www.instagram.com/p/BqBg5I3Dtyq/"
+          }
+        }
+      },
+      "block_order": [
+        "instagram_embed_fHzVB3",
+        "instagram_embed_CqWEAB",
+        "instagram_embed_wgCeyk",
+        "instagram_embed_j8TmMi",
+        "instagram_embed_qGdLQ3",
+        "instagram_embed_pU9qKk",
+        "instagram_embed_bEyHFQ",
+        "instagram_embed_mCtKpA",
+        "instagram_embed_kng63a",
+        "instagram_embed_BAqLmc",
+        "instagram_embed_R7jRLx",
+        "instagram_embed_qVadD6",
+        "instagram_embed_bm7CgH",
+        "instagram_embed_rNdxcA",
+        "instagram_embed_b3FLQQ",
+        "instagram_embed_qjnPqF",
+        "instagram_embed_YEf78V",
+        "instagram_embed_Dh3qnE",
+        "instagram_embed_DTRE7a",
+        "instagram_embed_FXwRP4",
+        "instagram_embed_t8gxpa",
+        "instagram_embed_KWFW7t",
+        "instagram_embed_eDzYgF",
+        "instagram_embed_baiNYj",
+        "instagram_embed_xd3nLw",
+        "instagram_embed_hxcwwb",
+        "instagram_embed_dW3Paj",
+        "instagram_embed_PUdF94",
+        "instagram_embed_7NR6Ga",
+        "instagram_embed_gV6GEB",
+        "instagram_embed_LVqgEA",
+        "instagram_embed_xDYGji",
+        "instagram_embed_zdGA9p"
+      ],
+      "name": "[MH] Instagram Grid",
+      "settings": {
+        "enable_lazy_loading": true,
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_padding": "10px 0",
+        "section_background": "rgba(0,0,0,0)",
+        "title": "",
+        "heading_tag": "h2",
+        "title_alignment": "center",
+        "title_color": "",
+        "description": "",
+        "description_alignment": "center",
+        "footer_text": "",
+        "footer_alignment": "center",
+        "grid_columns": "1fr 1fr",
+        "grid_columns_tablet": "1fr",
+        "grid_columns_mobile": "1fr",
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "border_radius": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_instagram_grid_aLyEeT",
+    "mh_instagram_grid_Chg37d"
+  ]
+}

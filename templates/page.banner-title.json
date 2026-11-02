@@ -1,0 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "section_background_9GFn7R": {
+      "type": "section-background",
+      "name": "t:sections.background.presets.name",
+      "settings": {
+        "rich_text": "<h1>{{ page.title }}</h1>",
+        "background_image": "{{ page.metafields.custom.image_banner.value }}",
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "174672988174c020ed": {
+      "type": "apps",
+      "blocks": {
+        "formful_app_block_form_6eFCV8": {
+          "type": "shopify://apps/formful/blocks/app-block-form/be9de36b-78a1-4ce9-8de3-f1044fb2ee2e",
+          "settings": {
+            "form_id": "{{ page.metafields.custom.formful_form_id.value }}",
+            "max_width": 75,
+            "column_gap": 2,
+            "row_gap": 1,
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "formful_app_block_form_6eFCV8"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_background_9GFn7R",
+    "main-page",
+    "174672988174c020ed"
+  ]
+}

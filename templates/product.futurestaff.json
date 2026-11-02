@@ -1,0 +1,462 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": true,
+        "enable_share_button": true
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "c7259cb9-7235-4028-b6df-3a68077fed80": {
+          "type": "title",
+          "settings": {
+            "layout": "title-right",
+            "title_size": "h1",
+            "show_product_rating": true,
+            "show_vendor_brand": false,
+            "show_vendor_name": false,
+            "share_whatsapp": false,
+            "share_facebook": false,
+            "share_twitter": false,
+            "share_pinterest": false,
+            "share_messenger": false,
+            "share_email": false,
+            "layout_mobile": "title-bottom",
+            "mobile_title_size": "h4"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_tax": false,
+            "font_size": 24
+          }
+        },
+        "short_description": {
+          "type": "short_description",
+          "settings": {
+            "show_read_more": false
+          }
+        },
+        "variant_selection": {
+          "type": "variant_selection",
+          "settings": {
+            "selection_type": "dropdown",
+            "options": true,
+            "button_options": "Color",
+            "dropdown_options": "",
+            "show_variant_images": true,
+            "show_selected_variant_images": false,
+            "show_unavailable_variants": true,
+            "show_single_options": false,
+            "enable_selling_plans": true,
+            "size_name": "Size",
+            "sizechart_alignment": "left",
+            "sizechart_title_size": "h3",
+            "sizechart_title": "Size chart",
+            "sizechart_text": "",
+            "sizechart_page": "",
+            "sizechart_image_width": 460,
+            "sizechart_liquid": "",
+            "sizechart_html": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {}
+        },
+        "buy_button": {
+          "type": "buy_button",
+          "settings": {
+            "button_style": "plain",
+            "show_amount_selection": false,
+            "show_dynamic_buybutton": false,
+            "button_style_dynamic_buybutton": "inv",
+            "preorder_label": "",
+            "preorder_label_color_palette": "tertiary",
+            "preorder_show_dynamic_buybutton": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "fe32c8c6-2ccd-4d3e-a0c0-40edf08abadb": {
+          "type": "trustbadge",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "c7259cb9-7235-4028-b6df-3a68077fed80",
+        "price",
+        "short_description",
+        "variant_selection",
+        "inventory",
+        "buy_button",
+        "fe32c8c6-2ccd-4d3e-a0c0-40edf08abadb"
+      ],
+      "settings": {
+        "modify_short_description": true,
+        "media_layout": "slider",
+        "images_grid_spacing": 8,
+        "custom_product_image_ratio": 100,
+        "fill_images": true,
+        "images_padding": 0,
+        "images_vertical_position": 0,
+        "show_thumbs_desktop": true,
+        "show_thumbs_mobile": false,
+        "thumbs_layout": "bottom",
+        "img_info": "",
+        "img_info_color_palette": "scheme-2",
+        "enable_custom_font_size": false,
+        "font_size": "14px",
+        "show_product_description": true,
+        "description_title_size": "h2",
+        "product_description_enable_read_more": false,
+        "pros_cons_title_size": "h2",
+        "pros": "",
+        "cons": "",
+        "specs_title_size": "h2",
+        "specifications": "",
+        "product_description_mobile_collapse": false,
+        "mobile_tabs_title_size": "h5",
+        "multiply_bg_mobile": false
+      }
+    },
+    "section_rich_text_kihfcX": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_PyDw8T": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h3>Don’t forget the silicone grip tape!</h3><p>Silicone Grip Tape self-fuses without heat or adhesive, forming a solid rubber grip within 1 minute of application. This stuff is MAGIC. Tape comes in black or clear and provides excellent grip for spinning staff. Each roll is 1 inch wide and 10 feet long, enough plus extra to provide grip for the FutureStaff.</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "content_PyDw8T"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "overlay_opacity": 100,
+        "text_position": "align-start text-start",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "wide",
+        "height_mobile": "xs",
+        "spacing_desktop": -50,
+        "spacing_mobile": 10,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_q84fWp": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_TETYn4": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-black-silicone-grip-tape-wrapped_8a4dd753-207a-4bac-928e-683707c72311.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_riLQGq": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/TapesSiliconeGroup_DSC4194-510x510.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_etgB4j": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/TapesSiliconeClear_DSC4182-510x510.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_CgmcWP": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/TapesSiliconeBlack_DSC4187-510x510.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_TETYn4",
+        "image_riLQGq",
+        "image_etgB4j",
+        "image_CgmcWP"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr 1fr",
+        "tablet_columns_template": "1fr 1fr",
+        "mobile_columns_template": "1fr 1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_krQ6rc": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "page_eyMtfR": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-futurestaff-attachment-version-1",
+            "page_header_description": "",
+            "page_header_text_align": "center",
+            "page_background_color": "rgba(0,0,0,0)",
+            "custom_padding": "10px"
+          }
+        }
+      },
+      "block_order": [
+        "page_eyMtfR"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_button_list_VKVgUe": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_6zA9g9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurepoi-designer-moodhoops-3_6b3626dd-afd0-42fe-a0c6-4f6df5046c27.jpg",
+            "background_position": "center",
+            "background_position_mobile": "center"
+          }
+        },
+        "button_t9UVWt": {
+          "type": "button",
+          "settings": {
+            "text": "Contact us",
+            "url": "shopify://pages/contact-us"
+          }
+        },
+        "button_4GLbgf": {
+          "type": "button",
+          "settings": {
+            "text": "Help docs",
+            "url": "/a/docs/docs-category/help"
+          }
+        }
+      },
+      "block_order": [
+        "image_6zA9g9",
+        "button_t9UVWt",
+        "button_4GLbgf"
+      ],
+      "name": "[MH] Banner buttons list",
+      "settings": {
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "banner_height": 400,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary inv",
+        "text_alignment": "center",
+        "title": "<h3>Still have questions about FutureStaff or FuturePoi?</h3>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 40,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "recommended_products_qty": 8,
+        "text_alignment": "start",
+        "title": "<h2>You may also like</h2>",
+        "title_underline_style": "none",
+        "spacing_desktop": 50,
+        "spacing_mobile": 0,
+        "mobile_collapse": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10
+      }
+    },
+    "mh_featured_products_63adkg": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "color_palette": "",
+        "header_content": "<h3>Related products</h3>",
+        "header_text_align": "left",
+        "enable_custom_header_color": false,
+        "custom_header_color": "rgba(0,0,0,0)",
+        "products": "{{ product.metafields.custom.custom_related_products.value }}",
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "40px 20px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "section_rich_text_kihfcX",
+    "mh_section_banner_columns_q84fWp",
+    "mh_section_banner_columns_krQ6rc",
+    "mh_section_banner_button_list_VKVgUe",
+    "recommendations",
+    "mh_featured_products_63adkg"
+  ]
+}

@@ -1,0 +1,512 @@
+{% comment %} Check if there are any valid Instagram URLs in blocks {% endcomment %}
+{% assign has_valid_instagram = false %}
+{% for block in section.blocks %}
+  {% assign instagram_url = block.settings.instagram_url %}
+  {% if instagram_url != blank %}
+    {% if instagram_url contains 'instagram.com/p/' or instagram_url contains 'instagram.com/reel/' %}
+      {% assign has_valid_instagram = true %}
+      {% break %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{% if has_valid_instagram %}
+  <article
+    class='palette-{{ section.settings.color_palette }} module-color-palette mh-instagram-grid'
+    style='
+      --mh-ig-bg-color: {{ section.settings.section_background | default: "transparent" }};
+      --mh-ig-padding: {{ section.settings.section_padding | default: "20px 0" }};
+      --mh-ig-grid-columns: {{ section.settings.grid_columns | default: "1fr 1fr 1fr" }};
+      --mh-ig-grid-columns-tablet: {{ section.settings.grid_columns_tablet | default: "1fr 1fr" }};
+      --mh-ig-grid-columns-mobile: {{ section.settings.grid_columns_mobile | default: "1fr" }};
+      --mh-ig-grid-gap: {{ section.settings.grid_gap }}px;
+      --mh-ig-grid-gap-mobile: {{ section.settings.grid_gap_mobile }}px;
+      --mh-ig-border-radius: {{ section.settings.border_radius }}px;
+    '
+  >
+    <div class='mh-instagram-grid-container'>
+      {% if section.settings.title != blank %}
+        <{{ section.settings.heading_tag | default: 'h2' }}
+          class='section-title align-{{ section.settings.title_alignment }}'
+          {% if section.settings.title_color != blank %}
+            style='--mh-ig-title-color: {{ section.settings.title_color }};'
+          {% endif %}
+        >
+          {{ section.settings.title }}
+        </{{ section.settings.heading_tag | default: 'h2' }}>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div class='section-description align-{{ section.settings.description_alignment }}'>
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+
+      <ul
+        class='instagram-grid-list'
+        data-grid-columns='{{ section.settings.grid_columns | strip | split: ' ' | size }}'
+      >
+        {% for block in section.blocks %}
+          {% assign instagram_url = block.settings.instagram_url %}
+          {% if instagram_url != blank %}
+            {% if instagram_url contains 'instagram.com/p/' or instagram_url contains 'instagram.com/reel/' %}
+              <li class='instagram-grid-item' {{ block.shopify_attributes }}>
+                <div class='instagram-embed-container'>
+                  {% assign post_parts = instagram_url | split: '/' %}
+                  {% assign post_index = 0 %}
+                  {% for part in post_parts %}
+                    {% if part == 'p' or part == 'reel' %}
+                      {% assign post_index = forloop.index %}
+                    {% endif %}
+                  {% endfor %}
+
+                  {% if post_index > 0 and post_parts[post_index] != blank %}
+                    {% assign embed_url = 'https://www.instagram.com/p/'
+                      | append: post_parts[post_index]
+                      | append: '/'
+                    %}
+
+                    {% if section.settings.enable_lazy_loading %}
+                      <div
+                        class='instagram-lazy-container'
+                        data-instagram-url='{{ instagram_url }}'
+                        data-embed-url='{{ embed_url }}'
+                        data-index='{{ forloop.index0 }}'
+                        style='
+                          width: 100%;
+                          min-height: 380px;
+                          border-radius: var(--mh-ig-border-radius, 0);
+                          background-color: #f8f8f8;
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                        '
+                      >
+                        <div class='instagram-placeholder'>
+                          <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            width='48'
+                            height='48'
+                            viewBox='0 0 24 24'
+                            fill='#cccccc'
+                          >
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                          </svg>
+                        </div>
+                      </div>
+                    {% else %}
+                      <blockquote
+                        class='instagram-media'
+                        data-instgrm-captioned
+                        data-instgrm-permalink='{{ embed_url }}'
+                        data-instgrm-version='14'
+                        style='
+                          max-width: 540px;
+                          min-width: 326px;
+                          width: calc(100% - 2px);
+                          margin: 1px auto;
+                          padding: 0;
+                          border-radius: var(--mh-ig-border-radius, 0);
+                          display: block;
+                        '
+                      ></blockquote>
+                    {% endif %}
+                  {% endif %}
+                </div>
+              </li>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      {% if section.settings.footer_text != blank %}
+        <div class='section-footer align-{{ section.settings.footer_alignment }}'>
+          {{ section.settings.footer_text }}
+        </div>
+      {% endif %}
+    </div>
+    {% unless section.settings.enable_lazy_loading %}
+      <script async src='//www.instagram.com/embed.js'></script>
+    {% endunless %}
+
+    {% if section.settings.enable_lazy_loading %}
+      <script>
+        (function () {
+          const instagramGrid = document.currentScript.closest('.mh-instagram-grid');
+          if (!instagramGrid) return;
+
+          const gridList = instagramGrid.querySelector('.instagram-grid-list');
+          if (!gridList) return;
+
+          const lazyContainers = instagramGrid.querySelectorAll('.instagram-lazy-container');
+          if (!lazyContainers.length) return;
+
+          const gridColumns = parseInt(gridList.getAttribute('data-grid-columns')) || 3;
+          const initialLoadCount = gridColumns * 2; // Load first two rows
+
+          let instagramScriptLoaded = false;
+          let observer = null;
+
+          function loadInstagramScript() {
+            if (instagramScriptLoaded) return Promise.resolve();
+
+            return new Promise((resolve) => {
+              const script = document.createElement('script');
+              script.src = '//www.instagram.com/embed.js';
+              script.async = true;
+              script.onload = () => {
+                instagramScriptLoaded = true;
+                resolve();
+              };
+              document.body.appendChild(script);
+            });
+          }
+
+          function processEmbed(container) {
+            const embedUrl = container.getAttribute('data-embed-url');
+            if (!embedUrl) return;
+
+            const blockquote = document.createElement('blockquote');
+            blockquote.className = 'instagram-media';
+            blockquote.setAttribute('data-instgrm-captioned', '');
+            blockquote.setAttribute('data-instgrm-permalink', embedUrl);
+            blockquote.setAttribute('data-instgrm-version', '14');
+            blockquote.style.cssText = `
+          max-width: 540px;
+          min-width: 326px;
+          width: calc(100% - 2px);
+          margin: 1px auto;
+          padding: 0;
+          border-radius: var(--mh-ig-border-radius, 0);
+          display: block;
+        `;
+
+            container.innerHTML = '';
+            container.appendChild(blockquote);
+
+            if (window.instgrm) {
+              window.instgrm.Embeds.process();
+            }
+          }
+
+          function setupObserver() {
+            if ('IntersectionObserver' in window) {
+              observer = new IntersectionObserver(
+                (entries) => {
+                  entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                      const container = entry.target;
+
+                      observer.unobserve(container);
+
+                      loadInstagramScript().then(() => {
+                        processEmbed(container);
+                      });
+                    }
+                  });
+                },
+                {
+                  rootMargin: '200px 0px', // Load a bit before they become visible
+                  threshold: 0.1,
+                },
+              );
+
+              processInitialEmbeds();
+
+              lazyContainers.forEach((container, index) => {
+                if (index >= initialLoadCount) {
+                  observer.observe(container);
+                }
+              });
+            } else {
+              loadInstagramScript().then(() => {
+                lazyContainers.forEach((container) => {
+                  processEmbed(container);
+                });
+              });
+            }
+          }
+
+          function processInitialEmbeds() {
+            loadInstagramScript().then(() => {
+              lazyContainers.forEach((container, index) => {
+                if (index < initialLoadCount) {
+                  processEmbed(container);
+                }
+              });
+            });
+          }
+
+          if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', setupObserver);
+          } else {
+            setupObserver();
+          }
+        })();
+      </script>
+    {% endif %}
+  </article>
+{% endif %}
+
+{% stylesheet %}
+  .mh-instagram-grid {
+    position: relative;
+    width: 100%;
+    background-color: var(--mh-ig-bg-color, transparent);
+    padding: var(--mh-ig-padding, 20px 0);
+  }
+
+  .mh-instagram-grid-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    margin-bottom: 20px;
+    color: var(--mh-ig-title-color, var(--headings_text, var(--text, inherit)));
+  }
+
+  .section-description {
+    margin-bottom: 30px;
+  }
+
+  .section-footer {
+    margin-top: 30px;
+  }
+
+  .align-left {
+    text-align: left;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-right {
+    text-align: right;
+  }
+
+  .instagram-grid-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: var(--mh-ig-grid-columns, 1fr 1fr 1fr);
+    gap: var(--mh-ig-grid-gap, 20px);
+  }
+
+  @media (max-width: 768px) {
+    .instagram-grid-list {
+      grid-template-columns: var(--mh-ig-grid-columns-tablet, 1fr 1fr);
+      gap: var(--mh-ig-grid-gap-mobile, 10px);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .instagram-grid-list {
+      grid-template-columns: var(--mh-ig-grid-columns-mobile, 1fr);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "[MH] Instagram Grid",
+  "max_blocks": 50,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "enable_lazy_loading",
+      "label": "Enable lazy loading",
+      "default": true,
+      "info": "Improves page performance by loading Instagram embeds only when they come into view"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color palette",
+      "default": "scheme-2"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "section_padding",
+      "label": "Section padding",
+      "default": "20px 0",
+      "info": "Format: top right bottom left (e.g., 20px 0 20px 0) or top/bottom left/right (e.g., 20px 0)"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Section background color",
+      "default": "transparent"
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "Title alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "description_alignment",
+      "label": "Description alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer text"
+    },
+    {
+      "type": "select",
+      "id": "footer_alignment",
+      "label": "Footer alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Grid Settings"
+    },
+    {
+      "type": "text",
+      "id": "grid_columns",
+      "label": "Grid columns (Desktop)",
+      "default": "1fr 1fr 1fr",
+      "info": "Format: 1fr 1fr 1fr or 1fr 2fr 1fr or repeat(3, 1fr)"
+    },
+    {
+      "type": "text",
+      "id": "grid_columns_tablet",
+      "label": "Grid columns (Tablet)",
+      "default": "repeat(2, 1fr)",
+      "info": "Format: 1fr 1fr or repeat(2, 1fr)"
+    },
+    {
+      "type": "text",
+      "id": "grid_columns_mobile",
+      "label": "Grid columns (Mobile)",
+      "default": "1fr",
+      "info": "Format: 1fr"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "label": "Grid gap (desktop)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "grid_gap_mobile",
+      "min": 0,
+      "max": 30,
+      "step": 5,
+      "label": "Grid gap (mobile)",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "label": "Border radius",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "instagram_embed",
+      "name": "Instagram Embed",
+      "settings": [
+        {
+          "type": "url",
+          "id": "instagram_url",
+          "label": "Instagram URL",
+          "info": "Format: https://www.instagram.com/p/XXXX/ or https://www.instagram.com/reel/XXXX/"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] Instagram Grid",
+      "category": "MH Custom",
+      "settings": {
+        "title": "Our Instagram Feed",
+        "grid_columns": "1fr 1fr 1fr",
+        "grid_gap": 20,
+        "enable_lazy_loading": true
+      },
+      "blocks": [
+        {
+          "type": "instagram_embed"
+        },
+        {
+          "type": "instagram_embed"
+        },
+        {
+          "type": "instagram_embed"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

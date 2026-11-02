@@ -1,0 +1,103 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_featured_card_9QtKJz": {
+      "type": "mh-featured-card",
+      "blocks": {
+        "card_gA48zq": {
+          "type": "card",
+          "repeater": "{{ page.metafields.custom.collections_data.value }}",
+          "settings": {
+            "page": "{{ block.repeater.destination_link_page.value }}",
+            "collection": "{{ block.repeater.destination_link_collection.value }}",
+            "product": "{{ block.repeater.destination_link_product.value }}",
+            "rich_text": "<h2>{{ block.repeater.collection_title.value }}</h2>{{ block.repeater.description | metafield_tag }}",
+            "background_image": "{{ block.repeater.collection_image.value }}",
+            "enable_text_shadow": true,
+            "item_bg_color": "",
+            "min_height": 300,
+            "overlay_opacity": 0.1,
+            "content_padding": "",
+            "image_object_fit": "cover",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "image_position": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_gA48zq"
+      ],
+      "name": "[MH] Featured Card",
+      "settings": {
+        "color_palette": "",
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "section_title_color": "",
+        "section_bg_color": "",
+        "custom_section_padding": "",
+        "section_margin": 30,
+        "border_radius": 0,
+        "enable_custom_height": true,
+        "custom_height": 410,
+        "enable_custom_height_mobile": true,
+        "custom_height_mobile": 410,
+        "columns_template": "repeat(3, 1fr)",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "gap": 20,
+        "gap_tablet": 10,
+        "gap_mobile": 10
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_featured_card_9QtKJz"
+  ]
+}

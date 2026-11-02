@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "section_rich_text_6LWUk3": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_JfHJgp": {
+          "type": "title",
+          "source": "{{ metaobject }}",
+          "settings": {
+            "title": "<p>{{ metaobject.title.value }}</p>"
+          }
+        },
+        "content_NNdAmm": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        },
+        "button_ra9pgB": {
+          "type": "button",
+          "settings": {
+            "link_text": "Button",
+            "link_url": "/",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "title_JfHJgp",
+        "content_NNdAmm",
+        "button_ra9pgB"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "wide",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "section_rich_text_6LWUk3"
+  ]
+}

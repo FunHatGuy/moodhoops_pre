@@ -1,0 +1,547 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_TdKekQ": {
+      "type": "section-background",
+      "settings": {
+        "rich_text": "<h1>{{ page.title }}</h1>",
+        "background_image": "{{ page.metafields.custom.image_banner.value }}",
+        "enable_eager_loading": true,
+        "background_position_x": 50,
+        "background_position_y": 50,
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": true,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_74UDnm": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_HFym7x": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>So you want to build a diy hula hoop…</h2>",
+            "description": "<p>There are a few reasons people might have to build their own diy hula hoop. Some people just want a cheap hula hoop, others like the idea of doing it themselves for the experience. A common misconception is that learning how to make a hula hoop will be cheaper than buying one. If you already have all the supplies, or know someone who can get those supplies for free or cheaply, then DIY can be a cheap way to build a hoop. But buying all the supplies to build a hoop yourself can often cost a lot more than you initially plan for. That being said, here are the things you need to know in order to build your own hoop!</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "10px 20px 0px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_y7ByiY": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/HoopsDayMetallicMinis_DSC2809-500x500.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_HFym7x",
+        "image_y7ByiY"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.4fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 330,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 0,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_PkgkNF": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_G9ibRM": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>It’s all about the tubing</h2>",
+            "description": "<p>The size, thickness, and hardness of the tubing you use makes all the difference. There are many sizes and types of tubing available, but there are only a few that work best for adult sized hula hoops. PVC pipe is too hard and heavy. LDPE tubing is too soft. HDPE tubing is lightweight and fairly rigid, and is considered the standard tubing type by most hoop-makers. HDPE is the default tubing used in all <a href=\"https://moodhoops.com/led-hoops/\">Moodhoops LED Hoops</a>. <a href=\"https://moodhoops.com/polypro-hoops/\">Polypro tubing</a> is about 5% lighter than HDPE, but it’s a bit more rigid. Of course being more rigid means it’s also more brittle, especially in cold environments. If you’re not sure what you want, go with HDPE. You’re going to get a durable, long lasting tubing that isn’t going to crack because you dropped it on the pavement in cold weather.</p><p>For a look at some of the amazing colors of tubing available, check out our selection of <a href=\"https://moodhoops.com/polypro-hoops/\">Polypro Dayhoops</a>.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-left",
+            "custom_padding": "10px 20px 10px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_G9ibRM"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h3",
+        "main_section_title_align": "left",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_zGCTd6": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_7HDtCb": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Wait, I need to do math?</h2>",
+            "description": "<p>The other issue with tubing is the size. And this… gets confusing. First of all, click on this chart to help get a better understanding of the idea.</p><p>The important thing is the difference between ID and OD. Sometimes tubing is measured by the OD, or Outer Diameter. This is most common with tubing that is used in fabrication, or whenever we’re interested in how thick the tubing is to the observer. Other times, tubing or pipe is measured by the ID, or Inner Diameter. ID is important when we’re interested in how much stuff can fit inside the tube, usually water or air. In the hoop world, when someone tells you “Oh I only use <a href=\"https://moodhoops.com/polypro-hoops/\">3/4″ polypro</a>” they probably mean 3/4″ OD tubing (about the size of a penny), but sometimes they are actually referring to <a href=\"https://moodhoops.com/shop-category/hoops/beginner-hoops/\">3/4″ ID tubing</a> which is about 1″ OD (about the size of a quarter). Confused yet?</p><p>For more information on hoop sizing, check out our <a href=\"https://moodhoops.com/sizing-guide/\">Hoop Sizing Guide</a>.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-left",
+            "custom_padding": "10px 20px 10px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_MhmWTc": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-tubing-Size-Guide.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_7HDtCb",
+        "image_MhmWTc"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.4fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_VHaUen": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_iGjcr8": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>The tubing I found at the store is ugly, now what?</h2>",
+            "description": "<p>Yes, the irrigation tubing you found at your local plumbing store looks like it sat outside in the rain for months and then got dragged around on the concrete. There’s a reason for that. Nobody else cares about tubing like hoopers do. 🙂 For most people it’s just something to cut to size and bury underground. So it gets stored in the rain, thrown and smashed, treated like dirt before it ends up at the store. That’s why at Moodhoops we have our tubing specially made, just for us. If you want 1″ OD irrigation tubing without the markings and scratches you find at the store, check out our <a href=\"https://moodhoops.com/shop/blank-beginner-hoop/\">Blank Beginner Hoops</a>. Or if you’re looking for beautiful tubing in 3/4″ or 5/8″ OD, you’ve probably already seen our selection of <a href=\"https://moodhoops.com/polypro-hoops/\">Polypro Dayhoops</a>.</p><p>But maybe it’s too late for that, you bought a coil of tubing from the hardware store and it looks… like it came from the hardware store. What to do? You probably already know what to do, it’s time to <a href=\"https://moodhoops.com/shop-category/hoop-tapes/\">tape that sucker up</a>!</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-left",
+            "custom_padding": "10px 20px 10px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_qV8BHx": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-5-beginner-hoop-0322-500x500.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_iGjcr8",
+        "image_qV8BHx"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.4fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_x3TaNT": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_YtrCfi": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Tape, tape, tape, now I’m broke</h2>",
+            "description": "<p>Tape gets expensive. Especially the good stuff. You’re going to be tempted to just use some cheap duct tape (and there’s no shame in that!). One thing to note about duct tape is that the adhesive tends to sneak out and get everywhere after a while. Your hoop will start to get sticky and then dirt and debris are going to start adhering to it. A much better alternative is <a href=\"https://moodhoops.com/shop-category/hoop-tapes/grip-tapes/\">Grip Tape</a>. A 55yd roll of 1″ Grip Tape will tape about 5 hoops. The cool thing about grip tape is that the adhesive is less tacky, so it won’t seep out and make a mess. The other nice thing about grip tape is that it’s grippy! The texture of grip tape is like cloth, while the texture of duct tape is slick like plastic. So yeah, Grip Tape is better than Duct Tape!</p><p>But you want more, don’t you? You want sparkle. You want fancy <a href=\"https://moodhoops.com/shop-category/hoop-tapes/\">metallic tapes</a>. The cool thing about metallic tapes is that they look awesome. The bad thing about metallic tapes is that they’re really hard to work with. Grip tape is flexible and forgiving. Metallic tape is very rigid and has a really steep learning curve. You probably shouldn’t use metallic tape on your first hoop. If you want a great looking hoop with metallic tape and grip tape, check out our <a href=\"https://moodhoops.com/shop-category/hoops/beginner-hoops/\">Beginner Hoops</a>.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-left",
+            "custom_padding": "10px 20px 10px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_rNtKAU": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/Moodhoops-plasma-tapes-grouped-500x500.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_YtrCfi",
+        "image_rNtKAU"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.4fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 0,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_MFJEyn": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_dTiVzm": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>This thing came apart…</h2>",
+            "description": "<p>One of the most important things about your hoop is how it connects. There are a few options. Let’s start with the amount of segments. Our <a href=\"https://moodhoops.com/polypro-hoops/\">Polypro Dayhoops</a> are single segment hoops, while our <a href=\"https://moodhoops.com/shop-category/hoops/beginner-hoops/\">Beginner Hoops</a> have multiple segments. Multiple segments are great for a large hoop because you can break it down into smaller pieces for travel. Single segment hoops are more responsive so they are a better choice for high performance Polypro hoops.</p><p>OK so you’ve decided how many segments you want to use, now how do you get the tubing to stay together? The easiest option is to just tape the ends together with duct tape. It’s not pretty, it’s not sturdy, but it works. One problem with a taped connection is that it’s pretty wobbly. A multiple segment hoop that has taped connections will be very wobbly and not very fun to hoop with. Another issue is that over time the tape will wear and stretch and the hoop connection will get even looser.</p><p>Another easy option, if you already have the tools, is to staple the ends of the tubing together using a staple gun (not a stapler). You see this often on the cheap children’s hoops at the store. This is not a great method. The staples can wiggle free and become tiny, dirty spikes that bury themselves into your skin. Ouch.</p><p>If you can find a piece of tubing (or wooden dowel) that fits snug in your hoop tubing, you can use a rivet gun to affix the hoop tubing to the inner tubing. This method works great. It’s secure, rigid, and doesn’t wear out. The only downside is that it’s quite permanent.</p><p>Finally, the most difficult (but best) method, rivets and snaps. This is the way we do it at Moodhoops. It gives a very sturdy and permanent fit, and it can be easily detached for travel. It requires the most tools and specialty parts, but in the end produces a superior hoop. Our <a href=\"https://moodhoops.com/led-hoops/\">LED Hoops</a>, <a href=\"https://moodhoops.com/shop-category/hoops/beginner-hoops/\">Beginner Hoops</a>, <a href=\"https://moodhoops.com/polypro-hoops/\">Polypro Dayhoops</a>, even the <a href=\"https://moodhoops.com/shop/future-hoop/\">FutureHoop</a> uses this construction</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_dTiVzm"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_TdKekQ",
+    "mh_section_banner_columns_74UDnm",
+    "mh_section_banner_columns_PkgkNF",
+    "mh_section_banner_columns_zGCTd6",
+    "mh_section_banner_columns_VHaUen",
+    "mh_section_banner_columns_x3TaNT",
+    "mh_section_banner_columns_MFJEyn"
+  ]
+}

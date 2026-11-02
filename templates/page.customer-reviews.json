@@ -1,0 +1,211 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_9UJefm": {
+      "type": "section-background",
+      "settings": {
+        "rich_text": "<h1>{{ page.title }}</h1>",
+        "background_image": "{{ page.metafields.custom.image_banner.value }}",
+        "enable_eager_loading": true,
+        "background_position_x": 50,
+        "background_position_y": 15,
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_8AB8rm": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_NYeGzg": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "<p>!! I have the Futurehoop PRO from Moodhoops and it’s truly the most beautiful little ball of lighted energy I’ve ever seen. So bright and magical!! Pattern variety is endless and so many fun features. I ended up needing a service on it for a resize. Very quick response time, professional and super reasonable priced. I sent it in 4 days ago and their headquarters received it this morning… it was already shipped right back out today! Ill be back to hooping with her in no time at all. I want to put an emphasis on lightening fast shipping!! Absolutely recommend!</p><p><strong>Heather Robertson</strong>/Facebook6 Apr 18</p>",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 5,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_JpQViA": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "<p>“Incredibly impressed with this company! I ordered the 5/8 featherweight futurehoop shuffle on a Wednesday night and it arrived Saturday morning. Super fast response time from their customer service team via email and the quality of the product is awesome. They included hoopwax and stickers in my packaging, as well as detailed information about using and maintaining the hoop, as well as their warranty. This is the best birthday present ever!!!”</p><p><strong>Lizzie Degenfelder</strong>/Facebook31 Mar 18</p>",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 5,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_iUEK68": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "<p>@MoodHoops you guys took one week to get my hoop fixed, retubed, resized, waxes, answered all my emails, gave me priority shipping, and returned my hoop to me in 1 WEEK!!! You have the absolute best customer service and I love you guys immensely! Thank you!</p><p><strong>j a z @chaostolaughter</strong>/Twitter24 Mar 18</p>",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 5,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_NYeGzg",
+        "image_JpQViA",
+        "image_iUEK68"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 360,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 40,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_button_list_KUqMVH": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_bibVCH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurehoop-designer-moodhoops-rainbow-2.jpg",
+            "background_position": "center",
+            "background_position_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_bibVCH"
+      ],
+      "settings": {
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "banner_height": 320,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary plain",
+        "text_alignment": "center",
+        "title": "<h2>If you want to help other customers know what to expect from MoodHoops</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_9UJefm",
+    "mh_section_banner_columns_8AB8rm",
+    "mh_section_banner_button_list_KUqMVH"
+  ]
+}

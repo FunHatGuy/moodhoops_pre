@@ -1,0 +1,374 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "section_background_NDKXac": {
+      "type": "section-background",
+      "name": "[MH] Background Section",
+      "settings": {
+        "rich_text": "<h1>{{ collection.title }}</h1>",
+        "background_image": "{{ collection.metafields.custom.banner_image.value }}",
+        "enable_eager_loading": true,
+        "background_position_x": 50,
+        "background_position_y": 50,
+        "color_palette": "scheme-2",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 100,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h2",
+            "text_alignment": "center"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "text_alignment": "center",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "disabled": true,
+          "settings": {}
+        },
+        "extra_details_VMxAgH": {
+          "type": "extra_details",
+          "name": "[MH] Rich text Text",
+          "settings": {
+            "details_text": "{{ collection.metafields.custom.extra_details_richtext | metafield_tag }}",
+            "details_alignment": "center"
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "extra_details_VMxAgH",
+        "product_grid"
+      ],
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "products_per_row": 4,
+        "secondary_products_per_row": 4,
+        "custom_product_image_ratio": 100,
+        "fill_images": true,
+        "images_padding": 0,
+        "images_vertical_position": 0,
+        "enable_image_choice": true,
+        "image_choice_1": "Model",
+        "image_choice_2": "Product",
+        "product_image": "second",
+        "show_collection_image": false,
+        "enable_filters": true,
+        "enable_menu": false,
+        "enable_collections": false,
+        "filters_menu_alignment": "left",
+        "filters_layout": "drawer",
+        "filter_menu": "main-menu",
+        "collections_menu": [],
+        "filter_sticky": true,
+        "filters_show_more_limit": 7,
+        "enable_custom_filters_font_size": true,
+        "filters_font_size": "16px",
+        "image_swatches_size": "xs",
+        "image_swatches_fill_images": true,
+        "image_swatches_show_in_circle": true,
+        "filter_mobile_sticky": true,
+        "fix_zindex": 1
+      }
+    },
+    "mh_featured_products_TAteiY": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "",
+        "section_title_richtext_alignment": "left",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "translucent-blush-polypro-hoop",
+          "metallic-raspberry-polypro-hoop",
+          "classic-magenta-polypro-hoop",
+          "uv-pink-polypro-hoop",
+          "classic-red-polypro-hoop",
+          "metallic-tangerine-polypro-hoop",
+          "classic-orange-polypro-hoop",
+          "uv-orange-polypro-hoop",
+          "classic-yellow-polypro-hoop",
+          "uv-yellow-polypro-hoop",
+          "translucent-dew-polypro-hoop",
+          "metallic-mint-polypro-hoop",
+          "metallic-peacock-polypro-hoop",
+          "classic-green-polypro-hoop",
+          "uv-green-polypro-hoop",
+          "translucent-aqua-polypro-hoop",
+          "metallic-sky-polypro-hoop",
+          "uv-turquoise-polypro-hoop",
+          "classic-blue-polypro-hoop",
+          "translucent-lilac-polypro-hoop",
+          "metallic-periwinkle-polypro-hoop",
+          "classic-purple-polypro-hoop",
+          "classic-black-polypro-hoop",
+          "metallic-bronze-polypro-hoop",
+          "metallic-silver-polypro-hoop",
+          "metallic-seafoam-polypro-hoop",
+          "classic-white-polypro-hoop",
+          "translucent-clear-polypro-hoop"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_eT3dpw": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h2>Sectional Polypro Hoops</h2>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 50,
+        "color_palette": "",
+        "products": [
+          "custom-sectional-polypro"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_8ikcKq": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h2>Specialty Hoops</h2>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 50,
+        "color_palette": "",
+        "products": [
+          "polypro-minis",
+          "featherweight-polypro-minis",
+          "white-hdpe-hoop",
+          "custom-polypro-gyro-hoop",
+          "gyro-hoop-connectors"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_NciUyq": {
+      "type": "mh-featured-products",
+      "blocks": {
+        "collection_products_UAkrKz": {
+          "type": "collection_products",
+          "repeater": "{{ collection.metafields.custom.collection_list.value }}",
+          "settings": {
+            "collection": "{{ block.repeater.collection_reference.value }}",
+            "show_collection_title": true,
+            "custom_collection_title": "{{ block.repeater.override_collection_title.value }}",
+            "title_font_size": 32,
+            "title_alignment": "center",
+            "margin_bottom": 50,
+            "collection_richtext": "{{ block.repeater.collection_richtext | metafield_tag }}",
+            "collection_richtext_alignment": "center",
+            "show_collection_richtext": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_products_UAkrKz"
+      ],
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "",
+        "section_title_richtext_alignment": "left",
+        "section_title_margin_bottom": 50,
+        "color_palette": "",
+        "products": [],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "section_lookbook_PEibEb": {
+      "type": "section-lookbook",
+      "blocks": {
+        "image_Dan6dq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/CutDayHoopsTranslucentTitled_DSC1336-768x768.jpg",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<h5>Translucent</h5>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_EkbtdL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HoopsCutGroupMetallicTitledSeafoam_DSC3457-768x768.jpg",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<h5>Metallic</h5>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_Qzijqr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/HoopsCutClassicTitled_DSC3245-768x768.jpg",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<h5>Classic</h5>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_gdeFKw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/UV-polypro-hoops-cut-moodhoops-768x768.jpg",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<h5>UV</h5>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        }
+      },
+      "block_order": [
+        "image_Dan6dq",
+        "image_EkbtdL",
+        "image_Qzijqr",
+        "image_gdeFKw"
+      ],
+      "name": "t:sections.lookbook.presets.name",
+      "settings": {
+        "number_of_items": 4,
+        "space_between": 16,
+        "text_alignment": "center",
+        "title": "<h3>Polypro Color Finishes</h3>",
+        "title_underline_style": "none",
+        "text": "",
+        "title_position": "center",
+        "lookbook_title_font": "primary",
+        "lookbook_title_size": "h2",
+        "layout_mobile": "rows",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_background_NDKXac",
+    "main-collection",
+    "mh_featured_products_TAteiY",
+    "mh_featured_products_eT3dpw",
+    "mh_featured_products_8ikcKq",
+    "mh_featured_products_NciUyq",
+    "section_lookbook_PEibEb"
+  ]
+}

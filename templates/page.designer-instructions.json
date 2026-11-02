@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_xxMy3p": {
+      "type": "section-background",
+      "name": "[MH] Background Section",
+      "settings": {
+        "rich_text": "<p>Thank you for your purchase of the FutureHoop Designer and for including us on your hooping journey!</p><p>We started Moodhoops in 2011 and have been putting our heart and soul into bringing this vibrant flow arts community high quality and fun to use flow props that spark joy and inspiration, whether inside or outside of the circle.</p><p>We are deeply inspired by all of the members of the community that we serve and sincerely appreciate that we get to support you and thrive alongside you.</p><p>Please refer to this guide to start digging into how your FutureHoop Designer operates. We’ve included detailed instructions and helpful videos to get you started, and <a href=\"/pages/contact-us\" title=\"Contact\"><span style=\"text-decoration:underline\">we’re always happy to help answer questions</span></a> if you get stuck.</p>",
+        "background_image": "shopify://shop_images/Sponsored-Artist-Morgan-Jenkins-FutureHoop-2024-19-714x1000_1.jpg",
+        "enable_eager_loading": false,
+        "background_position_x": 50,
+        "background_position_y": 0,
+        "color_palette": "scheme-2",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_vertical_tabs_zYqzYL": {
+      "type": "mh-vertical-tabs",
+      "blocks": {
+        "tab_hBBMxR": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Uncoiling Your Hoop",
+            "tab_icon": "",
+            "content_title": "",
+            "content_richtext": "<h3>Unboxing:</h3><ul><li>Do not open the hoop “accordion style”, or like a #8.</li><li>Pulling open a coiled hoop this way will cause damage to the hoop that is not covered under warranty.</li></ul><h3>Remove the \"Shipping Cuff\":</h3><ul><li>Your hoop arrives fully coiled with a \"shipping cuff\" over the connection and may look like 2 hoops.</li><li>Start by removing the blue masking tape from around the tubing.</li><li><span style=\"text-decoration:underline\">Remove outer shipping cuff to reveal the inner connection of the hoop.</span></li><li>To remove outer cuff, firmly pull one end of the hoop tubing away from the cuff, then take the cuff off the other end of the tubing.</li><li>You can save this cuff to use again in the future!</li></ul><h3>Uncoil the Hoop:</h3><ul><li>Carefully uncoil the hoop so that you can connect the ends together to form the hoop.</li><li>To close the hoop, press down the snap button, & insert one end into the other.</li><li>Make sure the snap button pops up in the on or off position. You can give the tubing a slight side to side motion to help the snap button pop out from the hole.</li><li>After closing the hoop, firmly try to pull open the hoop to make sure it’s in its fully locked position before hooping.</li><li>The hoop will turn on when the hoop is closed and the power contacts are connected.</li></ul><h3>Shaping the Hoop After Uncoiling:</h3><ul><li>Allow your hoop some time to relax into its circular shape.</li><li>Lay your hoop flat on the ground, in the fully uncoiled and closed position.</li><li>It may take about 24 hours after uncoiling the hoop to get a more fully rounded shape, but you can still hoop with it out of the box.</li></ul><h3>Coiling Your Hoop for Transport</h3><ul><li><strong>Please remember that kinked or cracked tubing is not covered by our warranty, so coiling your hoop should be done carefully and is at your own risk.</strong></li><li>Some of the smaller sizes, especially in stiffer polypro tubing or in 3/4 tubing, can be a little more difficult to coil.</li><li>If there's a tubing mishap and your tubing needs to be replaced just write in to us and we’re happy to get you fixed up and sent back to you quickly </li></ul><h4>Fully Coiling Your Hoop</h4><p>Hoops arrive with a \"shipping cuff\" that can be saved and reused in the future if you're comfortable fully coiling your hoop. The cuff provides stability when the hoop is in a coiled shape, but it should be completely removed before attempting to uncoil or open the hoop.</p><p><span style=\"text-decoration:underline\"><strong>IMPORTANT NOTE</strong></span></p><p><strong>If you are fully coiling your hoop, be sure to put the button in the </strong><span style=\"text-decoration:underline\"><strong>ON position</strong></span><strong>, and use the shipping cuff if you still have it.</strong> This this will give the best support to the inner tubing insert.</p><ul><li><span style=\"text-decoration:underline\">Removable Battery Hoops</span> - Remove the battery before coiling.</li><li><span style=\"text-decoration:underline\">Non-Removable Battery Hoops</span> - Add a piece of scotch tape over the battery contacts so the hoop won't turn on while fully coiled.</li></ul><h4>Partially Coiling Your Hoop</h4><p>Since the hoops open up, you can partially collapse the hoop if you’re unsure about fully coiling it. Once the hoop is partially collapsed you can add zip ties in several places along the coiled tubing to keep it in a coiled shape.</p><p><strong>Check out this FAQ page with full instructions and a video guide to assist with coiling your hoop &gt;&gt;&gt; </strong><a href=\"/a/docs/led-hoops/kb-coil-hoop-2\" title=\"kb-coil-hoop-2\"><strong>Guide to Coiling Your Hoop</strong></a></p><h3>Long-term Hoop Storage</h3><p>It’s normal for your hoop to have a little memory of its coiled shape when it’s been collapsed for a while.</p><ul><li>It’s best for the shape of the hoop to only keep it fully collapsed for temporary transport and travel.</li><li>Storing your hoop is best done either hanging from a hook in a secure spot, or stored flat on the ground in an out of the way spot (like under a bed or couch).</li><li>Warping may also occur from keeping the hoop leaned against a wall at an angle, so it’s best to keep the hoop hung up or laying flat on the floor.</li><li>Storing your hoop properly is especially needed for areas with warmer temperatures to avoid the tubing becoming uneven or wonky.</li><li>If your hoop tubing is wonky or warped, try laying it flat somewhere safe outside in the sun to allow the tubing to relax back into flat shape, just like when you got the hoop.</li></ul>",
+            "page": ""
+          }
+        },
+        "tab_Phi3cr": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Hoop Power",
+            "tab_icon": "",
+            "content_title": "Second Tab Content",
+            "content_richtext": "<p>This is the content for the second tab. You can add rich text here or select a page to display.</p>",
+            "page": "content-block-switch-on-of-designer-hoop-manual"
+          }
+        },
+        "tab_8dmi6V": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Read: Important Battery Info",
+            "tab_icon": "",
+            "content_title": "Third Tab Content",
+            "content_richtext": "<p>This is the content for the third tab. You can add rich text here or select a page to display.</p>",
+            "page": "content-block-lithium-ion-batteries-can-start-fires-very-important-information"
+          }
+        },
+        "tab_UprB4k": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Hoop Manual",
+            "tab_icon": "",
+            "content_title": "",
+            "content_richtext": "",
+            "page": "content-block-futurehoop-designer-manual"
+          }
+        },
+        "tab_NdrCDh": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Designer Downloads",
+            "tab_icon": "",
+            "content_title": "",
+            "content_richtext": "",
+            "page": "content-block-designer-downloads"
+          }
+        },
+        "tab_EX8Qty": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Designer Support",
+            "tab_icon": "",
+            "content_title": "",
+            "content_richtext": "",
+            "page": "content-block-designer-support"
+          }
+        },
+        "tab_7kz7hi": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Tutorials",
+            "tab_icon": "",
+            "content_title": "Video tutorials are sprinkled throughout the documentation, but here are some quick links to where you can find them:",
+            "content_richtext": "<ul><li><a href=\"/a/docs/futurehoop-designer-futurepoi-designer-futurestaff-designer/designer-update-pattern\" title=\"/a/docs/futurehoop-designer-futurepoi-designer-futurestaff-designer/designer-update-pattern\">Updating the Pattern Collection – Installing a Pattern Pack</a></li><li><a href=\"/a/docs/futurehoop-designer-futurepoi-designer-futurestaff-designer/designer-4-orange\" title=\"/a/docs/futurehoop-designer-futurepoi-designer-futurestaff-designer/designer-4-orange\">Motion Sensor Calibration – the 4 orange LEDs</a></li></ul>",
+            "page": ""
+          }
+        },
+        "tab_iwhg7z": {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Social Media",
+            "tab_icon": "",
+            "content_title": "",
+            "content_richtext": "<p><strong>Tag @moodhoops on socials and use hashtags for the chance to get featured!</strong></p><ul><li><a href=\"https://www.facebook.com/moodhoops/\">Facebook</a></li><li><a href=\"https://www.instagram.com/moodhoops/\">Instagram</a></li><li><a href=\"https://www.tiktok.com/@moodhoopsofficial\">TikTok</a></li></ul><p>Hashtags you can use to add to your posts or find other Moodhoopers:</p><ul><li>#futurehoop</li><li>#mhfuturehoop</li><li>#futurehoopdesigner</li><li>#designerhoop</li><li>#moodhoops</li></ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "tab_hBBMxR",
+        "tab_Phi3cr",
+        "tab_8dmi6V",
+        "tab_UprB4k",
+        "tab_NdrCDh",
+        "tab_EX8Qty",
+        "tab_7kz7hi",
+        "tab_iwhg7z"
+      ],
+      "custom_css": [
+        "@media (max-width: 767px) {.mobile-scroll-wrapper {max-width: 320px; }}"
+      ],
+      "name": "[MH] Vertical Tabs",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "buttons_style": "tertiary plain",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "title_alignment": "center",
+        "menu_width_percent": 20,
+        "tabs_gap": 2,
+        "columns_gap": 20,
+        "section_margin": 20,
+        "border_radius": 4,
+        "custom_section_padding": "0px 0px 0px 0px",
+        "tab_text_color": "#000000",
+        "tab_bg_color": "#efefef",
+        "tab_hover_text_color": "#000000",
+        "tab_active_text_color": "#df3d82",
+        "content_bg_color": "rgba(0,0,0,0)",
+        "content_padding": "15px"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_xxMy3p",
+    "mh_vertical_tabs_zYqzYL"
+  ]
+}

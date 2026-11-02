@@ -1,0 +1,604 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_video_iframe_grid_Q99LMA": {
+      "type": "mh-video-iframe-grid",
+      "blocks": {
+        "video_two_col_6zh9eR": {
+          "type": "video_two_col",
+          "settings": {
+            "block_background_type": "image",
+            "section_bg_color": "#000000",
+            "section_bg_image": "shopify://shop_images/blue-brick-pattern.jpg",
+            "overlay_opacity": 50,
+            "background_image_size": "cover",
+            "section_margin": 0,
+            "min_height": 200,
+            "left_title": "{{ page.title }}",
+            "left_heading_tag": "h1",
+            "left_description": "{{ page.content }}",
+            "left_custom_block_padding": "20px",
+            "left_enable_custom_text_color": false,
+            "left_custom_text_color": "rgba(0,0,0,0)",
+            "left_enable_custom_link_color": false,
+            "left_custom_link_color": "rgba(0,0,0,0)",
+            "left_video_url": "https://youtu.be/nT_BnXQL-Mc",
+            "left_content_alignment": "top-center",
+            "left_background_color": "rgba(0,0,0,0)",
+            "right_title": "",
+            "right_heading_tag": "h3",
+            "right_description": "",
+            "right_custom_block_padding": "20px",
+            "right_enable_custom_text_color": false,
+            "right_custom_text_color": "rgba(0,0,0,0)",
+            "right_enable_custom_link_color": false,
+            "right_custom_link_color": "rgba(0,0,0,0)",
+            "right_video_url": "",
+            "right_content_alignment": "top-left",
+            "right_background_color": "rgba(0,0,0,0)",
+            "show_top_square": false,
+            "top_square_color": "#ffffff",
+            "show_bottom_square": false,
+            "bottom_square_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "video_two_col_6zh9eR"
+      ],
+      "name": "[MH] Video two-column blocks",
+      "settings": {
+        "enable_lazy_loading": true,
+        "color_palette": "scheme-2",
+        "section_title_color": "#000000",
+        "main_section_title": "",
+        "main_section_footer_text": "<h3>A behind the scenes look at how LUCID was conceptualized, choreographed and created with the<br/><a href=\"https://moodhoops.com/led-hoops/\">Futurehoop Designer programmable hoop</a></h3>",
+        "main_section_footer_text_align": "center",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 20px 0px",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0
+      }
+    },
+    "mh_video_iframe_ajHzEh": {
+      "type": "mh-video-iframe",
+      "name": "[MH] Video iframe",
+      "settings": {
+        "color_palette": "",
+        "section_bg_color": "#000000",
+        "section_padding": "40px 20px",
+        "section_height": 400,
+        "section_margin_bottom": 0,
+        "header_content": "",
+        "header_text_align": "left",
+        "enable_custom_header_color": false,
+        "custom_header_color": "rgba(0,0,0,0)",
+        "enable_lazy_loading": true,
+        "video_url": "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fmoodhoops%2Fvideos%2F295596754462792%2F/&width=1120&height=630",
+        "video_padding": "20px 0",
+        "video_autoplay": false,
+        "video_muted": false,
+        "video_loop": false,
+        "footer_content": "",
+        "footer_text_align": "left",
+        "enable_custom_footer_color": false,
+        "custom_footer_color": "rgba(0,0,0,0)"
+      }
+    },
+    "mh_video_iframe_adxh6t": {
+      "type": "mh-video-iframe",
+      "name": "[MH] Video iframe",
+      "settings": {
+        "color_palette": "",
+        "section_bg_color": "#000000",
+        "section_padding": "0px",
+        "section_height": 400,
+        "section_margin_bottom": 0,
+        "header_content": "<h3>Not ready to wake up yet? The Flowmance videos continue below.</h3>",
+        "header_text_align": "center",
+        "enable_custom_header_color": false,
+        "custom_header_color": "rgba(0,0,0,0)",
+        "enable_lazy_loading": true,
+        "video_url": "https://youtu.be/3k_1892SfCE",
+        "video_padding": "0 20px",
+        "video_autoplay": false,
+        "video_muted": false,
+        "video_loop": false,
+        "footer_content": "",
+        "footer_text_align": "left",
+        "enable_custom_footer_color": false,
+        "custom_footer_color": "rgba(0,0,0,0)"
+      }
+    },
+    "mh_video_iframe_9WW9Uc": {
+      "type": "mh-video-iframe",
+      "name": "[MH] Video iframe",
+      "settings": {
+        "color_palette": "scheme-8",
+        "section_bg_color": "#000000",
+        "section_padding": "20px",
+        "section_height": 400,
+        "section_margin_bottom": 50,
+        "header_content": "",
+        "header_text_align": "left",
+        "enable_custom_header_color": false,
+        "custom_header_color": "rgba(0,0,0,0)",
+        "enable_lazy_loading": true,
+        "video_url": "https://youtu.be/h9LH1y8Q4vk",
+        "video_padding": "0 20px",
+        "video_autoplay": false,
+        "video_muted": false,
+        "video_loop": false,
+        "footer_content": "",
+        "footer_text_align": "left",
+        "enable_custom_footer_color": false,
+        "custom_footer_color": "rgba(0,0,0,0)"
+      }
+    },
+    "section_lookbook_pf3UBk": {
+      "type": "section-lookbook",
+      "blocks": {
+        "image_WdxRtG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lucid-morgan-bw1.jpg",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<p>Morgan’s passion for hoop dance has sent her around the world as an instructor and performer. Known for her Hoopography, she has been featured in many music videos and was cast to play a hooping character created specifically for her in Showtime’s Roadies.</p><p>With a background in film making, Morgan fuses her love for cinematic storytelling and hoopdance by creating award-winning hoop videos. She hopes to collaborate with more artists, dancers, and creators, and to continue directing videos that will push hoopdance into the mainstream to spread joy of hooping.</p><p>Morgan can be found spinning with her hoop troupe, Hooptown Hotties and performing solo as Miss Mo’Jangles.</p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        },
+        "image_n6qLMa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/lucid-lee-bw1.jpg",
+            "title": "",
+            "title_underline_style": "none",
+            "text": "<p>Lee is a southeastern based performance artist who fuses various dance styles with prop manipulation to create a beautiful display of grace and skill.</p><p>With a background in hip hop and tutting, his unique hoop style has distinguished him as one of the most highly sought after teachers and performers for festivals and workshops.</p><p>He not only performs with hoops, but is proficient with fire fans, poi, fire hoops and staff. Lee’s goal is to see the art and freedom of hooping expand as both an integral part of the dance industry, and a platform for self expression.</p>",
+            "show_link": true,
+            "link_text": "Button",
+            "link_url": "",
+            "button_style": "primary plain",
+            "show_look": false,
+            "product_list": [],
+            "look_btn_style": "buy_button plain",
+            "look_position": "end",
+            "show_look_label": false,
+            "look_label_text": "Label"
+          }
+        }
+      },
+      "block_order": [
+        "image_WdxRtG",
+        "image_n6qLMa"
+      ],
+      "name": "t:sections.lookbook.presets.name",
+      "settings": {
+        "number_of_items": 2,
+        "space_between": 16,
+        "text_alignment": "center",
+        "title": "",
+        "title_underline_style": "none",
+        "text": "",
+        "title_position": "center",
+        "lookbook_title_font": "primary",
+        "lookbook_title_size": "h2",
+        "layout_mobile": "rows",
+        "spacing_desktop": 60,
+        "spacing_mobile": 20,
+        "fix_zindex": 0
+      }
+    },
+    "mh_grid_section_QrXKME": {
+      "type": "mh-grid-section",
+      "blocks": {
+        "grid_item_9ywgnp": {
+          "type": "grid_item",
+          "settings": {
+            "item_title": "",
+            "item_heading_tag": "h3",
+            "item_description": "<p>Lee Jeffries<br/>Morgan Jenkins<br/>with Lulu Lam</p><p><strong>Special Thanks</strong><br/>Electric Pony Studios<br/>JTV Costumes Department<br/>JTV Props Department</p>",
+            "text_alignment": "center",
+            "item_background_color": "rgba(0,0,0,0)",
+            "item_padding": "20px",
+            "title_color": "#000000",
+            "title_margin": "15px 0 10px 0",
+            "text_color": "#ffffff",
+            "description_margin": "0 0 15px 0"
+          }
+        },
+        "grid_item_hJj9jy": {
+          "type": "grid_item",
+          "settings": {
+            "item_title": "",
+            "item_heading_tag": "h3",
+            "item_description": "<p><strong>Cinematographer<br/>Sound Designer</strong><br/>Gabriel Mann<br/>gabemann.com</p><p><strong>Lighting Designer<br/>Derek Hoffman</strong></p>",
+            "text_alignment": "center",
+            "item_background_color": "rgba(0,0,0,0)",
+            "item_padding": "20px",
+            "title_color": "#000000",
+            "title_margin": "15px 0 10px 0",
+            "text_color": "#ffffff",
+            "description_margin": "0 0 15px 0"
+          }
+        },
+        "grid_item_mPdQGN": {
+          "type": "grid_item",
+          "settings": {
+            "item_title": "",
+            "item_heading_tag": "h3",
+            "item_description": "<p><strong>Crew</strong><br/>Matt Parchen – 1st AC<br/>Jason Norman – Lighting Technician<br/>Lani Licas – Assistant to<br/>Ms. Jenkins & Mr. Jeffries</p><p>Behind the Scenes Videographer<br/>Ryan Hunter</p><p>Photography by Jimmy Bazan</p>",
+            "text_alignment": "center",
+            "item_background_color": "rgba(0,0,0,0)",
+            "item_padding": "20px",
+            "title_color": "#000000",
+            "title_margin": "15px 0 10px 0",
+            "text_color": "#ffffff",
+            "description_margin": "0 0 15px 0"
+          }
+        }
+      },
+      "block_order": [
+        "grid_item_9ywgnp",
+        "grid_item_hJj9jy",
+        "grid_item_mPdQGN"
+      ],
+      "name": "[MH] Grid Section",
+      "settings": {
+        "color_palette": "scheme-1",
+        "main_title": "Credits",
+        "heading_tag": "h2",
+        "title_color": "#ffffff",
+        "title_margin_bottom": 25,
+        "background_type": "image",
+        "background_color": "rgba(0,0,0,0)",
+        "background_image": "shopify://shop_images/blue-brick-pattern.jpg",
+        "background_image_size": "cover",
+        "overlay_opacity": 65,
+        "section_padding": "60px 20px",
+        "columns": "3",
+        "grid_gap": 0,
+        "border_radius": 0,
+        "footer_text": "<p><strong>Performance HoopsMorgan: 31″ in 3/4 blush polypro – Lee: 32″ in 3/4 dew polyproFutureHoop Designer HD</strong></p>",
+        "footer_alignment": "center",
+        "footer_text_color": "#ffffff",
+        "footer_margin_top": 40
+      }
+    },
+    "mh_image_blocks_RLpWRN": {
+      "type": "mh-image-blocks",
+      "blocks": {
+        "image_block_H7bTjy": {
+          "type": "image_block",
+          "settings": {
+            "block_margin": 30,
+            "images_gap": 10,
+            "block_overlay": 0,
+            "image_1": "shopify://shop_images/morgan-and-lee-flowmance-teaser-shot-1.jpg",
+            "image_2": "shopify://shop_images/lucid-hoopography-jimmy-bazan-morgan-jenkins-lee-jeffries-polypro-sponsored-artist-moodhoops-21.jpg",
+            "image_3": "shopify://shop_images/lucid-hoopography-jimmy-bazan-morgan-jenkins-lee-jeffries-polypro-sponsored-artist-moodhoops-42.jpg",
+            "image_4": "shopify://shop_images/lucid-hoopography-jimmy-bazan-lee-jeffries-polypro-sponsored-artist-moodhoops-31-695x1000.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_block_H7bTjy"
+      ],
+      "name": "[MH] Image Blocks",
+      "settings": {
+        "color_palette": "",
+        "main_title": "",
+        "heading_tag": "h2",
+        "title_color": "#000000",
+        "title_margin_bottom": 30,
+        "background_type": "color",
+        "background_color": "rgba(0,0,0,0)",
+        "background_image_size": "cover",
+        "overlay_opacity": 0,
+        "section_padding": "0px",
+        "desktop_min_height": 800,
+        "mobile_min_height": 500,
+        "footer_text": "",
+        "footer_alignment": "center",
+        "footer_text_color": "#666666",
+        "footer_margin_top": 40
+      }
+    },
+    "section_rich_text_Ey7Nqb": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_XzQmtE": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>Photography by Jimmy Bazan</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_qPKwRT": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Lee and Morgan’s paths crossed as instructors at Hoopcamp in 2015. Their first collaboration was the groundbreaking and award winning video, Flowmance, which features steamy partner Hoopography and a story of passion and jealousy.</p><p>Despondence was their second film as creators and performers using the hoop as a lens to explore deep emotion and a forward moving story exposing the dark shadows of depression that cast over one’s mind and relationships.</p><p>LUCID is their latest hoopography production and is truly a cinematic experience building on the enchanting universe of their unique flowmance.</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "title_XzQmtE",
+        "content_qPKwRT"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "wide",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_image_blocks_dQKCWb": {
+      "type": "mh-image-blocks",
+      "blocks": {
+        "vertical_split_xNNQFr": {
+          "type": "vertical_split",
+          "settings": {
+            "block_margin": 30,
+            "images_gap": 10,
+            "block_overlay": 0,
+            "image_1": "shopify://shop_images/lucid-hoopography-jimmy-bazan-morgan-jenkins-lee-jeffries-polypro-sponsored-artist-moodhoops-22.jpg",
+            "image_2": "shopify://shop_images/lucid-hoopography-jimmy-bazan-morgan-jenkins-polypro-sponsored-artist-moodhoops-1.jpg",
+            "image_3": "shopify://shop_images/lucid-hoopography-jimmy-bazan-morgan-jenkins-lee-jeffries-polypro-sponsored-artist-moodhoops-51.jpg",
+            "image_4": "shopify://shop_images/lucid-hoopography-jimmy-bazan-morgan-jenkins-lee-jeffries-polypro-sponsored-artist-moodhoops-12.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "vertical_split_xNNQFr"
+      ],
+      "name": "[MH] L-Shape Image Grid",
+      "settings": {
+        "color_palette": "",
+        "main_title": "",
+        "heading_tag": "h2",
+        "title_color": "#000000",
+        "title_margin_bottom": 30,
+        "background_type": "color",
+        "background_color": "rgba(0,0,0,0)",
+        "background_image_size": "cover",
+        "overlay_opacity": 0,
+        "section_padding": "0px",
+        "desktop_min_height": 800,
+        "mobile_min_height": 500,
+        "footer_text": "",
+        "footer_alignment": "center",
+        "footer_text_color": "#666666",
+        "footer_margin_top": 40
+      }
+    },
+    "mh_section_banner_columns_JXjihn": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_D84LJq": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/futurehoop-designer-cropped3.jpg",
+            "enable_text_shadow": false,
+            "title": "<h2>find</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_tXfNxG": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/futurehoop-designer-cropped3.jpg",
+            "enable_text_shadow": false,
+            "title": "<h2>your</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_fNMfNz": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/futurehoop-designer-cropped3.jpg",
+            "enable_text_shadow": false,
+            "title": "<h2>hoop</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_D84LJq",
+        "image_tXfNxG",
+        "image_fNMfNz"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "#000000",
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "40px 0px",
+        "enable_custom_height": true,
+        "custom_height": 400,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 30
+      }
+    },
+    "mh_featured_products_pBXMCe": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "color_palette": "",
+        "products": [
+          "pixelhoop",
+          "futurepoi-micro",
+          "pixelwand",
+          "future-wand",
+          "futurestaff-shuffle",
+          "futurestaff-remote-xl"
+        ],
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 3,
+        "grid_columns_mobile": 2,
+        "grid_gap": 15,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "0px 0px",
+        "padding_tablet": "15px",
+        "padding_mobile": "10px"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_video_iframe_grid_Q99LMA",
+    "mh_video_iframe_ajHzEh",
+    "mh_video_iframe_adxh6t",
+    "mh_video_iframe_9WW9Uc",
+    "section_lookbook_pf3UBk",
+    "mh_grid_section_QrXKME",
+    "mh_image_blocks_RLpWRN",
+    "section_rich_text_Ey7Nqb",
+    "mh_image_blocks_dQKCWb",
+    "mh_section_banner_columns_JXjihn",
+    "mh_featured_products_pBXMCe"
+  ]
+}

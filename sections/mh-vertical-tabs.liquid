@@ -1,0 +1,546 @@
+{%- assign btn_color = section.settings.buttons_style | split: ' ' | first -%}
+{%- assign btn_variant = section.settings.buttons_style | split: ' ' | last -%}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const verticalTabs = document.querySelectorAll('.mh-vertical-tabs');
+
+    verticalTabs.forEach((tabsContainer) => {
+      const tabButtons = tabsContainer.querySelectorAll('.tab-button');
+      const tabContents = tabsContainer.querySelectorAll('.tab-content');
+
+      if (tabButtons.length > 0) {
+        tabButtons[0].classList.add('active');
+      }
+
+      if (tabContents.length > 0) {
+        tabContents[0].classList.add('active');
+      }
+
+      tabButtons.forEach((button, index) => {
+        button.addEventListener('click', () => {
+          tabButtons.forEach((btn) => btn.classList.remove('active'));
+          tabContents.forEach((content) => content.classList.remove('active'));
+
+          button.classList.add('active');
+          if (tabContents[index]) {
+            tabContents[index].classList.add('active');
+          }
+        });
+      });
+    });
+  });
+</script>
+
+<article class='palette-{{ section.settings.color_palette }} module-color-palette mh-vertical-tabs-container'>
+  {% if section.settings.main_section_title != blank %}
+    {% assign tag = section.settings.main_section_heading_tag | default: 'h2' %}
+    <{{ tag }}
+      class='section-title align-{{ section.settings.title_alignment | default: 'center' }}'
+      style='--mh-vt-title-color: {{ section.settings.section_title_color | default: 'var(--text)' }};'
+    >
+      {{ section.settings.main_section_title }}
+    </{{ tag }}>
+  {% endif %}
+
+  <div class='mh-vertical-tabs' style='--mh-vt-columns-gap: {{ section.settings.columns_gap | default: 30 }}px;'>
+    <div
+      class='tabs-menu-container'
+    >
+      <div class='tabs-menu link-btn'>
+        {%- for block in section.blocks -%}
+          {% if block.type == 'tab' %}
+            <button
+              class='tab-button overlay-{{ btn_color }}{% if btn_variant == "inv" %} inv{% endif %}'
+              id='tab-{{ block.id }}'
+              style='
+                {% if section.settings.tab_bg_color != blank and section.settings.tab_bg_color != 'transparent' %}
+                --secondary_bg_btn: {{ section.settings.tab_bg_color }};
+                {% endif %}
+                --mh-vt-tab-text-color: {{ section.settings.tab_text_color | default: '#000000' }};
+                --mh-vt-tab-active-text-color: {{ section.settings.tab_active_text_color | default: '#ffffff' }};
+              '
+            >
+              {% if block.settings.tab_icon != blank %}
+                <span class='tab-icon'>{{ block.settings.tab_icon }}</span>
+              {% endif %}
+              {{ block.settings.tab_title }}
+            </button>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class='tabs-content-container'>
+      {%- for block in section.blocks -%}
+        {% if block.type == 'tab' %}
+          <div class='tab-content' id='content-{{ block.id }}'>
+            {% if block.settings.content_title != blank %}
+              <h3 class='content-title'>{{ block.settings.content_title }}</h3>
+            {% endif %}
+
+            {% if block.settings.content_richtext != blank %}
+              <div class='content-richtext'>
+                {{ block.settings.content_richtext }}
+              </div>
+            {% endif %}
+
+            {% if block.settings.page != blank %}
+              <div class='page-content-wrapper'>
+                <div class='page-content-inner'>
+                  {% assign page_content = pages[block.settings.page] %}
+                  {% if page_content.content != blank %}
+                    <div class='rte'>
+                      {{ page_content.content }}
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+</article>
+
+{% stylesheet %}
+  .mh-vertical-tabs-container {
+    width: 100%;
+    margin-bottom: var(--spacing);
+  }
+
+  .mh-vertical-tabs-container .section-title {
+    color: var(--mh-vt-title-color, var(--text));
+  }
+
+  .mh-vertical-tabs-container .mh-vertical-tabs {
+    display: grid;
+    grid-template-columns: minmax(150px, var(--mh-vt-menu-width, 30%)) 1fr;
+    gap: var(--mh-vt-columns-gap, 30px);
+    width: 100%;
+    margin-bottom: var(--mh-vt-section-margin, 50px);
+    background-color: var(--mh-vt-section-bg-color, transparent);
+    padding: var(--mh-vt-section-padding, 0px);
+  }
+
+  .mh-vertical-tabs-container .tabs-menu-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .mh-vertical-tabs-container .tabs-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--mh-vt-tabs-gap, 10px);
+    position: sticky;
+    top: 100px;
+  }
+
+  .mh-vertical-tabs-container .tab-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--secondary_bg, #f5f5f5);
+    color: var(--mh-vt-tab-text-color, var(--text));
+    border: none;
+    padding: 12px 20px;
+    margin: 0;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .mh-vertical-tabs-container .tab-button:hover {
+    background-color: var(--primary_bg_btn, #1a73e8);
+  }
+
+  .mh-vertical-tabs-container .tab-button.active {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--mh-vt-tab-active-text-color, #ffffff) !important;
+  }
+
+  .mh-vertical-tabs-container .tab-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mh-vertical-tabs-container .tabs-content-container {
+    background-color: var(--mh-vt-content-bg-color, var(--bg_alt));
+    border-radius: var(--mh-vt-border-radius, 4px);
+    padding: var(--mh-vt-content-padding, 30px);
+  }
+
+  .mh-vertical-tabs-container .tab-content {
+    display: none;
+  }
+
+  .mh-vertical-tabs-container .tab-content.active {
+    display: block;
+    animation: fadeIn 0.5s;
+  }
+
+  .mh-vertical-tabs-container .content-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--heading);
+  }
+
+  .mh-vertical-tabs-container .content-richtext {
+    margin-bottom: 20px;
+    color: var(--text);
+  }
+
+  .mh-vertical-tabs-container .page-content-wrapper {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .mh-vertical-tabs-container .page-content-inner {
+    width: 100%;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .mh-vertical-tabs-container .section-title.align-left {
+    text-align: left;
+  }
+
+  .mh-vertical-tabs-container .section-title.align-center {
+    text-align: center;
+  }
+
+  .mh-vertical-tabs-container .section-title.align-right {
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .mh-vertical-tabs-container .mh-vertical-tabs {
+      grid-template-columns: 1fr !important;
+    }
+
+    .mh-vertical-tabs-container .tabs-menu-container {
+      width: 100% !important;
+    }
+
+    .mh-vertical-tabs-container .tabs-menu {
+      position: relative;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: var(--mh-vt-tabs-gap, 10px);
+    }
+
+    .mh-vertical-tabs-container .tab-button {
+      flex: 1 1 auto;
+      min-width: 120px;
+      text-align: center;
+      justify-content: center;
+    }
+  }
+{% endstylesheet %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    --mh-vt-gap: {{ section.settings.gap | default: 20 }}px;
+    --mh-vt-section-margin: {{ section.settings.section_margin | default: 50 }}px;
+    --mh-vt-section-bg-color: {{ section.settings.section_bg_color | default: "transparent" }};
+    --mh-vt-section-padding: {{ section.settings.custom_section_padding | default: "0px" }};
+    --mh-vt-menu-width: {{ section.settings.menu_width_percent | default: 30 }}%;
+    --mh-vt-tabs-gap: {{ section.settings.tabs_gap | default: 10 }}px;
+    --mh-vt-content-bg-color: {{ section.settings.content_bg_color | default: "var(--bg_alt)" }};
+    --mh-vt-content-padding: {{ section.settings.content_padding | default: "30px" }};
+    --mh-vt-border-radius: {{ section.settings.border_radius | default: 4 }}px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "[MH] Vertical Tabs",
+  "max_blocks": 50,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color palette",
+      "default": "scheme-2"
+    },
+
+    {
+      "type": "select",
+      "id": "buttons_style",
+      "label": "Button style",
+      "options": [
+        { "value": "primary plain", "label": "Primary (plain)" },
+        { "value": "tertiary plain", "label": "Tertiary (plain)" },
+        { "value": "primary inv", "label": "Primary (inverted)" },
+        { "value": "tertiary inv", "label": "Tertiary (inverted)" }
+      ],
+      "default": "primary plain"
+    },
+    {
+      "type": "color",
+      "id": "section_title_color",
+      "label": "Section title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color",
+      "default": "transparent"
+    },
+    {
+      "type": "text",
+      "id": "main_section_title",
+      "label": "Section title"
+    },
+    {
+      "type": "select",
+      "id": "main_section_heading_tag",
+      "label": "Section title tag",
+      "default": "h2",
+      "options": [
+        {
+          "value": "h1",
+          "label": "h1"
+        },
+        {
+          "value": "h2",
+          "label": "h2"
+        },
+        {
+          "value": "h3",
+          "label": "h3"
+        },
+        {
+          "value": "h4",
+          "label": "h4"
+        },
+        {
+          "value": "h5",
+          "label": "h5"
+        },
+        {
+          "value": "h6",
+          "label": "h6"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "title_alignment",
+      "label": "Title alignment",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ]
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "menu_width_percent",
+      "label": "Menu width percentage",
+      "min": 15,
+      "max": 50,
+      "step": 5,
+      "unit": "%",
+      "default": 30,
+      "info": "Controls the width of the left menu column"
+    },
+    {
+      "type": "range",
+      "id": "tabs_gap",
+      "label": "Gap between tabs in menu",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "columns_gap",
+      "label": "Gap between columns",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_margin",
+      "label": "Section bottom margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Content border radius",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "custom_section_padding",
+      "label": "Section padding (CSS format)",
+      "default": "0px 0px 0px 0px"
+    },
+    {
+      "type": "header",
+      "content": "Tabs Styling"
+    },
+    {
+      "type": "color",
+      "id": "tab_text_color",
+      "label": "Tab text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "tab_bg_color",
+      "label": "Tab background color",
+      "default": "transparent"
+    },
+    {
+      "type": "color",
+      "id": "tab_hover_text_color",
+      "label": "Tab hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_text_color",
+      "label": "Tab active text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Content Styling"
+    },
+    {
+      "type": "color",
+      "id": "content_bg_color",
+      "label": "Content background color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "text",
+      "id": "content_padding",
+      "label": "Content padding (CSS format)",
+      "default": "30px"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Tab",
+      "type": "tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_title",
+          "label": "Tab Title",
+          "default": "Tab Title"
+        },
+        {
+          "type": "text",
+          "id": "tab_icon",
+          "label": "Tab Icon (emoji or unicode)",
+          "info": "Add an emoji or unicode character to display before the tab title"
+        },
+        {
+          "type": "header",
+          "content": "Content Settings"
+        },
+        {
+          "type": "text",
+          "id": "content_title",
+          "label": "Content Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content_richtext",
+          "label": "Content Rich Text"
+        },
+        {
+          "type": "page",
+          "id": "page",
+          "label": "Page Content",
+          "info": "Renders the selected page content inside the tab"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] Vertical Tabs",
+      "category": "MH Custom",
+      "blocks": [
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "First Tab",
+            "content_title": "First Tab Content",
+            "content_richtext": "<p>This is the content for the first tab. You can add rich text here or select a page to display.</p>"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Second Tab",
+            "content_title": "Second Tab Content",
+            "content_richtext": "<p>This is the content for the second tab. You can add rich text here or select a page to display.</p>"
+          }
+        },
+        {
+          "type": "tab",
+          "settings": {
+            "tab_title": "Third Tab",
+            "content_title": "Third Tab Content",
+            "content_richtext": "<p>This is the content for the third tab. You can add rich text here or select a page to display.</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

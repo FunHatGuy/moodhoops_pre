@@ -1,0 +1,849 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_section_banner_columns_YVLJhE": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_mwtgwY": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-1.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_FxVmMN": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-2.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ezELmH": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-3.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_azBtbd": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-4.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_tYaxqH": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-5.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_8arEQC": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-6.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_xwWLDL": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-6.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_zMHwNX": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-7.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_UPCWF4": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-8.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_Q6jejc": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-9.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_mBGErg": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-10.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_PBLMRi": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-11.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_H8jHwV": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-12.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_JWLMyK": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-13-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 10
+          }
+        },
+        "image_cgy9hm": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-14-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_cFaEXi": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-15-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ziemhJ": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-16-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_CX6D4P": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-17-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_mywDdL": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-18-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_JV6qGa": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-19-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_HCRwe8": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-20-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_8RLdXb": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-21-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_wAjh86": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-22-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_z8eeXf": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-23-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_JtkQbQ": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-24-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_tAhtRw": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-25-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ehjjkn": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-26-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_EHKkWL": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-27-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_4mJnFk": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-28-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_4bcLNn": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-29-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_pFwAN7": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/future-poi-30-510x339.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_4gzNrE": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-futurepoi-xl-001-510x383.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_ThPkak": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-futurepoi-xl-002-510x383.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_hLqw3g": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-futurepoi-xl-003-510x383.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        },
+        "image_HBHnRV": {
+          "type": "image",
+          "settings": {
+            "background_color": "#ffffff",
+            "content_alignment": "center",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "custom_padding": "20px 20px 20px 20px",
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-futurepoi-xl-004-510x383.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "image_mwtgwY",
+        "image_FxVmMN",
+        "image_ezELmH",
+        "image_azBtbd",
+        "image_tYaxqH",
+        "image_8arEQC",
+        "image_xwWLDL",
+        "image_zMHwNX",
+        "image_UPCWF4",
+        "image_Q6jejc",
+        "image_mBGErg",
+        "image_PBLMRi",
+        "image_H8jHwV",
+        "image_JWLMyK",
+        "image_cgy9hm",
+        "image_cFaEXi",
+        "image_ziemhJ",
+        "image_CX6D4P",
+        "image_mywDdL",
+        "image_JV6qGa",
+        "image_HCRwe8",
+        "image_8RLdXb",
+        "image_wAjh86",
+        "image_z8eeXf",
+        "image_JtkQbQ",
+        "image_tAhtRw",
+        "image_ehjjkn",
+        "image_EHKkWL",
+        "image_4mJnFk",
+        "image_4bcLNn",
+        "image_pFwAN7",
+        "image_4gzNrE",
+        "image_ThPkak",
+        "image_hLqw3g",
+        "image_HBHnRV"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "transparent",
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr 1fr",
+        "tablet_columns_template": "1fr 1fr 1fr",
+        "mobile_columns_template": "1fr 1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 10,
+        "border_radius": 0,
+        "section_margin": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_section_banner_columns_YVLJhE"
+  ]
+}

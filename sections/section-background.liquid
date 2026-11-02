@@ -1,0 +1,290 @@
+{%- assign has_text = section.settings.rich_text | strip_html | strip -%}
+{%- assign has_image = section.settings.background_image -%}
+{%- if has_text != blank or has_image != blank -%}
+  <div
+    class='
+      m6fr
+      {% unless section.settings.enable_custom_height %}size-{{ section.settings.height }}{% endunless %}
+      size-{{ section.settings.height_mobile }}-mobile
+      {% if section.settings.width == "wide" %}wide{% else %}boxed{% endif %}
+    '
+  >
+    <article
+      class='palette-{{ section.settings.color_palette }} module-color-palette p0 mh-background-content'
+    >
+      {% if section.settings.enable_eager_loading %}
+        <img
+          src='{{ section.settings.background_image | image_url: width: 2000 }}'
+          srcset='
+            {{ section.settings.background_image | image_url: width: 1000 }} 1000w,
+            {{ section.settings.background_image | image_url: width: 2000 }} 2000w
+          '
+          sizes='100vw'
+          alt=''
+          style='display: none;'
+          fetchpriority='high'
+          width='1px'
+          height='1px'
+        >
+      {% endif %}
+      <div class='richtext-container'>
+        {{ section.settings.rich_text }}
+      </div>
+    </article>
+  </div>
+
+  <style>
+     #shopify-section-{{ section.id }} { z-index: {{ section.settings.fix_zindex }}!important; }
+     #shopify-section-{{ section.id }} .module-color-palette:before { opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }}; }
+     @media only screen and (min-width: 47.5em) {
+         #shopify-section-{{ section.id }} .m6fr { margin-bottom: {{ section.settings.spacing_desktop }}px; }
+     {% if section.settings.enable_custom_height %}
+         #shopify-section-{{ section.id }} article { --mih: {{ section.settings.custom_height }}px; }
+     {% endif %}
+     {% if section.settings.spacing_desktop < 0 %}
+       #shopify-section-{{ section.id }} + *.has-kinetic-text { pointer-events: none; }
+     {% endif %}
+     }
+     @media only screen and (max-width: 47.5em) {
+         #shopify-section-{{ section.id }} .m6fr { margin-bottom: {{ section.settings.spacing_mobile }}px; }
+     {% if section.settings.spacing_mobile < 0 %}
+       #shopify-section-{{ section.id }} + *.has-kinetic-text { pointer-events: none; }
+     {% endif %}
+     }
+
+     /* MH-58 */
+     #shopify-section-{{ section.id }} .mh-background-content {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       padding-top: 20px;
+       padding-bottom: 20px;
+       position: static;
+
+       {% if section.settings.background_image != blank %}
+         background-image: url({{ section.settings.background_image | image_url: width: 2000 }});
+         background-size: cover;
+         background-position: {{ section.settings.background_position_x }}% {{ section.settings.background_position_y }}%;
+         background-repeat: no-repeat;
+       {% endif %}
+
+       {% if section.settings.enable_custom_height %}
+         min-height: {{ section.settings.custom_height }}px;
+       {% else %}
+         {% case section.settings.height %}
+           {% when 'xs' %} min-height: 200px;
+           {% when 's'  %} min-height: 300px;
+           {% when 'm'  %} min-height: 450px;
+           {% when 'l'  %} min-height: 600px;
+         {% endcase %}
+       {% endif %}
+     }
+
+     @media (max-width: 768px) {
+       #shopify-section-{{ section.id }} .mh-background-content {
+         {% if section.settings.background_image != blank %}
+           background-image: url({{ section.settings.background_image | image_url: width: 1000 }});
+         {% endif %}
+       }
+     }
+
+    #shopify-section-{{ section.id }} h1,
+    #shopify-section-{{ section.id }} h2,
+    #shopify-section-{{ section.id }} h3 {
+      text-shadow:
+        2px 2px 0px rgba(100, 100, 100, 1),
+        1px 1px 1px #000,
+        0px 1px 1px #646464;
+     }
+  </style>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "t:sections.background.name",
+  "disabled_on": {
+    "groups": ["header"]
+  },
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "rich_text",
+      "label": "Content"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "id": "enable_eager_loading",
+      "type": "checkbox",
+      "label": "Enable eager loading for images (use ONLY for above the fold sections)",
+      "default": false
+    },
+    {
+      "id": "background_position_x",
+      "type": "range",
+      "label": "Background Position X",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "id": "background_position_y",
+      "type": "range",
+      "label": "Background Position Y",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 50
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "t:global.color_palette.label",
+      "default": "scheme-5"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "t:sections.background.settings.overlay_opacity.label",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "height",
+      "label": "t:sections.background.settings.height.label",
+      "options": [
+        {
+          "value": "xs",
+          "label": "t:sections.background.settings.height.options__1.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.background.settings.height.options__2.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.background.settings.height.options__3.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.background.settings.height.options__4.label"
+        }
+      ],
+      "default": "xs"
+    },
+    {
+      "id": "enable_custom_height",
+      "type": "checkbox",
+      "label": "t:sections.banner_columns.settings.enable_custom_height.label"
+    },
+    {
+      "type": "range",
+      "id": "custom_height",
+      "label": "t:sections.slideshow.settings.custom_height.label",
+      "info": "t:sections.slideshow.settings.custom_height.info",
+      "min": 20,
+      "max": 2000,
+      "step": 20,
+      "unit": "px",
+      "default": 300
+    },
+    {
+      "type": "select",
+      "id": "width",
+      "label": "t:sections.background.settings.width.label",
+      "options": [
+        {
+          "value": "boxed",
+          "label": "t:sections.background.settings.width.options__1.label"
+        },
+        {
+          "value": "wide",
+          "label": "t:sections.background.settings.width.options__2.label"
+        }
+      ],
+      "default": "wide"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.background.settings.mobile.header"
+    },
+    {
+      "type": "select",
+      "id": "height_mobile",
+      "label": "t:sections.background.settings.mobile.height_mobile.label",
+      "options": [
+        {
+          "value": "xs",
+          "label": "t:sections.background.settings.mobile.height_mobile.options__1.label"
+        },
+        {
+          "value": "s",
+          "label": "t:sections.background.settings.mobile.height_mobile.options__2.label"
+        },
+        {
+          "value": "m",
+          "label": "t:sections.background.settings.mobile.height_mobile.options__3.label"
+        },
+        {
+          "value": "l",
+          "label": "t:sections.background.settings.mobile.height_mobile.options__4.label"
+        }
+      ],
+      "default": "xs"
+    },
+    {
+      "type": "header",
+      "content": "t:global.spacing.header"
+    },
+    {
+      "id": "spacing_desktop",
+      "type": "range",
+      "label": "t:global.spacing.spacing_desktop.label",
+      "min": -300,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "id": "spacing_mobile",
+      "type": "range",
+      "label": "t:global.spacing.spacing_mobile.label",
+      "min": -300,
+      "max": 300,
+      "step": 10,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "id": "fix_zindex",
+      "type": "range",
+      "label": "t:global.fix_zindex.label",
+      "info": "t:global.fix_zindex.info",
+      "min": 0,
+      "max": 25,
+      "step": 1,
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] Background Section",
+      "category": "MH Custom",
+      "settings": {},
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

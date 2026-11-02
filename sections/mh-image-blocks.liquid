@@ -1,0 +1,723 @@
+<article
+  class='palette-{{ section.settings.color_palette }} module-color-palette mh-image-blocks-section'
+  style='
+    {% if section.settings.background_type == 'image' and section.settings.background_image != blank %}
+      {% assign overlay_opacity = section.settings.overlay_opacity | default: 0 | divided_by: 100.0 %}
+      --mh-imb-section-bg-image: url({{ section.settings.background_image | image_url }});
+      --mh-imb-section-bg-size: {{ section.settings.background_image_size }};
+      --mh-imb-section-overlay-opacity: {{ overlay_opacity }};
+    {% else %}
+      --mh-imb-section-bg-color: {{ section.settings.background_color | default: 'transparent' }};
+    {% endif %}
+    --mh-imb-section-padding: {{ section.settings.section_padding | default: '40px 20px' }};
+  '
+>
+  <div>
+    {% if section.settings.main_title != blank %}
+      {% assign tag = section.settings.heading_tag | default: 'h2' %}
+      <{{ tag }}
+        class='section-title text-center'
+        style='
+          --mh-imb-title-color: {{ section.settings.title_color | default: 'var(--text)' }};
+          --mh-imb-title-margin-bottom: {{ section.settings.title_margin_bottom | default: '30' }}px;
+        '
+      >
+        {{ section.settings.main_title }}
+      </{{ tag }}>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div
+        class='image-blocks-container'
+        style='
+          --mh-imb-desktop-min-height: {{ section.settings.desktop_min_height | default: '400' }}px;
+          --mh-imb-mobile-min-height: {{ section.settings.mobile_min_height | default: '250' }}px;
+        '
+      >
+        {% for block in section.blocks %}
+          {% if block.type == 'image_block' %}
+            <div
+              class='image-block'
+              {{ block.shopify_attributes }}
+              style='
+                --mh-imb-block-margin: {{ block.settings.block_margin | default: '30' }}px;
+                --mh-imb-images-gap: {{ block.settings.images_gap | default: '10' }}px;
+              '
+            >
+              {% assign block_overlay = block.settings.block_overlay | default: 0 | divided_by: 100.0 %}
+
+              {% if block.settings.image_1 != blank %}
+                <div
+                  class='main-image'
+                  style='
+                    --mh-imb-bg-image: url({{ block.settings.image_1 | image_url }});
+                    --mh-imb-overlay-opacity: {{ block_overlay }};
+                  '
+                ></div>
+              {% endif %}
+
+              <div class='grid-images'>
+                {% if block.settings.image_2 != blank %}
+                  <div
+                    class='grid-image grid-image-top'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_2 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                    '
+                  ></div>
+                {% endif %}
+
+                {% if block.settings.image_3 != blank %}
+                  <div
+                    class='grid-image grid-image-bottom-left'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_3 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                    '
+                  ></div>
+                {% endif %}
+
+                {% if block.settings.image_4 != blank %}
+                  <div
+                    class='grid-image grid-image-bottom-right'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_4 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                    '
+                  ></div>
+                {% endif %}
+              </div>
+            </div>
+          {% elsif block.type == 'vertical_split' %}
+            <div
+              class='vertical-split-block'
+              {{ block.shopify_attributes }}
+              style='
+                --mh-imb-block-margin: {{ block.settings.block_margin | default: '30' }}px;
+                --mh-imb-images-gap: {{ block.settings.images_gap | default: '10' }}px;
+              '
+            >
+              {% assign block_overlay = block.settings.block_overlay | default: 0 | divided_by: 100.0 %}
+
+              <div class='left-images'>
+                {% if block.settings.image_1 != blank %}
+                  <div
+                    class='left-image left-image-top'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_1 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                    '
+                  ></div>
+                {% endif %}
+
+                {% if block.settings.image_2 != blank %}
+                  <div
+                    class='left-image left-image-bottom'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_2 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                    '
+                  ></div>
+                {% endif %}
+              </div>
+
+              <div class='right-images'>
+                {% if block.settings.image_3 != blank %}
+                  <div
+                    class='right-image right-image-top'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_3 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                      --mh-imb-bg-position: center;
+                    '
+                  ></div>
+                {% endif %}
+
+                {% if block.settings.image_4 != blank %}
+                  <div
+                    class='right-image right-image-bottom'
+                    style='
+                      --mh-imb-bg-image: url({{ block.settings.image_4 | image_url }});
+                      --mh-imb-overlay-opacity: {{ block_overlay }};
+                    '
+                  ></div>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.footer_text != blank %}
+      <div
+        class='section-footer'
+        style='
+          --mh-imb-footer-text-align: {{ section.settings.footer_alignment | default: 'center' }};
+          --mh-imb-footer-margin-top: {{ section.settings.footer_margin_top | default: '40' }}px;
+          --mh-imb-footer-text-color: {{ section.settings.footer_text_color | default: 'var(--text)' }};
+        '
+      >
+        {{ section.settings.footer_text }}
+      </div>
+    {% endif %}
+  </div>
+</article>
+
+{% stylesheet %}
+  .mh-image-blocks-section {
+    width: 100%;
+    position: relative;
+    padding: var(--mh-imb-section-padding);
+    background-color: var(--mh-imb-section-bg-color, transparent);
+  }
+
+  .mh-image-blocks-section[style*='--mh-imb-section-bg-image'] {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, var(--mh-imb-section-overlay-opacity, 0)),
+        rgba(0, 0, 0, var(--mh-imb-section-overlay-opacity, 0))
+      ),
+      var(--mh-imb-section-bg-image);
+    background-size: var(--mh-imb-section-bg-size, cover);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .mh-image-blocks-section .section-title {
+    margin: 0;
+    font-weight: bold;
+    color: var(--mh-imb-title-color, var(--text));
+    margin-bottom: var(--mh-imb-title-margin-bottom, 30px);
+  }
+
+  .mh-image-blocks-section .text-center {
+    text-align: center;
+  }
+
+  .mh-image-blocks-section .image-blocks-container {
+    width: 100%;
+  }
+
+  .mh-image-blocks-section .image-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: var(--mh-imb-desktop-min-height, 400px);
+    box-sizing: border-box;
+    margin-bottom: var(--mh-imb-block-margin, 30px);
+    gap: var(--mh-imb-images-gap, 10px);
+  }
+
+  .mh-image-blocks-section .main-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0)), rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0))),
+      var(--mh-imb-bg-image);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .mh-image-blocks-section .grid-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: inherit;
+    height: 100%;
+  }
+
+  .mh-image-blocks-section .grid-image-top {
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+
+  .mh-image-blocks-section .grid-image-bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .mh-image-blocks-section .grid-image-bottom-right {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .mh-image-blocks-section .grid-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0)), rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0))),
+      var(--mh-imb-bg-image);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .mh-image-blocks-section .section-footer {
+    width: 100%;
+    text-align: var(--mh-imb-footer-text-align, center);
+    margin-top: var(--mh-imb-footer-margin-top, 40px);
+    color: var(--mh-imb-footer-text-color, var(--text));
+  }
+
+  .mh-image-blocks-section .section-footer p {
+    margin: 0;
+  }
+
+  .mh-image-blocks-section .vertical-split-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: var(--mh-imb-desktop-min-height, 400px);
+    box-sizing: border-box;
+    margin-bottom: var(--mh-imb-block-margin, 30px);
+    gap: var(--mh-imb-images-gap, 10px);
+  }
+
+  .mh-image-blocks-section .left-images {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+    height: 100%;
+  }
+
+  .mh-image-blocks-section .left-image-top {
+    flex: 1.2;
+    width: 100%;
+    position: relative;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0)), rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0))),
+      var(--mh-imb-bg-image);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .mh-image-blocks-section .left-image-bottom {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0)), rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0))),
+      var(--mh-imb-bg-image);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  .mh-image-blocks-section .right-images {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+    height: 100%;
+  }
+
+  .mh-image-blocks-section .right-image-top {
+    flex: 0.8;
+    width: 100%;
+    position: relative;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0)), rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0))),
+      var(--mh-imb-bg-image);
+    background-size: cover;
+    background-position: var(--mh-imb-bg-position, top center);
+    background-repeat: no-repeat;
+  }
+
+  .mh-image-blocks-section .right-image-bottom {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0)), rgba(0, 0, 0, var(--mh-imb-overlay-opacity, 0))),
+      var(--mh-imb-bg-image);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 768px) {
+    .mh-image-blocks-section .image-block {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      height: auto;
+      gap: 10px;
+    }
+
+    .mh-image-blocks-section .main-image {
+      min-height: var(--mh-imb-mobile-min-height, 250px);
+      height: var(--mh-imb-mobile-min-height, 250px);
+    }
+
+    .mh-image-blocks-section .grid-images {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      height: auto;
+    }
+
+    .mh-image-blocks-section .grid-image-top {
+      min-height: var(--mh-imb-mobile-min-height, 250px);
+      height: var(--mh-imb-mobile-min-height, 250px);
+    }
+
+    .mh-image-blocks-section .grid-image-bottom-left,
+    .mh-image-blocks-section .grid-image-bottom-right {
+      min-height: var(--mh-imb-mobile-min-height, 250px);
+      height: var(--mh-imb-mobile-min-height, 250px);
+    }
+
+    .mh-image-blocks-section .vertical-split-block {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+      height: auto;
+      gap: 10px;
+    }
+
+    .mh-image-blocks-section .left-images,
+    .mh-image-blocks-section .right-images {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .mh-image-blocks-section .left-image-top,
+    .mh-image-blocks-section .left-image-bottom,
+    .mh-image-blocks-section .right-image-top,
+    .mh-image-blocks-section .right-image-bottom {
+      flex: none;
+      min-height: var(--mh-imb-mobile-min-height, 250px);
+      height: var(--mh-imb-mobile-min-height, 250px);
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "[MH] L-Shape Image Grid",
+  "max_blocks": 10,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "General Settings"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Section title"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "label": "Title bottom margin (px)",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Section Background"
+    },
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "Background type",
+      "options": [
+        { "value": "color", "label": "Color" },
+        { "value": "image", "label": "Image" }
+      ],
+      "default": "color"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "background_image_size",
+      "label": "Background image size",
+      "options": [
+        { "value": "cover", "label": "Cover" },
+        { "value": "contain", "label": "Contain" },
+        { "value": "auto", "label": "Original size" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "Section background overlay opacity (%)",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "section_padding",
+      "label": "Section padding (e.g. 40px 20px)",
+      "default": "40px 20px"
+    },
+    {
+      "type": "header",
+      "content": "Image Heights"
+    },
+    {
+      "type": "range",
+      "id": "desktop_min_height",
+      "min": 200,
+      "max": 800,
+      "step": 10,
+      "label": "Desktop minimum height for all images (px)",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "mobile_min_height",
+      "min": 150,
+      "max": 500,
+      "step": 10,
+      "label": "Mobile minimum height for all images (px)",
+      "default": 250
+    },
+    {
+      "type": "header",
+      "content": "Section Footer"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer text"
+    },
+    {
+      "type": "select",
+      "id": "footer_alignment",
+      "label": "Footer alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "footer_text_color",
+      "label": "Footer text color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "footer_margin_top",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "label": "Footer top margin (px)",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "L-Shape Image Grid Block",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Block Settings"
+        },
+        {
+          "type": "range",
+          "id": "block_margin",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "label": "Block bottom margin (px)",
+          "default": 30
+        },
+        {
+          "type": "range",
+          "id": "images_gap",
+          "min": 0,
+          "max": 30,
+          "step": 2,
+          "label": "Gap between images (px)",
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "block_overlay",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "label": "Block overlay opacity (%)",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "Images"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1 (Left Side - Full Height)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2 (Right Top - Full Width)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image 3 (Right Bottom Left)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image 4 (Right Bottom Right)"
+        }
+      ]
+    },
+    {
+      "type": "vertical_split",
+      "name": "Vertical Split Grid",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Block Settings"
+        },
+        {
+          "type": "range",
+          "id": "block_margin",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "label": "Block bottom margin (px)",
+          "default": 30
+        },
+        {
+          "type": "range",
+          "id": "images_gap",
+          "min": 0,
+          "max": 30,
+          "step": 2,
+          "label": "Gap between images (px)",
+          "default": 10
+        },
+        {
+          "type": "range",
+          "id": "block_overlay",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "label": "Block overlay opacity (%)",
+          "default": 0
+        },
+        {
+          "type": "header",
+          "content": "Images"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_1",
+          "label": "Image 1 (Left Top - Bigger)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_2",
+          "label": "Image 2 (Left Bottom - Smaller)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_3",
+          "label": "Image 3 (Right Top - Smaller)"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_4",
+          "label": "Image 4 (Right Bottom - Bigger)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] L-Shape Image Grid",
+      "category": "MH Custom",
+      "settings": {
+        "main_title": "L-Shape Image Gallery",
+        "section_padding": "60px 20px",
+        "desktop_min_height": 400,
+        "mobile_min_height": 250
+      },
+      "blocks": [
+        {
+          "type": "image_block",
+          "settings": {
+            "block_overlay": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "[MH] Vertical Split Image Grid",
+      "category": "MH Custom",
+      "settings": {
+        "main_title": "Vertical Split Image Gallery",
+        "section_padding": "60px 20px",
+        "desktop_min_height": 400,
+        "mobile_min_height": 250
+      },
+      "blocks": [
+        {
+          "type": "vertical_split",
+          "settings": {
+            "block_overlay": 0
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,353 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_hPnUHE": {
+      "type": "section-background",
+      "settings": {
+        "rich_text": "<h1>{{ page.title }}</h1>",
+        "background_image": "{{ page.metafields.custom.image_banner.value }}",
+        "enable_eager_loading": true,
+        "background_position_x": 50,
+        "background_position_y": 15,
+        "color_palette": "scheme-2",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": true,
+        "custom_height": 200,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_wrAKik": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_eehdHV": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "<p><strong>For most spinners, the original FuturePoi is a great choice. Designer is for performers who want total control and programmability. Unlike the original FuturePoi, Designer lets you upload custom patterns and unlock new features as we release them.</strong></p><p><strong>You can plug Designer into any OSX/Windows/Linux computer with a USB port and it will show up like a flash drive so you can copy patterns and update files onto it.</strong></p>",
+            "background_color": "#46cecc",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "0px 0px 0px 0px",
+            "overlay_opacity": 5,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_eehdHV"
+      ],
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_TDwMib": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "page_TamtNj": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-futurepoi-comparison-guide",
+            "page_header_description": "<h2>FuturePoi Comparison Guide</h2>",
+            "page_header_text_align": "center",
+            "page_background_color": "#b181d5",
+            "custom_padding": "10px 35px 30px 20px"
+          }
+        }
+      },
+      "block_order": [
+        "page_TamtNj"
+      ],
+      "settings": {
+        "color_palette": "scheme-2",
+        "section_title_color": "#000000",
+        "section_bg_color": "#b181d5",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "30px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 0,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_kHxmFi": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_9AfhCd": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-future-poi-group-comparison-dark.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_xLG8a4": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-future-poi-group-comparison-light.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_9AfhCd",
+        "image_xLG8a4"
+      ],
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "#b181d5",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 30px 0px",
+        "enable_custom_height": true,
+        "custom_height": 700,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 0,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_button_list_VNqmte": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_m9EbGM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurepoi-designer-moodhoops-3.jpg",
+            "background_position": "center",
+            "background_position_mobile": "center"
+          }
+        },
+        "button_Extrfd": {
+          "type": "button",
+          "settings": {
+            "text": "Contact us",
+            "url": "/pages/contact-us"
+          }
+        },
+        "button_9LJRrm": {
+          "type": "button",
+          "settings": {
+            "text": "Help",
+            "url": "/a/docs/docs-category/help"
+          }
+        }
+      },
+      "block_order": [
+        "image_m9EbGM",
+        "button_Extrfd",
+        "button_9LJRrm"
+      ],
+      "settings": {
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "banner_height": 500,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary inv",
+        "text_alignment": "center",
+        "title": "<h2>Still have questions about</h2><h2>FuturePoi or FutureStaff?</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 90,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_spacer_94W7Xa": {
+      "type": "section-spacer",
+      "settings": {
+        "height": 50,
+        "height_mobile": 20
+      }
+    },
+    "section_featured_products_yVnVga": {
+      "type": "section-featured-products",
+      "settings": {
+        "products": [
+          "futurestaff-designer",
+          "futurestaff-shuffle",
+          "futurestaff-remote-xl",
+          "remote-controls"
+        ],
+        "layout": "grid",
+        "number_of_items": 4,
+        "text_alignment": "center",
+        "title": "<h2>FuturePoi / FutureStaff</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "show_link": true,
+        "link_text": "Button",
+        "link_url": "",
+        "button_style": "primary plain",
+        "enable_tablet_layout": true,
+        "mobile_layout": "slider",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_hPnUHE",
+    "mh_section_banner_columns_wrAKik",
+    "mh_section_banner_columns_TDwMib",
+    "mh_section_banner_columns_kHxmFi",
+    "mh_section_banner_button_list_VNqmte",
+    "section_spacer_94W7Xa",
+    "section_featured_products_yVnVga"
+  ]
+}

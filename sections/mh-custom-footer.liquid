@@ -1,0 +1,400 @@
+{%- liquid
+  assign bottom_menu_block = section.blocks | where: 'type', 'bottom_menu' | first
+-%}
+
+<div
+  class='palette-{{ section.settings.color_palette }} module-color-palette mh-custom-footer{% if section.settings.center_alignment %} text-center{% endif %}'
+  style='
+    --mh-cf-fg-color: {{ section.settings.text_color | default: "var(--text)" }};
+    --mh-cf-padding: {{ section.settings.section_padding | default: "40px 0" }};
+    --mh-cf-margin-top: {{ section.settings.section_margin_top }}px;
+    --mh-cf-title-margin: {{ section.settings.title_margin }}px;
+    --mh-cf-menu-gap: {{ section.settings.menu_gap }}px;
+    --mh-cf-copyright-margin: {{ section.settings.copyright_margin }}px;
+    --mh-cf-menu-hover-color: {{ bottom_menu_block.settings.hover_color }};
+  '
+>
+  <div class='mh-custom-footer-container'>
+    {%- if bottom_menu_block -%}
+      {%- if bottom_menu_block.settings.title != blank -%}
+        <div class='mh-footer-title'>
+          {%- if bottom_menu_block.settings.title_link != blank -%}
+            <a href='{{ bottom_menu_block.settings.title_link }}' class='mh-footer-title-link'>
+              {{ bottom_menu_block.settings.title }}
+            </a>
+          {%- else -%}
+            {{ bottom_menu_block.settings.title }}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+      {%- if linklists[bottom_menu_block.settings.menu].links.size > 0 -%}
+        <nav class='mh-custom-footer-nav'>
+          <ul class='mh-footer-menu-list'>
+            {%- for link in linklists[bottom_menu_block.settings.menu].links -%}
+              <li class='mh-footer-menu-item'>
+                <a
+                  href='{{ link.url }}'
+                  class='mh-footer-menu-link{% if bottom_menu_block.settings.text_uppercase %} text-uppercase{% endif %}'
+                >
+                  {{ link.title }}
+                </a>
+              </li>
+            {%- endfor -%}
+          </ul>
+        </nav>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- if section.settings.bottom_img -%}
+      {%- if section.settings.bottom_img_link != empty -%}<a href='{{ section.settings.bottom_img_link }}'>{%- endif -%}
+      <figure class='mh-footer-image'>
+        <img
+          src='{{- section.settings.bottom_img | image_url: width: section.settings.bottom_img_width -}}'
+          srcset='{% render 'image-srcset', image: section.settings.bottom_img, max_width: section.settings.bottom_img_width %}'
+          sizes='
+            (min-width: 1100px) {{ section.settings.bottom_img_width }}px,
+            (min-width: 760px) 0,
+            50px
+          '
+          width='{{ section.settings.bottom_img_width }}'
+          height='36'
+          alt='{{ section.settings.bottom_img.alt | default: 'Footer image' | escape }}'
+          loading='lazy'
+        >
+      </figure>
+      {%- if section.settings.bottom_img_link != empty -%}</a>{%- endif -%}
+    {%- endif -%}
+
+    {%- if section.settings.show_copyright -%}
+      <div class='mh-footer-copyright'>
+        &copy;
+        <span class='mh-footer-year'>{{ 'now' | date: '%Y' }}</span>
+        {{ shop.name }}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.show_heart -%}
+      <div class='mh-footer-heart'>
+        <svg width='18' height='18' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+          <path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z" fill="currentColor"/>
+        </svg>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% stylesheet %}
+  .mh-custom-footer {
+    position: relative;
+    width: 100%;
+    color: var(--mh-cf-fg-color);
+    padding: var(--mh-cf-padding);
+    margin-top: var(--mh-cf-margin-top);
+  }
+
+  .mh-custom-footer:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 110vw;
+    margin: 0 0 0 -55vw;
+    background: var(--mh-cf-bg-color);
+  }
+
+  .mh-custom-footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .mh-custom-footer.text-center {
+    text-align: center;
+  }
+
+  .mh-custom-footer.text-center .mh-custom-footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Title styles */
+  .mh-footer-title {
+    margin-bottom: var(--mh-cf-title-margin);
+  }
+
+  .mh-footer-title-link {
+    color: var(--mh-cf-fg-color);
+    text-decoration: none;
+  }
+
+  .mh-custom-footer .mh-footer-title-link:hover {
+    color: var(--mh-cf-menu-hover-color, var(--mh-cf-fg-color));
+  }
+
+  .mh-footer-title.text-uppercase {
+    text-transform: uppercase;
+  }
+
+  /* Navigation styles */
+  .mh-custom-footer-nav {
+    margin-bottom: 20px;
+  }
+
+  .mh-footer-menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: var(--mh-cf-menu-gap);
+    flex-wrap: wrap;
+  }
+
+  .mh-custom-footer.text-center .mh-footer-menu-list {
+    justify-content: center;
+  }
+
+  .mh-footer-menu-item {
+    margin: 0;
+  }
+
+  .mh-footer-menu-link {
+    color: var(--mh-cf-fg-color);
+    text-decoration: none;
+  }
+
+  .mh-footer-menu-link:hover {
+    color: var(--mh-cf-menu-hover-color, var(--mh-cf-fg-color)) !important;
+  }
+
+  .mh-footer-menu-link.text-uppercase {
+    text-transform: uppercase;
+  }
+
+  /* Image styles */
+  .mh-footer-image {
+    margin: 20px 0;
+  }
+
+  .mh-footer-image img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Heart styles */
+  .mh-footer-heart {
+    margin-top: 10px;
+  }
+
+  .mh-footer-heart svg {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .mh-footer-menu-list {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  }
+
+  #content > *:last-child,
+  #content > [id*='shopify-section']:last-child > *:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  @media (max-width: 480px) {
+    .mh-custom-footer {
+      padding: 30px 15px;
+    }
+
+    .mh-footer-menu-list {
+      gap: 8px;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "[MH] Custom Footer",
+  "class": "mh-custom-footer-section",
+  "tag": "footer",
+  "disabled_on": {
+    "groups": ["header", "aside"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color palette",
+      "default": "scheme-6"
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "section_padding",
+      "label": "Section padding",
+      "default": "40px 0",
+      "info": "Format: top right bottom left (e.g., 40px 20px) or vertical horizontal (e.g., 40px 0)"
+    },
+    {
+      "type": "range",
+      "id": "section_margin_top",
+      "label": "Section top margin",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 0,
+      "info": "Add space above the footer section"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "info": "Leave empty to use theme default"
+    },
+    {
+      "type": "checkbox",
+      "id": "center_alignment",
+      "label": "Center all elements",
+      "info": "Center all footer elements vertically and horizontally",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_copyright",
+      "label": "Show copyright",
+      "info": "Display copyright information in footer",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_heart",
+      "label": "Show heart emoji",
+      "info": "Display 💗 under the copyright text",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Spacing Settings"
+    },
+    {
+      "type": "range",
+      "id": "title_margin",
+      "label": "Title bottom margin",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "menu_gap",
+      "label": "Menu items gap",
+      "min": 5,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "copyright_margin",
+      "label": "Copyright top margin",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 25
+    },
+    {
+      "type": "header",
+      "content": "Bottom Image"
+    },
+    {
+      "id": "bottom_img",
+      "type": "image_picker",
+      "label": "Footer image",
+      "info": "Optional image to display in footer"
+    },
+    {
+      "id": "bottom_img_width",
+      "type": "range",
+      "label": "Image width",
+      "min": 50,
+      "max": 200,
+      "step": 5,
+      "unit": "px",
+      "default": 125
+    },
+    {
+      "id": "bottom_img_link",
+      "type": "url",
+      "label": "Image link URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "bottom_menu",
+      "name": "Bottom Menu",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "info": "Optional title text to display above the menu"
+        },
+        {
+          "type": "url",
+          "id": "title_link",
+          "label": "Title link URL",
+          "info": "Optional URL to make the title clickable"
+        },
+        {
+          "type": "checkbox",
+          "id": "text_uppercase",
+          "label": "Uppercase menu text",
+          "info": "Convert menu text to all uppercase letters",
+          "default": false
+        },
+        {
+          "type": "color",
+          "id": "hover_color",
+          "label": "Menu hover color",
+          "info": "Color of menu text on hover"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Footer menu",
+          "info": "Select the menu to display in the footer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] Custom Footer",
+      "category": "MH Custom",
+      "blocks": [
+        {
+          "type": "bottom_menu"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

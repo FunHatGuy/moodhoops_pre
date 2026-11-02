@@ -1,0 +1,871 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_section_banner_columns_UtfcnL": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_gUcikh": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-sponsored-artist-sunnydaze-3.jpg",
+            "enable_text_shadow": true,
+            "title": "<h1>{{ page.title }}</h1>",
+            "description": "<p><strong>developed by Sunny Daze</strong></p><p>Hoop Theory revolves around ’mechanics’.<br/>Mechanics are fundamental ‘tricks’ or concepts that can’t be broken down any further.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-center",
+            "custom_padding": "50px 20px 20px 20px",
+            "overlay_opacity": 25,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_gUcikh"
+      ],
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": true,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 900,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "section_background_G3pwgk": {
+      "type": "section-background",
+      "settings": {
+        "rich_text": "<h2>32 Hoop Theory Mechanics</h2><p>Mechanics are akin to the alphabet.Understanding and knowing all 32 of them will allow you deconstruct your flow and build and create new tricks and combos just as knowing the alphabet lets you understand and build language. Over time, as these ideas seep into your consciousness, it will unleash endless creation! 🙌</p>",
+        "enable_eager_loading": false,
+        "background_position_x": 50,
+        "background_position_y": 50,
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": true,
+        "custom_height": 20,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": -70,
+        "spacing_mobile": -50,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_wLBKRk": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_tJXQyB": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/1-Push-Pull-Hinge-Fold-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#000000",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "dotted",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_QHHdqV": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/2-Isolation-Extension-Flower-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_qzXjFU": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/3-Tracer-Ghosting-Weave-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_C3n7j4": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/4-On-Body-Smear-Breaks-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_P9wzNR": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/5-Stall-Sustained-Spinning-Duck-In-Out-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_pVDzea": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/6-Body-Roll-No-Beat-Body-Wrap-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_UttDEa": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/7-Hand-Turn-Hand-Spin-Palm-Spin-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_npdDMC": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/8-Wedgie-Escalator-Coin-Flip-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_mnHxbG": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/9-Toss-Jump-Through-Lock-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_bdUHPR": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/9_10-Slap-Bounce-Balance-Hoop-Theory-Mechanics-Sunny-Daze-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_bdPyPe": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/leggings-so-tight-I-see-stars-pattern-photo.jpg",
+            "enable_text_shadow": true,
+            "title": "",
+            "description": "<p>developed by Sunny Daze</p>",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_ybVKAw": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-sponsored-artist-sunnydaze-9-1000x1000_jpg.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 10,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_tJXQyB",
+        "image_QHHdqV",
+        "image_qzXjFU",
+        "image_C3n7j4",
+        "image_P9wzNR",
+        "image_pVDzea",
+        "image_UttDEa",
+        "image_npdDMC",
+        "image_mnHxbG",
+        "image_bdUHPR",
+        "image_bdPyPe",
+        "image_ybVKAw"
+      ],
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr 1fr",
+        "tablet_columns_template": "1fr 1fr",
+        "mobile_columns_template": "1fr 1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 360,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 10,
+        "border_radius": 0,
+        "section_margin": 100,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_wVgyMe": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_iGNCpC": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/sunny-daze-moodhoops-sponsored-artist-polypro-hoops-22.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_iGNCpC"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 720,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 10,
+        "border_radius": 0,
+        "section_margin": 0,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_LmeHim": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_jfXPeQ": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2><strong>Message from Sunny Daze:</strong></h2>",
+            "description": "<p>I’m so excited to show what I’ve been working on over the past several months, and what I’ll be teaching at the @jamboreedenver this July! 🤗🎊</p><p>This summer I’ll be posting and expanding on each of these mechanics as well as the space (grid/planes) you’ll be creating in.</p><p>I wanted to break down hooping to it’s core, so I could better understand my flow as well as teach 🤓 The product of that embarkment isn’t really ‘new’ tricks, but more of a method, or organized way to think of flow.<br/>So I’m going to simply call it <strong>‘Hoop Theory’</strong><br/>⭕️<br/><strong>More to come soon</strong> 💖</p><h3>use code thankssunny<br/>for 5% off your order</h3>{{ page.content }}",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "top-center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_jfXPeQ"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_button_list_iB8Cjz": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_TgGMfL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurehoop-designer-moodhoops-blur11.jpg",
+            "background_position": "top center",
+            "background_position_mobile": "center"
+          }
+        },
+        "button_8HkpXp": {
+          "type": "button",
+          "settings": {
+            "text": "Questions? Contact Us ",
+            "url": "/pages/contact-us"
+          }
+        }
+      },
+      "block_order": [
+        "image_TgGMfL",
+        "button_8HkpXp"
+      ],
+      "settings": {
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "banner_height": 200,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary inv",
+        "text_alignment": "center",
+        "title": "<h2>We're here to help you find your flow</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 30,
+        "spacing_mobile": 10,
+        "fix_zindex": 0
+      }
+    },
+    "mh_featured_products_7Qr3r3": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "color_palette": "",
+        "products": [
+          "pixelhoop",
+          "3-4-fire-hoop",
+          "pixelwand",
+          "futurepoi-micro",
+          "soft-led-poi",
+          "future-wand"
+        ],
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 3,
+        "grid_columns_mobile": 2,
+        "grid_gap": 15,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "30px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_UrfjAy": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "color_palette": "",
+        "products": [
+          "rainbow-silk-veil-fans",
+          "water-lily-silk-veil-fans",
+          "oasis-silk-veil-fans",
+          "celestial-silk-veil-fans",
+          "cherry-blossom-silk-veil-fans"
+        ],
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 3,
+        "grid_columns_mobile": 2,
+        "grid_gap": 15,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "40px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_e4fCJh": {
+      "type": "mh-featured-products",
+      "blocks": {
+        "products_slider_XaeUzY": {
+          "type": "products_slider",
+          "settings": {
+            "products": [
+              "fire-wick",
+              "pixelhoop",
+              "hoopwax",
+              "14500-hoop-battery",
+              "translucent-clear-polypro-hoop",
+              "blank-beginner-hoop",
+              "10440-hoop-battery",
+              "blaze-led-hoop",
+              "remote-controls",
+              "glitch-led-hoop",
+              "3m-grip-tape",
+              "classic-purple-polypro-hoop",
+              "luna-led-hoop",
+              "futurehoop-shuffle",
+              "battery-charger",
+              "uv-pink-polypro-hoop",
+              "sunrise-led-hoop",
+              "3-4-fire-hoop",
+              "neon-led-hoop",
+              "uv-green-polypro-hoop",
+              "nebula-beginner-hoop",
+              "polypro-minis",
+              "element-led-hoop",
+              "metallic-mint-polypro-hoop",
+              "metallic-raspberry-polypro-hoop",
+              "translucent-aqua-polypro-hoop",
+              "uv-yellow-polypro-hoop",
+              "lucid-beginner-hoop",
+              "uv-orange-polypro-hoop"
+            ],
+            "slides_per_view_desktop": "4",
+            "slides_per_view_tablet": "3",
+            "slides_per_view_mobile": "2",
+            "space_between": 15,
+            "space_between_mobile": 10,
+            "centered_slides": false,
+            "loop": true,
+            "autoplay": false,
+            "lazy_loading": false,
+            "autoplay_delay": 3000,
+            "margin_top": 0
+          }
+        }
+      },
+      "block_order": [
+        "products_slider_XaeUzY"
+      ],
+      "name": "[MH] Featured Products",
+      "settings": {
+        "color_palette": "",
+        "products": [],
+        "grid_columns_desktop": 3,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 1,
+        "grid_gap": 20,
+        "grid_gap_mobile": 15,
+        "padding_desktop": "0",
+        "padding_tablet": "10px 0px",
+        "padding_mobile": "0px"
+      }
+    },
+    "section_newsletter_APAjxf": {
+      "type": "section-newsletter",
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/futurehoop-designer-moodhoops-blur11.jpg",
+        "overlay_opacity_img": 15,
+        "color_palette": "scheme-8",
+        "overlay_opacity": 100,
+        "width": "boxed",
+        "title": "<h2>Subscribe to our newsletter</h2>",
+        "title_underline_style": "none",
+        "text": "<p><strong>Sign up to our newsletter to learn about new styles and special discounts. We promise we’ll only use your email address for this purpose, and you can unsubscribe at any time.</strong></p>",
+        "link_text": "Subscribe",
+        "button_style": "primary plain",
+        "enable_newsletter_terms_checkbox": false,
+        "newsletter_terms_text": "",
+        "spacing_desktop": -40,
+        "spacing_mobile": -30,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_EdpXQc": {
+      "type": "section-rich-text",
+      "blocks": {
+        "button_p9Emq8": {
+          "type": "button",
+          "settings": {
+            "link_text": "Back To Shop",
+            "link_url": "/",
+            "button_style": "secondary inv"
+          }
+        }
+      },
+      "block_order": [
+        "button_p9Emq8"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": -30,
+        "spacing_mobile": -30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_section_banner_columns_UtfcnL",
+    "section_background_G3pwgk",
+    "mh_section_banner_columns_wLBKRk",
+    "mh_section_banner_columns_wVgyMe",
+    "mh_section_banner_columns_LmeHim",
+    "mh_section_banner_button_list_iB8Cjz",
+    "mh_featured_products_7Qr3r3",
+    "mh_featured_products_UrfjAy",
+    "mh_featured_products_e4fCJh",
+    "section_newsletter_APAjxf",
+    "section_rich_text_EdpXQc"
+  ]
+}

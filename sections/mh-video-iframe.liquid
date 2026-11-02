@@ -1,0 +1,1260 @@
+<script>
+  (function () {
+    'use strict';
+
+    // Global state management
+    const state = {
+      sectionObservers: new WeakMap(),
+      intersectionObserver: null,
+      sectionInstances: new Set(),
+      mutationTimeouts: new WeakMap(),
+      isInitialized: false,
+    };
+
+    // Get video embed URL with improved regex patterns
+    function getVideoEmbedUrl(url) {
+      if (!url) return '';
+
+      // YouTube detection (improved)
+      const youtubeRegex =
+        /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
+      const youtubeMatch = url.match(youtubeRegex);
+      if (youtubeMatch && youtubeMatch[1]) {
+        return `https://www.youtube.com/embed/${youtubeMatch[1]}`;
+      }
+
+      // Vimeo detection
+      const vimeoRegex =
+        /(?:vimeo\.com\/(?:channels\/(?:\w+\/)?|groups\/([^\/]*)\/videos\/|album\/(\d+)\/video\/|)(\d+)(?:$|\/|\?))/i;
+      const vimeoMatch = url.match(vimeoRegex);
+      if (vimeoMatch && vimeoMatch[3]) {
+        return `https://player.vimeo.com/video/${vimeoMatch[3]}`;
+      }
+
+      // Facebook video detection
+      const facebookPluginRegex = /facebook\.com\/plugins\/video\.php\?href=([^&]+)/i;
+      const facebookPluginMatch = url.match(facebookPluginRegex);
+      if (facebookPluginMatch && facebookPluginMatch[1]) {
+        return url;
+      }
+
+      const facebookDirectRegex = /facebook\.com\/.*\/videos\/(\d+)/i;
+      const facebookDirectMatch = url.match(facebookDirectRegex);
+      if (facebookDirectMatch && facebookDirectMatch[1]) {
+        return `https://www.facebook.com/plugins/video.php?href=${encodeURIComponent(url)}&width=500&show_text=false&height=280&appId`;
+      }
+
+      return url;
+    }
+
+    // Check if URL should be loaded as iframe
+    function isIframeUrl(url) {
+      if (!url) return false;
+      const youtubeRegex = /(?:youtube\.com|youtu\.be)/i;
+      const vimeoRegex = /vimeo\.com/i;
+      const facebookRegex = /facebook\.com/i;
+      return youtubeRegex.test(url) || vimeoRegex.test(url) || facebookRegex.test(url);
+    }
+
+    // Get adaptive intersection observer settings
+    function getIntersectionObserverConfig() {
+      const isMobile = window.innerWidth < 768;
+      const isTablet = window.innerWidth >= 768 && window.innerWidth < 1024;
+
+      let rootMargin;
+      if (isMobile) {
+        rootMargin = '50px 0px';
+      } else if (isTablet) {
+        rootMargin = '75px 0px';
+      } else {
+        rootMargin = '100px 0px';
+      }
+
+      return {
+        rootMargin,
+        threshold: [0, 0.1],
+      };
+    }
+
+    // Create intersection observer with adaptive settings
+    function createIntersectionObserver() {
+      if (state.intersectionObserver) {
+        return state.intersectionObserver;
+      }
+
+      const config = getIntersectionObserverConfig();
+
+      state.intersectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const section = entry.target;
+            console.log('Video section became visible:', section.id || section.className);
+
+            loadSectionContent(section);
+            state.intersectionObserver.unobserve(section);
+          }
+        });
+      }, config);
+
+      return state.intersectionObserver;
+    }
+
+    // Load video content into container
+    function loadVideoContent(container, videoUrl, autoplay = false, muted = false, loop = false) {
+      if (!container || !videoUrl) return;
+
+      try {
+        if (isIframeUrl(videoUrl)) {
+          const embedUrl = getVideoEmbedUrl(videoUrl);
+          const iframe = container.querySelector('.video-iframe');
+          const videoElement = container.querySelector('.video-element');
+
+          if (iframe) {
+            iframe.src = embedUrl;
+            iframe.style.display = 'block';
+            iframe.title = 'Video preview';
+            iframe.loading = 'lazy'; // Add lazy loading for performance
+          }
+
+          if (videoElement) {
+            videoElement.style.display = 'none';
+          }
+        } else {
+          const videoElement = container.querySelector('.video-element');
+          const iframe = container.querySelector('.video-iframe');
+
+          if (videoElement) {
+            videoElement.src = videoUrl;
+            videoElement.autoplay = autoplay;
+            videoElement.muted = muted;
+            videoElement.loop = loop;
+            videoElement.style.display = 'block';
+
+            // Add error handling for video elements
+            videoElement.addEventListener('error', (e) => {
+              console.warn('Video loading error:', e);
+              container.classList.add('video-error');
+            });
+          }
+
+          if (iframe) {
+            iframe.style.display = 'none';
+          }
+        }
+
+        // Mark container as loaded
+        container.classList.add('video-loaded');
+
+        // Dispatch loaded event
+        container.dispatchEvent(
+          new CustomEvent('mh:video:loaded', {
+            detail: { container, videoUrl },
+          }),
+        );
+      } catch (error) {
+        console.warn('Failed to load video content:', error);
+        container.classList.add('video-error');
+
+        // Dispatch error event
+        container.dispatchEvent(
+          new CustomEvent('mh:video:error', {
+            detail: { error, container, videoUrl },
+          }),
+        );
+      }
+    }
+
+    // Clean up section resources
+    function cleanupSectionResources(container) {
+      // Clean up MutationObserver
+      if (state.sectionObservers.has(container)) {
+        const observer = state.sectionObservers.get(container);
+        observer.disconnect();
+        state.sectionObservers.delete(container);
+      }
+
+      // Clear any pending timeouts
+      if (state.mutationTimeouts.has(container)) {
+        clearTimeout(state.mutationTimeouts.get(container));
+        state.mutationTimeouts.delete(container);
+      }
+
+      // Remove from instances set
+      state.sectionInstances.delete(container);
+
+      // Clean up video resources
+      const videos = container.querySelectorAll('.video-element');
+      videos.forEach((video) => {
+        if (video.src) {
+          video.pause();
+          video.src = '';
+          video.load();
+        }
+      });
+
+      const iframes = container.querySelectorAll('.video-iframe');
+      iframes.forEach((iframe) => {
+        iframe.src = '';
+      });
+    }
+
+    // Get the most appropriate element to observe
+    function getObservationTarget(sectionElement) {
+      const sectionId = sectionElement.id;
+
+      // Look for section-{ID} pattern containers
+      if (sectionId) {
+        const specificContainer = document.getElementById(`section-${sectionId}`) || document.getElementById(sectionId);
+        if (specificContainer && specificContainer !== sectionElement) {
+          return specificContainer;
+        }
+      }
+
+      // Look for a parent container that might be more appropriate
+      const parentSection = sectionElement.closest('[id^="section-"], [class*="section-"]');
+      if (parentSection && parentSection !== sectionElement) {
+        return parentSection;
+      }
+
+      // Fallback to the section element itself
+      return sectionElement;
+    }
+
+    // Process mutations with focused logic
+    function processMutations(mutations, sectionElement, observationTarget) {
+      let hasVideoChanges = false;
+      let hasStructuralChanges = false;
+
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'childList') {
+          // Handle added nodes
+          mutation.addedNodes.forEach((node) => {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+              // Check if it's a video container
+              if (
+                node.classList &&
+                (node.classList.contains('video-container') || node.classList.contains('video-block-container'))
+              ) {
+                hasVideoChanges = true;
+              }
+
+              // Check if it contains video elements
+              const videoElements =
+                node.querySelectorAll && node.querySelectorAll('.video-container, .video-block-container');
+              if (videoElements && videoElements.length > 0) {
+                hasVideoChanges = true;
+              }
+
+              // Check for structural changes
+              if (
+                node.hasAttribute &&
+                (node.getAttribute('data-section-type') === 'mh-video-iframe' ||
+                  node.classList.contains('mh-video-iframe'))
+              ) {
+                hasStructuralChanges = true;
+              }
+            }
+          });
+
+          // Handle removed nodes
+          mutation.removedNodes.forEach((node) => {
+            if (node.nodeType === Node.ELEMENT_NODE) {
+              if (
+                node.classList &&
+                (node.classList.contains('video-container') || node.classList.contains('video-block-container'))
+              ) {
+                hasVideoChanges = true;
+              }
+            }
+          });
+        } else if (mutation.type === 'attributes') {
+          // Handle attribute changes
+          const target = mutation.target;
+          if (
+            target.classList &&
+            (target.classList.contains('video-container') || target.classList.contains('video-block-container'))
+          ) {
+            hasVideoChanges = true;
+          }
+        }
+      });
+
+      // Only reinitialize if we detected relevant changes
+      if (hasVideoChanges || hasStructuralChanges) {
+        console.log('Detected relevant changes in video section, reinitializing...');
+        setTimeout(() => {
+          loadSectionVideos(sectionElement);
+        }, 50);
+      }
+    }
+
+    // Setup mutation observer for specific section container only
+    function setupSectionMutationObserver(sectionElement) {
+      // Avoid double observer
+      if (state.sectionObservers.has(sectionElement)) {
+        return state.sectionObservers.get(sectionElement);
+      }
+
+      // Get the specific container to observe
+      const observationTarget = getObservationTarget(sectionElement);
+
+      console.log(
+        'Setting up MutationObserver for video section:',
+        observationTarget.id || observationTarget.className,
+      );
+
+      const observer = new MutationObserver((mutations) => {
+        // Clear existing timeout
+        if (state.mutationTimeouts.has(sectionElement)) {
+          clearTimeout(state.mutationTimeouts.get(sectionElement));
+        }
+
+        // Debounce the processing
+        const timeoutId = setTimeout(() => {
+          processMutations(mutations, sectionElement, observationTarget);
+        }, 150); // 150ms debounce
+
+        state.mutationTimeouts.set(sectionElement, timeoutId);
+      });
+
+      // OPTIMIZED: Only observe the specific section container
+      observer.observe(observationTarget, {
+        childList: true,
+        subtree: false, // Only direct children, not deep tree
+        attributes: true,
+        attributeFilter: ['data-section-type', 'data-video-url', 'data-autoplay', 'data-muted', 'data-loop', 'class'],
+        characterData: false,
+      });
+
+      state.sectionObservers.set(sectionElement, observer);
+      return observer;
+    }
+
+    // Load all videos in a section
+    function loadSectionVideos(sectionElement) {
+      // Load main video container
+      const videoContainer = sectionElement.querySelector('.video-container');
+      const videoUrl = videoContainer?.getAttribute('data-video-url');
+
+      if (videoUrl && videoContainer) {
+        loadVideoContent(videoContainer, videoUrl, false, false, false);
+      }
+
+      // Load video blocks
+      const videoBlocks = sectionElement.querySelectorAll('.video-block-container');
+      videoBlocks.forEach((blockContainer) => {
+        const blockVideoUrl = blockContainer.getAttribute('data-video-url');
+        const autoplay = blockContainer.getAttribute('data-autoplay') === 'true';
+        const muted = blockContainer.getAttribute('data-muted') === 'true';
+        const loop = blockContainer.getAttribute('data-loop') === 'true';
+
+        if (blockVideoUrl) {
+          loadVideoContent(blockContainer, blockVideoUrl, autoplay, muted, loop);
+        }
+      });
+    }
+
+    // Load section content
+    function loadSectionContent(section) {
+      console.log('Loading MH Video section content:', section.id || section.className);
+
+      // Remove loading state and add loaded state
+      section.classList.remove('video-section-loading');
+      section.classList.add('video-section-loaded');
+
+      // Load videos
+      loadSectionVideos(section);
+
+      // Dispatch loaded event
+      section.dispatchEvent(
+        new CustomEvent('mh:video:section:loaded', {
+          detail: { section },
+        }),
+      );
+
+      console.log('Video section fully loaded');
+    }
+
+    // Initialize individual section
+    function initializeVideoSection(sectionElement) {
+      // Prevent double initialization
+      if (sectionElement.hasAttribute('data-mh-video-initialized')) {
+        return;
+      }
+
+      console.log('Initializing MH Video section:', sectionElement.id || sectionElement.className);
+      sectionElement.setAttribute('data-mh-video-initialized', 'true');
+
+      // Add to instances set
+      state.sectionInstances.add(sectionElement);
+
+      // Setup mutation observer for this specific section only
+      setupSectionMutationObserver(sectionElement);
+
+      const enableLazySection = sectionElement.getAttribute('data-enable-lazy-section') === 'true';
+      console.log('Lazy section enabled:', enableLazySection);
+
+      if (enableLazySection) {
+        // LAZY LOADING: section won't load until visible
+        console.log('Setting up lazy loading - section will not load until visible');
+
+        const observer = createIntersectionObserver();
+        sectionElement.classList.add('video-section-loading');
+        observer.observe(sectionElement);
+
+        console.log('Now observing video section - waiting for visibility...');
+      } else {
+        // IMMEDIATE LOADING: section loads right away
+        console.log('Loading video section immediately (no lazy loading)');
+        sectionElement.classList.add('video-section-loaded');
+        loadSectionVideos(sectionElement);
+      }
+    }
+
+    // Initialize all video sections
+    function initializeAll() {
+      if (state.isInitialized) {
+        console.warn('MH Video Manager already initialized');
+        return;
+      }
+
+      console.log('Initializing all MH Video sections');
+      const videoSections = document.querySelectorAll('[data-section-type="mh-video-iframe"]');
+      console.log('Found video sections:', videoSections.length);
+
+      videoSections.forEach((section) => initializeVideoSection(section));
+      state.isInitialized = true;
+
+      // Handle responsive changes with throttling
+      setupResizeHandler();
+    }
+
+    // Setup optimized resize handler
+    function setupResizeHandler() {
+      let lastResize = 0;
+      const throttleDelay = 250;
+
+      window.addEventListener('resize', () => {
+        const now = Date.now();
+        if (now - lastResize < throttleDelay) return;
+        lastResize = now;
+
+        // Recreate intersection observer with new settings
+        if (state.intersectionObserver) {
+          state.intersectionObserver.disconnect();
+          state.intersectionObserver = null;
+        }
+      });
+    }
+
+    // Complete cleanup
+    function cleanup() {
+      console.log('Cleaning up MH Video Manager');
+
+      // Clean up all sections
+      state.sectionInstances.forEach((section) => {
+        cleanupSectionResources(section);
+      });
+
+      // Disconnect intersection observer
+      if (state.intersectionObserver) {
+        state.intersectionObserver.disconnect();
+        state.intersectionObserver = null;
+      }
+
+      // Clear all timeouts
+      state.mutationTimeouts.forEach((timeoutId) => clearTimeout(timeoutId));
+      state.mutationTimeouts = new WeakMap();
+
+      // Reset state
+      state.sectionInstances.clear();
+      state.sectionObservers = new WeakMap();
+      state.isInitialized = false;
+    }
+
+    // Pause all videos
+    function pauseAllVideos() {
+      state.sectionInstances.forEach((section) => {
+        const videos = section.querySelectorAll('.video-element');
+        videos.forEach((video) => {
+          if (!video.paused) {
+            video.pause();
+          }
+        });
+      });
+    }
+
+    // Resume autoplay videos
+    function resumeAutoplayVideos() {
+      state.sectionInstances.forEach((section) => {
+        const videoBlocks = section.querySelectorAll('.video-block-container[data-autoplay="true"]');
+        videoBlocks.forEach((block) => {
+          const video = block.querySelector('.video-element');
+          if (video && video.paused) {
+            video.play().catch((e) => console.warn('Autoplay failed:', e));
+          }
+        });
+      });
+    }
+
+    // DOM Ready initialization
+    function initializeWhenReady() {
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeAll);
+      } else {
+        initializeAll();
+      }
+    }
+
+    // Initialize
+    initializeWhenReady();
+
+    // Cleanup on page unload
+    window.addEventListener('beforeunload', cleanup);
+
+    // Handle page visibility changes (for performance)
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        // Pause videos when page is hidden
+        pauseAllVideos();
+      } else {
+        // Resume autoplay when page becomes visible
+        resumeAutoplayVideos();
+      }
+    });
+
+    // Expose API globally for Shopify integration and debugging
+    window.MHVideo = {
+      initializeAll: initializeAll,
+      initializeSection: initializeVideoSection,
+      loadSectionVideos: loadSectionVideos,
+      cleanup: cleanup,
+
+      // Utility methods
+      pauseAllVideos: pauseAllVideos,
+      resumeAutoplayVideos: resumeAutoplayVideos,
+
+      // Get section instances for debugging
+      getSectionInstances: () => Array.from(state.sectionInstances),
+
+      // Manual video loading
+      loadVideo: (container, url, options = {}) => {
+        const { autoplay = false, muted = false, loop = false } = options;
+        loadVideoContent(container, url, autoplay, muted, loop);
+      },
+
+      // Access to state for debugging
+      getState: () => ({
+        isInitialized: state.isInitialized,
+        sectionsCount: state.sectionInstances.size,
+        hasIntersectionObserver: !!state.intersectionObserver,
+      }),
+    };
+  })();
+</script>
+
+{% comment %} Check if section has any video content {% endcomment %}
+{% assign has_main_video = false %}
+{% assign has_video_blocks = false %}
+
+{% if section.settings.video_url != blank %}
+  {% assign has_main_video = true %}
+{% endif %}
+
+{% for block in section.blocks %}
+  {% if block.type == 'video_block' and block.settings.video_url != blank %}
+    {% assign has_video_blocks = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_main_video or has_video_blocks %}
+  <article
+    id='shopify-section-{{ section.id }}'
+    class='palette-{{ section.settings.color_palette }} module-color-palette video-section'
+    data-section-type='mh-video-iframe'
+    data-enable-lazy-section='{{ section.settings.enable_lazy_section }}'
+    style='
+      --mh-vif-bg-color: {{ section.settings.section_bg_color | default: 'transparent' }};
+      --mh-vif-padding: {{ section.settings.section_padding | default: '40px 20px' }};
+      --mh-vif-min-height: {{ section.settings.section_height | default: 400 }}px;
+      --mh-vif-margin-bottom: {{ section.settings.section_margin_bottom | default: 0 }}px;
+    '
+  >
+    <div class='video-section-container'>
+      {% if section.settings.header_content != blank %}
+        <div
+          class='video-header align-{{ section.settings.header_text_align | default: 'left' }}'
+          {% if section.settings.enable_custom_header_color
+            and section.settings.custom_header_color != 'transparent'
+            and section.settings.custom_header_color != ''
+          %}
+            style='--mh-vif-header-color: {{ section.settings.custom_header_color }};'
+          {% endif %}
+        >
+          {{ section.settings.header_content }}
+        </div>
+      {% endif %}
+
+      {% if section.settings.video_url != blank %}
+        <div
+          class='video-wrapper'
+          style='--mh-vif-video-padding: {{ section.settings.video_padding | default: '20px 0' }};'
+        >
+          <div
+            class='video-container'
+            data-video-url='{{ section.settings.video_url }}'
+          >
+            <!-- Iframe for YouTube/Vimeo/Facebook -->
+            <iframe
+              class='video-iframe'
+              title='Video example'
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowfullscreen
+              {% if section.settings.enable_lazy_loading != false %}
+                loading='lazy'
+              {% endif %}
+              style='display: none;'
+            ></iframe>
+
+            <!-- Video element for direct video files -->
+            <video
+              class='video-element'
+              controls
+              {% if section.settings.video_autoplay %}
+                autoplay
+              {% endif %}
+              {% if section.settings.video_muted %}
+                muted
+              {% endif %}
+              {% if section.settings.video_loop %}
+                loop
+              {% endif %}
+              style='display: none;'
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      {% endif %}
+
+      {% if section.blocks.size > 0 %}
+        <div
+          class='video-blocks-wrapper {% if section.settings.enable_flex_layout %}flex-layout{% endif %}'
+          {% if section.settings.enable_flex_layout %}
+            style='--mh-vif-flex-items-per-row: {{ section.settings.flex_items_per_row | default: 2 }}; --mh-vif-flex-gap: {{ section.settings.flex_gap | default: 20 }}px;'
+          {% endif %}
+        >
+          {% for block in section.blocks %}
+            {% if block.type == 'video_block' %}
+              <div
+                class='video-block align-{{ block.settings.video_alignment | default: 'center' }} {% if section.settings.enable_flex_layout %}flex-item{% endif %}'
+                data-block-id='{{ block.id }}'
+                style='--mh-vif-video-padding: {{ section.settings.video_padding | default: '20px 0' }}; --mh-vif-block-width: {{ block.settings.video_width | default: 800 }}px;'
+              >
+                {% if block.settings.video_title != blank %}
+                  <div class='video-block-title align-{{ block.settings.title_alignment | default: 'left' }}'>
+                    <h3>{{ block.settings.video_title }}</h3>
+                  </div>
+                {% endif %}
+
+                {% if block.settings.video_url != blank %}
+                  <div
+                    class='video-container video-block-container'
+                    data-video-url='{{ block.settings.video_url }}'
+                    data-autoplay='{{ block.settings.video_autoplay }}'
+                    data-muted='{{ block.settings.video_muted }}'
+                    data-loop='{{ block.settings.video_loop }}'
+                  >
+                    <!-- Iframe for YouTube/Vimeo/Facebook -->
+                    <iframe
+                      class='video-iframe'
+                      title='Video example'
+                      frameborder='0'
+                      allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                      allowfullscreen
+                      {% if section.settings.enable_lazy_loading != false %}
+                        loading='lazy'
+                      {% endif %}
+                      style='display: none;'
+                    ></iframe>
+
+                    <!-- Video element for direct video files -->
+                    <video
+                      class='video-element'
+                      controls
+                      {% if block.settings.video_autoplay %}
+                        autoplay
+                      {% endif %}
+                      {% if block.settings.video_muted %}
+                        muted
+                      {% endif %}
+                      {% if block.settings.video_loop %}
+                        loop
+                      {% endif %}
+                      style='display: none;'
+                    >
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if section.settings.footer_content != blank %}
+        <div
+          class='video-footer align-{{ section.settings.footer_text_align | default: 'left' }}'
+          {% if section.settings.enable_custom_footer_color
+            and section.settings.custom_footer_color != 'transparent'
+            and section.settings.custom_footer_color != ''
+          %}
+            style='--mh-vif-footer-color: {{ section.settings.custom_footer_color }};'
+          {% endif %}
+        >
+          {{ section.settings.footer_content }}
+        </div>
+      {% endif %}
+    </div>
+
+    <!-- Loading indicator -->
+    <div class='video-section-loading-indicator'>
+      <div class='loading-spinner'></div>
+    </div>
+  </article>
+{% endif %}
+
+{% stylesheet %}
+  .video-section {
+    position: relative;
+    width: 100%;
+    background-color: var(--mh-vif-bg-color, transparent);
+    padding: var(--mh-vif-padding, 40px 20px);
+    min-height: var(--mh-vif-min-height, 400px);
+    margin-bottom: var(--mh-vif-margin-bottom, 0);
+  }
+
+  .video-section-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Loading states */
+  .video-section-loading .video-section-loading-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 10;
+  }
+
+  .video-section-loaded .video-section-loading-indicator,
+  .video-section-loading-indicator {
+    display: none;
+  }
+
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .video-header {
+    margin-bottom: 20px;
+  }
+
+  .video-header h1,
+  .video-header h2,
+  .video-header h3,
+  .video-header h4,
+  .video-header h5,
+  .video-header h6,
+  .video-header p,
+  .video-header * {
+    color: var(--mh-vif-header-color, var(--headings_text, var(--text, inherit)));
+  }
+
+  .video-wrapper {
+    flex-grow: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--mh-vif-video-padding, 20px 0);
+  }
+
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+
+  .video-iframe,
+  .video-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .video-footer {
+    margin-top: 20px;
+  }
+
+  .video-footer h1,
+  .video-footer h2,
+  .video-footer h3,
+  .video-footer h4,
+  .video-footer h5,
+  .video-footer h6,
+  .video-footer p,
+  .video-footer * {
+    color: var(--mh-vif-footer-color, var(--headings_text, var(--text, inherit)));
+  }
+
+  /* Video blocks styles */
+  .video-blocks-wrapper {
+    margin-top: 40px;
+  }
+
+  .video-blocks-wrapper.flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--mh-vif-flex-gap, 20px);
+  }
+
+  .video-block {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .video-block.flex-item {
+    width: calc(
+      (100% - (var(--mh-vif-flex-gap, 20px) * (var(--mh-vif-flex-items-per-row, 2) - 1))) /
+        var(--mh-vif-flex-items-per-row, 2)
+    );
+    margin-bottom: var(--mh-vif-flex-gap, 20px);
+    min-width: 300px;
+  }
+
+  .video-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .video-block.align-left {
+    align-items: flex-start;
+  }
+
+  .video-block.align-center {
+    align-items: center;
+  }
+
+  .video-block.align-right {
+    align-items: flex-end;
+  }
+
+  .video-block-title {
+    margin-bottom: 15px;
+    width: var(--mh-vif-block-width, 800px);
+    max-width: 100%;
+  }
+
+  .video-block-title.align-left {
+    text-align: left;
+  }
+
+  .video-block-title.align-center {
+    text-align: center;
+  }
+
+  .video-block-title.align-right {
+    text-align: right;
+  }
+
+  .video-block-title h3 {
+    color: var(--mh-vif-header-color, var(--headings_text, var(--text, inherit)));
+    margin: 0;
+  }
+
+  .video-block-container {
+    position: relative;
+    width: var(--mh-vif-block-width, 800px);
+    max-width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+  }
+
+  .video-block.flex-item .video-block-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-block.flex-item .video-block-title {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Text alignment classes */
+  .video-header.align-left,
+  .video-footer.align-left {
+    text-align: left;
+  }
+
+  .video-header.align-center,
+  .video-footer.align-center {
+    text-align: center;
+  }
+
+  .video-header.align-right,
+  .video-footer.align-right {
+    text-align: right;
+  }
+
+  @media (max-width: 768px) {
+    .video-section {
+      padding: 20px 15px;
+    }
+
+    .video-header {
+      margin-bottom: 15px;
+    }
+
+    .video-footer {
+      margin-top: 15px;
+    }
+
+    .video-blocks-wrapper {
+      margin-top: 30px;
+    }
+
+    .video-block {
+      margin-bottom: 20px;
+    }
+
+    .video-blocks-wrapper.flex-layout {
+      --mh-vif-flex-items-per-row: 1 !important;
+    }
+
+    .video-block.flex-item {
+      width: 100%;
+      min-width: auto;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "[MH] Video iframe",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color palette",
+      "default": "scheme-2"
+    },
+    {
+      "type": "header",
+      "content": "Performance Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_lazy_section",
+      "label": "Enable lazy loading for entire section",
+      "default": false,
+      "info": "When enabled, the section will only load when it's 100px away from being visible. This improves page performance."
+    },
+    {
+      "type": "header",
+      "content": "Section Background"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color",
+      "default": "transparent"
+    },
+    {
+      "type": "text",
+      "id": "section_padding",
+      "label": "Section padding (top right bottom left)",
+      "default": "40px 20px",
+      "info": "Example: 40px 20px or 40px 20px 40px 20px"
+    },
+    {
+      "type": "range",
+      "id": "section_height",
+      "min": 200,
+      "max": 800,
+      "step": 50,
+      "label": "Section minimum height (px)",
+      "default": 400
+    },
+    {
+      "type": "range",
+      "id": "section_margin_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "Section bottom margin (px)",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Header Content"
+    },
+    {
+      "type": "richtext",
+      "id": "header_content",
+      "label": "Header content (rich text)"
+    },
+    {
+      "type": "select",
+      "id": "header_text_align",
+      "label": "Header text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_custom_header_color",
+      "label": "Enable custom header text color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "custom_header_color",
+      "label": "Header text color",
+      "default": "transparent"
+    },
+    {
+      "type": "header",
+      "content": "Video Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_lazy_loading",
+      "label": "Enable lazy loading for iFrame",
+      "default": true,
+      "info": "Makes iFrame load only when it comes into view, improving page performance"
+    },
+    {
+      "type": "url",
+      "id": "video_url",
+      "label": "Video URL",
+      "info": "Support YouTube, Vimeo, Facebook URLs (will use iframe) or direct video file URLs (.mp4, .webm, etc.)"
+    },
+    {
+      "type": "text",
+      "id": "video_padding",
+      "label": "Video padding (top right bottom left)",
+      "default": "20px 0",
+      "info": "Padding around video element"
+    },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay",
+      "label": "Autoplay video (only for direct video files)",
+      "default": false,
+      "info": "Autoplay only works for direct video files, not YouTube/Vimeo"
+    },
+    {
+      "type": "checkbox",
+      "id": "video_muted",
+      "label": "Mute video (only for direct video files)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "video_loop",
+      "label": "Loop video (only for direct video files)",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Video Blocks Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_flex_layout",
+      "label": "Enable flex layout for video blocks",
+      "default": false,
+      "info": "When enabled, video blocks will be displayed in a flexible grid layout"
+    },
+    {
+      "type": "range",
+      "id": "flex_items_per_row",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Items per row (flex layout)",
+      "default": 2,
+      "info": "Number of video blocks to display per row when flex layout is enabled"
+    },
+    {
+      "type": "range",
+      "id": "flex_gap",
+      "min": 10,
+      "max": 50,
+      "step": 5,
+      "label": "Gap between items (px)",
+      "default": 20,
+      "info": "Space between video blocks in flex layout"
+    },
+    {
+      "type": "header",
+      "content": "Footer Content"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_content",
+      "label": "Footer content (rich text)"
+    },
+    {
+      "type": "select",
+      "id": "footer_text_align",
+      "label": "Footer text alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_custom_footer_color",
+      "label": "Enable custom footer text color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "custom_footer_color",
+      "label": "Footer text color",
+      "default": "transparent"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video_block",
+      "name": "Video Block",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video_url",
+          "label": "Video URL",
+          "info": "Support YouTube, Vimeo, Facebook URLs (will use iframe) or direct video file URLs (.mp4, .webm, etc.)"
+        },
+        {
+          "type": "text",
+          "id": "video_title",
+          "label": "Video Title (optional)"
+        },
+        {
+          "type": "select",
+          "id": "title_alignment",
+          "label": "Title alignment",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "range",
+          "id": "video_width",
+          "min": 300,
+          "max": 1400,
+          "step": 50,
+          "label": "Video width (px)",
+          "default": 1200,
+          "info": "Set the width of the video container"
+        },
+        {
+          "type": "select",
+          "id": "video_alignment",
+          "label": "Video alignment",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_autoplay",
+          "label": "Autoplay video (only for direct video files)",
+          "default": false,
+          "info": "Autoplay only works for direct video files, not YouTube/Vimeo"
+        },
+        {
+          "type": "checkbox",
+          "id": "video_muted",
+          "label": "Mute video (only for direct video files)",
+          "default": false
+        },
+        {
+          "type": "checkbox",
+          "id": "video_loop",
+          "label": "Loop video (only for direct video files)",
+          "default": false
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] Video iframe",
+      "category": "MH Custom",
+      "settings": {
+        "header_content": "<h2>Video Title</h2><p>Video description goes here</p>",
+        "video_url": "https://youtu.be/dQw4w9WgXcQ",
+        "footer_content": "<p>Additional information or call to action</p>",
+        "section_bg_color": "transparent",
+        "section_padding": "40px 20px",
+        "section_height": 400,
+        "enable_lazy_section": false
+      }
+    }
+  ]
+}
+{% endschema %}

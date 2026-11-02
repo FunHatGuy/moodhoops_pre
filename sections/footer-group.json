@@ -1,0 +1,91 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:static_sections.footer.name",
+  "sections": {
+    "mh_custom_footer_D4QeiG": {
+      "type": "mh-custom-footer",
+      "blocks": {
+        "bottom_menu_rKDY6r": {
+          "type": "bottom_menu",
+          "settings": {
+            "title": "moodhoops.com",
+            "title_link": "/",
+            "text_uppercase": true,
+            "hover_color": "#df3d82",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "bottom_menu_rKDY6r"
+      ],
+      "name": "[MH] Custom Footer",
+      "settings": {
+        "color_palette": "scheme-2",
+        "section_padding": "20px 0",
+        "section_margin_top": 50,
+        "text_color": "#ffffff",
+        "center_alignment": true,
+        "show_copyright": false,
+        "show_heart": true,
+        "title_margin": 15,
+        "menu_gap": 20,
+        "copyright_margin": 20,
+        "bottom_img_width": 125,
+        "bottom_img_link": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "bottom_menu_79fghf": {
+          "type": "bottom_menu",
+          "disabled": true,
+          "settings": {
+            "title": "moodhoops.com",
+            "title_link": "/",
+            "menu": "footer"
+          }
+        }
+      },
+      "block_order": [
+        "bottom_menu_79fghf"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".base-font {text-align: center;}"
+      ],
+      "settings": {
+        "footer_color": "scheme-2",
+        "column_text_alignment": "center",
+        "content_position": "center",
+        "title_font": "primary",
+        "title_size_blocks": "h5",
+        "bottom_color": "scheme-2",
+        "bottom_img_width": 100,
+        "bottom_img_link": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "enable_follow_on_shop": false,
+        "show_payment_methods": true,
+        "bottom_menu_position": "bottom",
+        "center_bottom_section": true,
+        "spacing_desktop": 0,
+        "spacing_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "mh_custom_footer_D4QeiG",
+    "footer"
+  ]
+}

@@ -1,0 +1,167 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "section_faq_zCwyHq": {
+      "type": "section-faq",
+      "blocks": {
+        "text_pNtztg": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Import Taxes",
+            "icon": "none",
+            "header_image_width": 25,
+            "faq_answer": "<p>When orders are shipped over international borders the receiving country may charge an import tax (also called a customs fee or import duty). <strong>We have no control over when and how these taxes are charged.</strong> Some governments provide a calculator so you can estimate these fees before ordering, for example <a href=\"https://www.cbsa-asfc.gc.ca/travel-voyage/dte-acl/est-cal-eng.html\">here is one from the Canadian government.</a> If you can’t find an import duty calculator for your country you may want to contact your customs agency.</p><p>All transactions are billed in US Dollars (USD). Currency conversion will be performed automatically by the payment processor. Currency conversion rates fluctuate constantly, but you can estimate the conversion rate by using Google (example: “100 usd to cad”) or any number of online currency conversion calculat</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_WDecVX": {
+          "type": "text",
+          "settings": {
+            "faq_question": "International Shipping Timetable",
+            "icon": "none",
+            "header_image_width": 25,
+            "faq_answer": "",
+            "page": "content-block-international-shipping-timetable",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_8fp3jf": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Choice of Shipping Carrier",
+            "icon": "none",
+            "header_image_width": 25,
+            "faq_answer": "<p>Orders may be shipped with either the US Postal Service, UPS, or FedEx. If a specific courier service is desired please let us know.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_FFC9KF": {
+          "type": "text",
+          "settings": {
+            "faq_question": "Warranty Shipping",
+            "icon": "none",
+            "header_image_width": 25,
+            "faq_answer": "<p>If you need to redeem a product warranty both the repair and return postage will be paid for by us. To ship the product to our workshop, however, the customer will need to purchase their own postage.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        },
+        "text_FqTQar": {
+          "type": "text",
+          "settings": {
+            "faq_question": "International Power Standards",
+            "icon": "none",
+            "header_image_width": 25,
+            "faq_answer": "<p>All of our products come with battery chargers that fit standard US electrical outlets. Adapters to fit into non-US wall outlets are not included.</p>",
+            "page": "",
+            "image_width": 465,
+            "liquid": "",
+            "html": "",
+            "show_contact_form": false
+          }
+        }
+      },
+      "block_order": [
+        "text_pNtztg",
+        "text_WDecVX",
+        "text_8fp3jf",
+        "text_FFC9KF",
+        "text_FqTQar"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "alignment": "center",
+        "compact": false,
+        "title": "<h1>International Orders</h1><p>Customers outside the US should read the information below before ordering.</p>",
+        "title_underline_style": "none",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h2"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 30,
+        "spacing_mobile": 30
+      }
+    },
+    "174672988174c020ed": {
+      "type": "apps",
+      "blocks": {
+        "formful_app_block_form_LwawwJ": {
+          "type": "shopify://apps/formful/blocks/app-block-form/be9de36b-78a1-4ce9-8de3-f1044fb2ee2e",
+          "settings": {
+            "form_id": "{{ page.metafields.custom.formful_form_id.value }}",
+            "max_width": 100,
+            "column_gap": 2,
+            "row_gap": 1,
+            "padding_top": 36,
+            "padding_bottom": 36,
+            "color_scheme": ""
+          }
+        }
+      },
+      "block_order": [
+        "formful_app_block_form_LwawwJ"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "section_faq_zCwyHq",
+    "main-page",
+    "174672988174c020ed"
+  ]
+}

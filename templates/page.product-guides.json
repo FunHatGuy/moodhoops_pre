@@ -1,0 +1,517 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_section_banner_columns_rCVigG": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_FC8Ued": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/futurehoop-comparison-guide",
+            "image": "shopify://shop_images/HoopsLED_FutureColorTubing_DSC5128.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>FutureHoop<br/>Comparison Guide</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        },
+        "image_w3TH9T": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/futurepoi-comparison-guide",
+            "image": "shopify://shop_images/moodhoops-futurepoi-lite-001.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>FuturePoi<br/>Comparison Guide</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        },
+        "image_kQH4yT": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/futurestaff-comparison-guide",
+            "image": "shopify://shop_images/futurepoi-designer-moodhoops-50060.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>FutureStaff<br/>Comparison Guide</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_FC8Ued",
+        "image_w3TH9T",
+        "image_kQH4yT"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": true,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 450,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_pwKJbr": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_bmWWFt": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/help",
+            "image": "shopify://shop_images/futurehoop-moodhoops-lightpainting-rachel-britton-photgraphy-4.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>Help Docs</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        },
+        "image_9tWbRJ": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/troubleshooting-home",
+            "image": "shopify://shop_images/moodhoops-polypro-rings1.jpg",
+            "enable_text_shadow": true,
+            "title": "<h1>Services,<br/>Repairs, Troubleshooting</h1>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_bmWWFt",
+        "image_9tWbRJ"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_PDyT6x": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_Vi4EVh": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/sizing-guide/",
+            "image": "shopify://shop_images/moodhoops-polypro_03.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>Hoop Sizing Guide</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        },
+        "image_RR3c37": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/gift-buying-guide/",
+            "image": "shopify://shop_images/gift-buying-guide-scaled.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>Hoop Gifting Guide</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "100px 10px"
+          }
+        },
+        "image_qygF7R": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "/pages/battery-safety/",
+            "image": "shopify://shop_images/moodhoops-14500x3-battery-0259.jpg",
+            "enable_text_shadow": true,
+            "title": "<h2>Battery Safety Guide</h2>",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 20,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "200px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_Vi4EVh",
+        "image_RR3c37",
+        "image_qygF7R"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 450,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 450,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_button_list_88BPAE": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_gNPCwk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurepoi-designer-moodhoops-1.jpg",
+            "background_position": "center",
+            "background_position_mobile": "center"
+          }
+        },
+        "button_cedfXV": {
+          "type": "button",
+          "settings": {
+            "text": "Online Manual",
+            "url": "/pages/doc"
+          }
+        },
+        "button_E3qPcP": {
+          "type": "button",
+          "settings": {
+            "text": "Help Docs",
+            "url": "/pages/help"
+          }
+        },
+        "button_MFMA6U": {
+          "type": "button",
+          "settings": {
+            "text": "Downloads",
+            "url": "/pages/downloads"
+          }
+        }
+      },
+      "block_order": [
+        "image_gNPCwk",
+        "button_cedfXV",
+        "button_E3qPcP",
+        "button_MFMA6U"
+      ],
+      "name": "[MH] Banner buttons list",
+      "settings": {
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "banner_height": 200,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary inv",
+        "text_alignment": "center",
+        "title": "<h2>Best selling collections</h2>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_LaBrWr": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_Mmq66i": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h3>We’re here to answer your questions!</h3>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        },
+        "button_qPeUPi": {
+          "type": "button",
+          "settings": {
+            "link_text": "Contact Us",
+            "link_url": "shopify://pages/contact-us",
+            "button_style": "primary plain"
+          }
+        }
+      },
+      "block_order": [
+        "content_Mmq66i",
+        "button_qPeUPi"
+      ],
+      "name": "t:sections.rich_text.presets.name",
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "wide",
+        "height_mobile": "xs",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_newsletter_K7FKVR": {
+      "type": "section-newsletter",
+      "name": "t:sections.newsletter.presets.name",
+      "settings": {
+        "overlay_opacity_img": 0,
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "width": "wide",
+        "title": "<h2>Subscribe to our emails</h2>",
+        "title_underline_style": "none",
+        "text": "<p>Never miss any news and be the first to know about sale and offers</p>",
+        "link_text": "Subscribe",
+        "button_style": "primary plain",
+        "enable_newsletter_terms_checkbox": false,
+        "newsletter_terms_text": "",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_section_banner_columns_rCVigG",
+    "mh_section_banner_columns_pwKJbr",
+    "mh_section_banner_columns_PDyT6x",
+    "mh_section_banner_button_list_88BPAE",
+    "section_rich_text_LaBrWr",
+    "section_newsletter_K7FKVR"
+  ]
+}

@@ -1,0 +1,217 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_eRCpKU": {
+      "type": "section-background",
+      "settings": {
+        "rich_text": "<h1>{{ page.title }}</h1>",
+        "background_position_x": 50,
+        "background_position_y": 50,
+        "color_palette": "scheme-2",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_image_with_text_deXM46": {
+      "type": "section-image-with-text",
+      "blocks": {
+        "title_43cH3j": {
+          "type": "title",
+          "settings": {
+            "title": "{{ page.content }}<h2><strong>The MoodHoops Guide to Spinning Poi</strong></h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "text_cVd9P9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Take a journey to discover the ancient, vibrant, and healing art of poi spinning, also known as poi dancing.</p><p>Grab some poi and let’s do this!</p>",
+            "font": "secondary",
+            "font_weight": "400",
+            "font_size": "16px"
+          }
+        },
+        "buttons_jLw6fA": {
+          "type": "buttons",
+          "settings": {
+            "show_first_link": true,
+            "first_link_text": "Step by Step Instructions",
+            "first_link_url": "#Step-by-Step",
+            "first_button_style": "secondary plain",
+            "show_second_link": false,
+            "second_link_text": "Button",
+            "second_link_url": "/",
+            "second_button_style": "secondary plain"
+          }
+        }
+      },
+      "block_order": [
+        "title_43cH3j",
+        "text_cVd9P9",
+        "buttons_jLw6fA"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/bluephoria_performance-futurepoi-fire-flames-510x510.jpg",
+        "overlay_opacity_img": 0,
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "overlay_opacity": 100,
+        "layout": "image-right",
+        "width": "boxed",
+        "height": "4/3",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "text_position": "text-start",
+        "height_mobile": "1/1",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "section_rich_text_EynEVz": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_ACdhdB": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>What is Poi Spinning?</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_qcLf84": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Poi spinning is a flow art that involves swinging tethered weights in a variety of rhythms and motions to create geometric patterns of light or color. This unique combination of performance art and dexterity play tends make spinning poi feel like an improvisational dance or meditative flow state.</p><p><a href=\"https://en.wikipedia.org/wiki/Poi_(performance_art)\" target=\"_blank\">Poi spinning</a> originated with the <a href=\"https://en.wikipedia.org/wiki/M%C4%81ori_people\" target=\"_blank\">Māori people of New Zealand</a>, where it’s still practiced today. Poi spinning has gained in popularity and is now practiced all over the world. With the expansion of poi, there has been a significant evolution of style, practice, and the tools used.</p><p>“Poi” is used to describe the art form itself and also the specific tools used in poi spinning. A poi is a weighted object – most commonly a ball or a stick – that can be spun and synchronized to create beautiful visual patterns. Poi can be made from various materials, from fire to LED lights and glow sticks, to streamers and veils.</p><p>Poi spinning and poi dance are both fun and healing. The practice has also been shown to have health benefits, improving grip strength, balance, and concentration.</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        },
+        "content_Nawq3y": {
+          "type": "content",
+          "settings": {
+            "page": "content-block-beginner-poi-spinning-step-by-step",
+            "text": "",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        },
+        "title_beMFwP": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>Spinning Poi Like a Pro</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_FR6Ywd": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Like with anything, learning to spin poi like a pro takes time. But with patience and practice, you’ll master the basics and gain confidence with your ropes.</p><p>When you’re first starting out, it’s important to take your time learning each new trick. You want to make sure you’re really comfortable with each one before you decide to move onto the next.</p><p>Begin with basic moves like “<a href=\"https://moodhoops.com/poi-spinning-tutorial-how-to-learn-the-fountain-beginner/\">the fountain</a>” and “reel turns” and “butterflies.” These movements will help you grasp the fundamentals and develop plane control – an extremely important concept in poi spinning. Try not to get frustrated if these techniques don’t come naturally to you at first. With patience and practice, they’ll feel like second nature in no time.</p><p>Once you’ve mastered the fundamentals, you’ll be able to move onto more advanced techniques like “crossers” and “CAPs.” The more you practice, the more comfortable and confident you’ll become.</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        },
+        "title_tCrVf6": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>Have Fun!</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_ExQYGd": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>Keep practicing and you’ll be on your way to poi spinning like the pros!</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "title_ACdhdB",
+        "content_qcLf84",
+        "content_Nawq3y",
+        "title_beMFwP",
+        "content_FR6Ywd",
+        "title_tCrVf6",
+        "content_ExQYGd"
+      ],
+      "custom_css": [
+        ".m6fr *:not(.link-btn, .submit) > a:not([class*=\"overlay-\"]) {color: var(--secondary_bg);}",
+        ".m6fr article > div {padding: 20px 10px;}"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "overlay_opacity": 100,
+        "text_position": "align-start text-start",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_eRCpKU",
+    "section_image_with_text_deXM46",
+    "section_rich_text_EynEVz",
+  ]
+}

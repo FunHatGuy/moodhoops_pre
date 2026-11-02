@@ -1,0 +1,926 @@
+/* ***************************** */
+/* General styles - START */
+/* ***************************** */
+
+/* MH-14 - Set max width for policies pages, same approach as used for regular CMS pages */
+body .shopify-policy__container {
+  max-width: var(--glw);
+}
+
+/* MH-60 - Chat button and scroll to top button positioning and styling */
+body #totop.mh-to-top {
+  bottom: 95px;
+  padding-right: 22px;
+}
+
+body #totop.mh-to-top > a {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 14px;
+}
+
+#cookie-bar {
+  z-index: 8;
+}
+
+.cookie-on inbox-online-store-chat {
+  bottom: calc(var(--cookie_h) + 16px) !important;
+}
+
+/* ***************************** */
+/* General styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* Header styles - START */
+/* ***************************** */
+
+/* MH-83 - Changed hiding menu approach from "display: none" to visibility + opacity */
+/* Added transition delay to prevent accidental menu open on each hover */
+/* Notice that 0.25s value need to be synced with transition delay in assets/async-menu.css */
+/* Added media breakpoint so implemented changes will only affect desktop */
+@media only screen and (min-width: 1001px) {
+  body .overlay-close {
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    transition-delay: 0.25s;
+  }
+}
+
+#header-inner:not(.text-center-logo) #logo:has(span), #header-inner.logo-text:not(.text-center-logo) #logo {
+  max-width: none;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 370px) {
+  #header-inner:not(.text-center-logo) #logo:has(span), #header-inner.logo-text:not(.text-center-logo) #logo > a > span {
+    font-size: 26px !important;
+  }
+}
+
+
+/* ***************************** */
+/* Header styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* Footer styles - START */
+/* ***************************** */
+
+/* MH-21 - Footer layout */
+#content {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh;
+}
+
+.main-content-wrapper {
+  flex: 1;
+}
+
+/* ***************************** */
+/* Footer styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* PDP styles - START */
+/* ***************************** */
+
+/* Styles for custom price including options - START */
+
+/* Default state */
+#root #content #main-product .mh-price-incl-options-wrapper {
+  display: none;
+}
+
+/* Display when OPTIS loaded */
+#root #content #main-product .bss-po-product-page + form > div.mh-price-incl-options-wrapper {
+  display: flex;
+}
+
+/* Styling for additional label */
+#root #content #main-product .mh-price-incl-options-message {
+  display: inline-block;
+  margin-right: 6px;
+  /* Should be the same as --price_fz CSS variable applied to Price block (admin config) */
+  font-size: 24px;
+  /* Used to align text and price */
+  line-height: 1.35;
+}
+
+/* Styles for custom price including options - END */
+
+#root #content #main-product .po-option--checkbox-container .po_option_value {
+  line-height: inherit;
+}
+
+#root #content #main-product .po-helptext-content p {
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 3px;
+}
+
+#root #content #main-product .po-option--container .po-label {
+  align-items: baseline;
+}
+
+#root #content #main-product .po_description {
+  margin-top: 0;
+}
+
+#root #content #main-product .po-dropdown-thumbnail-arrow, .po-dropdown-arrow {
+  margin-right: 10px !important;
+}
+
+#root #content #main-product .po-dropdown-selected-option {
+  padding: 3px 16px 0px 12px;
+  height: 50px;
+  border-radius: 0;
+}
+
+#root #content #main-product .po-dropdown-list {
+  border-radius: 0;
+}
+
+#root #content #main-product #bss-po-dropdown-selected-option .po-dropdown-arrow.po-dropdown-arrow-down {
+  right: 12px;
+  border-width: 0 1.5px 1.5px 0;
+  padding: 3.5px;
+}
+
+#root #content #main-product .po-option--container__inline {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#root #content #main-product .disabled.overlay-unavailable_buy_button:before {
+  background: var(--secondary_bg_btn);
+}
+
+.form-cart .input-inline.last-child input#discount::placeholder {
+  font-size: 14px;
+}
+
+.po-label-container label span {
+  margin-left: 0 !important;
+  font-weight: var(--main_fw_strong) !important;
+  font-size: 1em !important;
+}
+
+#root #content #main-product .po-option--checkbox-wrapper.po-option__select-quantity {
+  margin-bottom: 5px;
+}
+
+#root #content #main-product .po-option--container .po-label {
+  align-items: center;
+}
+
+#root #content #main-product .po_description {
+  max-width: 100%;
+}
+
+#root #content #main-product .po-radio-circle, .po-option--type-checkbox input {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+#root #content #main-product .po-form-option-container {
+  row-gap: 24px;
+}
+
+#root #content #main-product .po_option_value.po-option__checkbox-value,
+#root #content #main-product .bss_scroll .po-dropdown-option.po-value,
+#root #content #main-product .po-value.po-dropdown-selected-option {
+  font-size: var(--base_fz);
+  color: var(--primary_text);
+  font-family: var(--main_ff);
+  font-style: var(--main_fs);
+  font-weight: var(--main_fw);
+  line-height: var(--main_lh);
+  text-transform: var(--main_tt);
+  letter-spacing: var(--main_ls);
+}
+
+#root #content #main-product .po-value.po-dropdown-selected-option {
+  line-height: 44px;
+}
+
+#root #content #main-product .po-dropdown-selected-option {
+  border: 1px solid var(--custom_input_bd);
+}
+
+@media (max-width: 760px) {
+  #root #content #main-product .l4pr-container {
+    margin-bottom: 20px !important;
+  }
+
+  #root #content #main-product .swiper-custom-pagination {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-52%);
+  }
+}
+
+@media (min-width: 1001px) {
+  #root #content #main-product .mh-product__purchase-options {
+    width: calc(100% - var(--cont_w)) !important;
+    border-left: 25px solid rgba(0, 0, 0, 0);
+  }
+
+  #root #content #main-product .l4pr-container {
+    width: var(--cont_w) !important;
+    border-left: 25px solid rgba(0, 0, 0, 0);
+  }
+}
+
+@media (max-width: 1500px) {
+  #root #content #main-product .l4pr-container {
+    border-left: var(--cols) solid rgba(0, 0, 0, 0);
+  }
+}
+
+/* ***************************** */
+/* PDP styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* PLP styles - START */
+/* ***************************** */
+
+/* MH-27 - START */
+
+#root #content .collection-wrapper .mobile-hide select {
+  max-width: 90px;
+  background-position: right;
+  padding: 0 12px 0 0;
+}
+
+#root #content .collection-wrapper .mobile-hide.has-select.done {
+  max-width: max-content;
+}
+
+ul#collection > li {
+  border-left-width: 20px;
+}
+
+#content .collection-wrapper .l4vw.outline.mh-l4vw {
+  margin: 0 0 10px 0;
+}
+
+#content .main-content-wrapper header > h1 {
+  margin-bottom: 20px;
+}
+
+#content .main-content-wrapper .link-btn.mobile-hide.mh-filters:not(.clone) {
+  position: static;
+  padding: 0;
+}
+
+@media only screen and (max-width: 760px) {
+  .f8sr.mobile-compact.mobile-sticky.fixed fieldset:before {
+    box-shadow: 0 4px 12px -4px rgba(0,0,0,0.52);
+  }
+}
+
+
+@media only screen and (max-width: 760px) {
+  [dir=ltr] .f8sr fieldset>.link-btn+* {
+    z-index: 1;
+  }
+}
+
+.collection-extra-details {
+  text-align: var(--mh-mc-extra-details-alignment);
+}
+
+/* MH-27 - END */
+
+/* ***************************** */
+/* PLP styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* Cart styles - START */
+/* ***************************** */
+
+/* MH-23 - Product options & price display - START */
+
+.main-content-wrapper .mh-old-price--hide,
+#cart .mh-old-price--hide {
+  display: none;
+}
+
+.main-content-wrapper .mh-old-price {
+  display: inline-block;
+}
+
+.mh-product-options-table {
+  border: none !important;
+  border-collapse: collapse;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.mh-product-options-table tr,
+.mh-product-options-table td {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.mh-product-options-table td {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 0;
+  padding-right: 8px;
+  vertical-align: top;
+}
+
+.mh-product-options-table .mh-label-cell {
+  font-weight: 500;
+  color: #888;
+  white-space: nowrap;
+  padding-right: 8px;
+}
+
+.mh-product-options-table .mh-value-cell {
+  color: var(--primary_text);
+  padding-left: 0;
+}
+
+/* MH-23 - Product options & price display - END */
+
+/* ***************************** */
+/* Cart styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* Formful styles - START */
+/* ***************************** */
+
+/* MH-57 - General Formful styling */
+main [id^="shopify-section-template--"]:has(.formful__form) {
+  z-index: 1 !important;
+}
+
+[class*="formful__form"] button.formful__button {
+  color: var(--secondary_btn_text);
+}
+
+/* Fix issue with native Formful forms styling on submit  */
+.formful__form.formful__hide {
+  display: none !important;
+}
+
+/* ***************************** */
+/* Formful styles - END */
+/* ***************************** */
+
+/* ***************************** */
+/* BetterDocs styles - START */
+/* ***************************** */
+
+/* MH-80 - Fix issues caused by global BetterDocs styles */
+body,
+body.template,
+body.mh-custom-theme,
+textarea,
+input,
+select,
+option {
+  color: var(--primary_text);
+  font-family: var(--main_ff);
+  font-style: var(--main_fs);
+  font-weight: var(--main_fw);
+  line-height: var(--main_lh);
+  text-transform: var(--main_tt);
+  letter-spacing: var(--main_ls);
+}
+
+button {
+  color: var(--primary_text);
+  font-family: var(--main_ff);
+  font-style: var(--main_fs);
+  font-weight: var(--btn_fw);
+  line-height: var(--btn_lh);
+  text-transform: var(--main_tt);
+  letter-spacing: var(--main_ls);
+}
+
+/* MH-37 - BetterDocs styling */
+.bdl2-main,
+.bdl2-search-modal-wrapper {
+  --accent-color: var(--secondary_bg);
+  --accent-light-color: #fcebf2;
+  --main-text-color: var(--primary_text);
+  --main-text-light-color: #4a4a4a;
+  --primary-light-color: #fff;
+  /* Wrapper width for different breakpoints */
+  --table-width-xl: 700px; /* 1401px+ */
+  --table-width-lg: 692px; /* 1301-1400px */
+  --table-width-md: 562px; /* 1201-1300px */
+  --table-width-sm: 450px; /* 1101-1200px */
+  --table-width-xs: 360px; /* 1001-1100px */
+  --table-width-xxs: 360px; /* 992-1000px */
+
+  /* Minimum table width */
+  --table-min-width: 320px;
+  --table-min-width-mobile: 280px;
+
+  /* Margins for mobile devices */
+  --table-margin-tablet: 10px;
+  --table-margin-mobile: 6px;
+  --table-margin-small: 0px;
+}
+
+.bdl2-main .bdl2-content-wrapper .doc-title {
+  font-weight: 400;
+  color: var(--main-text-color);
+}
+
+body .bdl2-main .bdl2-doc-feedback {
+  background: var(--body_bg);
+}
+
+body .bdl2-main .bdl2-doc-feedback .feedback-title,
+body .bdl2-main .bdl2-doc-feedback .feelings .feelings-item span {
+  color: var(--main-text-color);
+}
+
+body .bdl2-main .bdl2-doc-feedback .feelings .feelings-item:hover {
+  background: var(--accent-light-color);
+}
+
+.bdl2-main .bdl2-toc-block .toc-area .toc-title,
+.bdl2-main .bdl2-toc-block.bdl2-toc-block .toc-area .toc-title,
+.bdl2-main .bdl2-toc-block .toc-area .toc-title,
+.bdl2-main .bdl2-toc-block .toc-area .toc-wrapper a {
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main .bdl2-toc-block .toc-area .toc-wrapper a:hover {
+  color: var(--accent-color) !important;
+}
+
+.bdl2-main .bdl2-toc-block .toc-area .toc-wrapper a.active {
+  color: var(--accent-color) !important;
+}
+
+.bdl2-main .bdl2-content-wrapper a,
+.bdl2-main .bdl2-content-wrapper a *,
+.bdl2-main .bdl2-content-wrapper [href],
+.bdl2-main .bdl2-content-wrapper [href] *,
+.bdl2-main .bdl2-content-wrapper *:link,
+.bdl2-main .bdl2-content-wrapper *:link *,
+.bdl2-main .bdl2-content-wrapper *:visited,
+.bdl2-main .bdl2-content-wrapper *:visited *,
+.bdl2-main .bdl2-content-wrapper .description a,
+.bdl2-main .bdl2-content-wrapper .description a *,
+.bdl2-search-modal-wrapper a,
+.bdl2-search-modal-wrapper a *,
+.bdl2-search-modal-wrapper [href],
+.bdl2-search-modal-wrapper [href] *,
+.bdl2-search-modal-wrapper *:link,
+.bdl2-search-modal-wrapper *:link *,
+.bdl2-search-modal-wrapper *:visited,
+.bdl2-search-modal-wrapper *:visited * {
+  color: var(--accent-color) !important;
+}
+
+.bdl2-main button,
+.bdl2-main input,
+.bdl2-main i,
+.bdl2-main svg,
+.bdl2-main path,
+.bdl2-main [class*="icon"],
+.bdl2-main [class*="Icon"],
+.bdl2-main [class*="btn"],
+.bdl2-search-modal-wrapper button,
+.bdl2-search-modal-wrapper input,
+.bdl2-search-modal-wrapper i,
+.bdl2-search-modal-wrapper svg,
+.bdl2-search-modal-wrapper path,
+.bdl2-search-modal-wrapper [class*="icon"],
+.bdl2-search-modal-wrapper [class*="Icon"],
+.bdl2-search-modal-wrapper [class*="btn"] {
+  color: initial !important;
+}
+
+.bdl2-main .bdl2-content-wrapper .bdl2-doc-meta .last-update {
+  margin: 0;
+  color: var(--main-text-color);
+}
+
+.bdl2-main .body {
+  font-family: var(--main_ff);
+}
+
+.bdl2-main .bdl2-breadcrumb > * {
+  margin-bottom: 0;
+}
+
+.bdl2-main .bdl2-breadcrumb .breadcrumb-link.breadcrumb-active {
+  color: var(--main-text-color);
+  font-weight: 400;
+}
+
+.bdl2-main .bdl2-sidebar .sidebar-menu .sidebar-item.sidebar-item-dropdown > .sidebar-link-wrap {
+  width: 100%;
+}
+
+.bdl2-main .bdl2-search-modal-wrapper {
+  top: 54px;
+}
+
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal {
+  top: 20% !important;
+}
+
+.bdl2-search-modal-wrapper .bdl2-search-modal {
+  top: 20% !important;
+}
+
+@media (max-width: 1000px) {
+  .bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal,
+  .bdl2-search-modal-wrapper .bdl2-search-modal {
+    top: 10% !important;
+  }
+}
+
+/* Active tab color */
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-tabs .result-tabs-item.active,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-tabs .result-tabs-item.active {
+  color: var(--accent-color) !important;
+}
+
+/* Background highlights */
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-tabs .result-tabs-item.active::before,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-tabs .result-tabs-item.active::before,
+.bdl2-main .bdl2-toc-block .toc-area .toc-wrapper ul li.level-1:has(>.active)::after,
+.bdl2-main .bdl2-toc-block .toc-area .toc-wrapper ol li.level-1:has(>.active)::after,
+.bdl2-main .bdl2-sidebar .sidebar-menu .sidebar-item.active::before,
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover,
+.bdl2-main .bdl2-sidebar .sidebar-menu .sidebar-item.active::before {
+  background: var(--accent-light-color) !important;
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main [data-whatintent=mouse] button:hover:before,
+.bdl2-main [data-whatintent=mouse] .link-btn a:hover:before,
+.bdl2-main [data-whatintent=mouse] .n6pg li.prev a:hover:after,
+.bdl2-main [data-whatintent=mouse] .n6pg li.next a:hover:after,
+.bdl2-main [data-whatintent=mouse] #totop a:hover:before,
+.bdl2-search-modal-wrapper [data-whatintent=mouse] button:hover:before,
+.bdl2-search-modal-wrapper [data-whatintent=mouse] .link-btn a:hover:before,
+.bdl2-search-modal-wrapper [data-whatintent=mouse] .n6pg li.prev a:hover:after,
+.bdl2-search-modal-wrapper [data-whatintent=mouse] .n6pg li.next a:hover:after,
+.bdl2-search-modal-wrapper [data-whatintent=mouse] #totop a:hover:before {
+  background: var(--accent-light-color) !important;
+}
+
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .title-link,
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover a,
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .title,
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .result-group,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .title-link,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover a,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .title,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .result-group,
+.bdl2-main .sidebar-item.active a,
+.bdl2-main .sidebar-item.active .title-link,
+.bdl2-main .result-tabs-item.active a,
+.bdl2-main .result-tabs-item.active .title-link,
+.bdl2-search-modal-wrapper .result-tabs-item.active a,
+.bdl2-search-modal-wrapper .result-tabs-item.active .title-link {
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main .result-item:hover *,
+.bdl2-main .sidebar-item.active *,
+.bdl2-main .result-tabs-item.active *,
+.bdl2-search-modal-wrapper .result-item:hover *,
+.bdl2-search-modal-wrapper .result-tabs-item.active * {
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main .bdl2-sidebar-wrapper .bdl2-search-bar .sidebar-search .text {
+  color: var(--main-text-light-color) !important;
+}
+
+.bdl2-main .bdl2-row .bdl2-content-wrapper .mobile-controller a.sidebar-toggler.toggler > img,
+.bdl2-main .bdl2-row .bdl2-content-wrapper .mobile-controller a.toc-toggler.toggler > img {
+  filter: brightness(0) saturate(100%) invert(25%) sepia(85%) saturate(3000%) hue-rotate(315deg) brightness(85%) contrast(100%);
+}
+
+.bdl2-main button:before,
+.bdl2-main .link-btn a:before,
+.bdl2-main #nav-user > ul > li > a i span:before,
+.bdl2-main #totop a:before {
+  background: #f9fafb;
+}
+
+/* Hover text color */
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover > .title *,
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover > .result-group *,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover > .title *,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover > .result-group * {
+  color: var(--primary-light-color) !important;
+}
+
+.bdl2-main .bdl2-main-content.bdl2-single-doc svg,
+.bdl2-main .bdl2-search-modal svg,
+.bdl2-main .bdl2-search-modal-wrapper icon svg,
+.bdl2-search-modal-wrapper .bdl2-search-modal svg,
+.bdl2-search-modal-wrapper icon svg {
+  fill: var(--accent-color) !important;
+  z-index: 2;
+  color: var(--primary-light-color) !important;
+}
+
+/* SVG в sidebar-submenu */
+.bdl2-main .bdl2-sidebar-submenu svg {
+  color: var(--accent-color) !important;
+  fill: var(--accent-color) !important;
+}
+
+.bdl2-main [class*="icon"] svg,
+.bdl2-main .icon svg,
+.bdl2-main span svg,
+.bdl2-main div svg,
+.bdl2-search-modal-wrapper [class*="icon"] svg,
+.bdl2-search-modal-wrapper .icon svg,
+.bdl2-search-modal-wrapper span svg,
+.bdl2-search-modal-wrapper div svg {
+  fill: currentColor;
+}
+
+.bdl2-main [class*="icon"]:has(svg),
+.bdl2-main .icon:has(svg),
+.bdl2-main span:has(svg),
+.bdl2-main div:has(svg),
+.bdl2-search-modal-wrapper [class*="icon"]:has(svg),
+.bdl2-search-modal-wrapper .icon:has(svg),
+.bdl2-search-modal-wrapper span:has(svg),
+.bdl2-search-modal-wrapper div:has(svg) {
+  color: var(--accent-color) !important;
+}
+
+.bdl2-main .bdl2-sidebar-submenu svg,
+.bdl2-main .bdl2-sidebar-submenu svg *,
+.bdl2-main svg[fill="currentColor"],
+.bdl2-main svg[fill="currentColor"] *,
+.bdl2-main *:has(svg[fill="currentColor"]),
+.bdl2-search-modal-wrapper svg[fill="currentColor"],
+.bdl2-search-modal-wrapper svg[fill="currentColor"] *,
+.bdl2-search-modal-wrapper *:has(svg[fill="currentColor"]) {
+  color: var(--accent-color) !important;
+  fill: var(--accent-color) !important;
+}
+
+.bdl2-main .bdl2-sidebar-submenu svg path,
+.bdl2-main svg[fill="currentColor"] path,
+.bdl2-search-modal-wrapper svg[fill="currentColor"] path {
+  fill: var(--accent-color) !important;
+}
+
+.bdl2-archive-subcategory-block .icon svg * {
+  color: var(--accent-color) !important;
+  fill: var(--accent-color) !important;
+}
+
+/* Sidebar search styling */
+.bdl2-main .bdl2-sidebar-wrapper .bdl2-search-bar .sidebar-search .text {
+  vertical-align: baseline !important;
+}
+
+.bdl2-main .bdl2-sidebar-wrapper .bdl2-search-bar .sidebar-search .icon svg {
+  vertical-align: baseline !important;
+  color: var(--primary-light-color) !important;
+}
+
+.bdl2-main .bdl2-search-result-tabs .result-tabs-item.active *,
+.bdl2-search-modal-wrapper .bdl2-search-result-tabs .result-tabs-item.active * {
+  color: var(--accent-color) !important;
+}
+
+.bdl2-main .bdl2-main-content.bdl2-single-doc .sidebar-search .text {
+  color: var(--primary-light-color);
+}
+
+/* Search block icons and esc styling */
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-header .modal-search-wrapper .search-block .icon,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-header .modal-search-wrapper .search-block .icon {
+  z-index: 2;
+  margin: 0;
+  vertical-align: text-bottom;
+  left: 8px !important;
+  top: 48% !important;
+}
+
+.bdl2-main .bdl2-hero-content .bdl2-hero-search .icon,
+.bdl2-main .bdl2-hero-content .bdl2-hero-search kbd {
+  z-index: 2;
+  margin: 0;
+}
+
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-header .modal-search-wrapper .search-block .esc,
+.bdl2-main .bdl2-hero-content .bdl2-hero-search > kbd,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-header .modal-search-wrapper .search-block .esc {
+  z-index: 2;
+  color: #667085 !important;
+  border: 1px solid #667085 !important;
+}
+
+/* Ensure icon z-index stays */
+.bdl2-main .bdl2-search-modal-wrapper icon svg,
+.bdl2-search-modal-wrapper icon svg {
+  z-index: 2;
+}
+
+/* Hero icon color */
+.bdl2-main .bdl2-hero-content.bdl2-hero-search .icon {
+  color: var(--accent-color) !important;
+}
+
+/* Archive hover effect */
+.bdl2-main .bdl2-archive-subcategory-block .item:hover,
+.bdl2-main .bdl2-archive-single-doc-block .archive-single-doc:hover {
+  background: rgba(223, 61, 130, 0.1) !important;
+}
+
+/* Page wrapper padding */
+.bdl2-main .bdl2-content-wrapper {
+  padding: 50px 20px 10px 11px;
+}
+
+/* Hide elements */
+.bdl2-main #toggle_id_5093 .count,
+.bdl2-main #toggle_id_5074 .count,
+body #root .powered-by {
+  display: none !important;
+}
+
+.bdl2-main .bdl2-search-modal *,
+.bdl2-search-modal-wrapper .bdl2-search-modal * {
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main .bdl2-search-modal .bdl2-search-result-tabs .result-tabs-item.active,
+.bdl2-main .bdl2-search-modal .bdl2-search-result-tabs .result-tabs-item.active *,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result-tabs .result-tabs-item.active,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result-tabs .result-tabs-item.active * {
+  color: var(--accent-color) !important;
+}
+
+.bdl2-main .bdl2-search-modal .bdl2-search-result-content .result-item:hover *,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result-content .result-item:hover * {
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main .bdl2-search-modal .bdl2-search-result-content .result-item:hover .title-link,
+.bdl2-main .bdl2-search-modal .bdl2-search-result-content .result-item:hover .title,
+.bdl2-main .bdl2-search-modal .bdl2-search-result-content .result-item:hover .result-group,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result-content .result-item:hover .title-link,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result-content .result-item:hover .title,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result-content .result-item:hover .result-group {
+  color: var(--main-text-color) !important;
+}
+
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .title *,
+.bdl2-main .bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .result-group *,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .title *,
+.bdl2-search-modal-wrapper .bdl2-search-modal .bdl2-search-result .bdl2-search-result-content .result-item:hover .result-group * {
+  color: var(--main-text-color) !important;
+}
+
+@media (max-width: 991px) {
+  .bdl2-main-content:not(.modeDesktop) .bdl2-toc-block,
+  .bdl2-main-content:not(.modeDesktop) .bdl2-col-sidebar {
+    top: -25px !important;
+    position: absolute !important;
+    height: calc(100% + 75px) !important;
+  }
+
+  .bdl2-main-content:not(.modeDesktop) .bdl2-col-sidebar.show {
+    left: -16px !important;
+  }
+
+  .bdl2-main-content:not(.modeDesktop) .bdl2-toc-block {
+    right: -16px !important;
+  }
+}
+
+/* Responsive table */
+.bdl2-main .table-wrapper,
+.bdl2-search-modal-wrapper .table-wrapper {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+}
+
+.bdl2-main .table-wrapper table,
+.bdl2-search-modal-wrapper .table-wrapper table {
+  width: 100%;
+  min-width: var(--table-min-width);
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+/* 1401px+ */
+@media (min-width: 1401px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: var(--table-width-xl);
+    max-width: var(--table-width-xl);
+  }
+}
+
+/* 1301-1400px */
+@media (min-width: 1301px) and (max-width: 1400px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: var(--table-width-lg);
+    max-width: var(--table-width-lg);
+  }
+}
+
+/* 1201-1300px */
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: var(--table-width-md);
+    max-width: var(--table-width-md);
+  }
+}
+
+/* 1101-1200px */
+@media (min-width: 1101px) and (max-width: 1200px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: var(--table-width-sm);
+    max-width: var(--table-width-sm);
+  }
+}
+
+/* 1001-1100px */
+@media (min-width: 1001px) and (max-width: 1100px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: var(--table-width-xs);
+    max-width: var(--table-width-xs);
+  }
+}
+
+/* 992-1000px */
+@media (min-width: 992px) and (max-width: 1000px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: var(--table-width-xxs);
+    max-width: var(--table-width-xxs);
+  }
+}
+
+/* Tablets and mobile */
+@media (max-width: 991px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: calc(100vw - 120px);
+    max-width: calc(100vw - 120px);
+    margin: 0 var(--table-margin-tablet);
+  }
+}
+
+@media (max-width: 767px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: calc(100vw - 40px);
+    max-width: calc(100vw - 40px);
+    margin: 0 var(--table-margin-mobile);
+  }
+}
+
+@media (max-width: 480px) {
+  .bdl2-main .table-wrapper,
+  .bdl2-search-modal-wrapper .table-wrapper {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+    margin: 0 var(--table-margin-small);
+  }
+}
+
+@media (max-width: 320px) {
+  .bdl2-main .table-wrapper table,
+  .bdl2-search-modal-wrapper .table-wrapper table {
+    min-width: var(--table-min-width-mobile);
+  }
+}
+
+/* ***************************** */
+/* BetterDocs styles - END */
+/* ***************************** */

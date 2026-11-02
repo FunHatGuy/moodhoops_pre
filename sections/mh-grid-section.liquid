@@ -1,0 +1,519 @@
+<article
+  class='palette-{{ section.settings.color_palette }} module-color-palette mh-grid-section'
+  style='
+    {% if section.settings.background_type == 'image' and section.settings.background_image != blank %}
+      {% assign overlay_opacity = section.settings.overlay_opacity | default: 0 | divided_by: 100.0 %}
+      --mh-section-bg-image: url({{ section.settings.background_image | image_url }});
+      --mh-section-bg-size: {{ section.settings.background_image_size }};
+      --mh-section-overlay-opacity: {{ overlay_opacity }};
+    {% else %}
+      --mh-section-bg-color: {{ section.settings.background_color | default: 'transparent' }};
+    {% endif %}
+    --mh-section-padding: {{ section.settings.section_padding | default: '40px 20px' }};
+  '
+>
+  <div class='container'>
+    {% if section.settings.main_title != blank %}
+      {% assign tag = section.settings.heading_tag | default: 'h2' %}
+      <{{ tag }}
+        class='section-title text-center'
+        style='
+          --mh-title-color: {{ section.settings.title_color | default: 'var(--text)' }};
+          --mh-title-margin-bottom: {{ section.settings.title_margin_bottom | default: '30' }}px;
+        '
+      >
+        {{ section.settings.main_title }}
+      </{{ tag }}>
+    {% endif %}
+
+    {% if section.blocks.size > 0 %}
+      <div
+        class='grid-container'
+        style='
+          --mh-grid-columns: {% if section.settings.columns == '1' %}1fr{% elsif section.settings.columns == '2' %}repeat(2, 1fr){% else %}repeat(3, 1fr){% endif %};
+          --mh-grid-gap: {{ section.settings.grid_gap | default: '20' }}px;
+        '
+      >
+        {% for block in section.blocks %}
+          <div
+            class='grid-item'
+            {{ block.shopify_attributes }}
+            style='
+              --mh-item-bg-color: {{ block.settings.item_background_color | default: 'transparent' }};
+              --mh-item-padding: {{ block.settings.item_padding | default: '20px' }};
+              --mh-item-border-radius: {{ section.settings.border_radius | default: '0' }}px;
+              --mh-item-text-align: {{ block.settings.text_alignment | default: 'left' }};
+            '
+          >
+            {% if block.settings.item_image != blank %}
+              <div class='grid-item-image'>
+                {% assign img_size = block.settings.item_image.width | default: 600 %}
+                <img
+                  src='{{ block.settings.item_image | image_url: width: img_size }}'
+                  alt='{{ block.settings.item_image.alt | default: block.settings.item_title }}'
+                  width='{{ img_size }}'
+                  height='{{ img_size | times: block.settings.item_image.aspect_ratio | default: img_size | round }}'
+                  loading='lazy'
+                >
+              </div>
+            {% endif %}
+
+            {% if block.settings.item_title != blank %}
+              <{{ block.settings.item_heading_tag | default: 'h3' }}
+                class='grid-item-title'
+                style='
+                  --mh-item-title-color: {{ block.settings.title_color | default: 'var(--headings_text)' }};
+                  --mh-item-title-margin: {{ block.settings.title_margin | default: '15px 0 10px 0' }};
+                '
+              >
+                {{ block.settings.item_title }}
+              </{{ block.settings.item_heading_tag | default: 'h3' }}>
+            {% endif %}
+
+            {% if block.settings.item_description != blank %}
+              <div
+                class='grid-item-description'
+                style='
+                  --mh-item-text-color: {{ block.settings.text_color | default: 'var(--text)' }};
+                  --mh-item-description-margin: {{ block.settings.description_margin | default: '0 0 15px 0' }};
+                '
+              >
+                {{ block.settings.item_description }}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if section.settings.footer_text != blank %}
+      <div
+        class='section-footer'
+        style='
+          --mh-footer-text-align: {{ section.settings.footer_alignment | default: 'center' }};
+          --mh-footer-margin-top: {{ section.settings.footer_margin_top | default: '40' }}px;
+          --mh-footer-text-color: {{ section.settings.footer_text_color | default: 'var(--text)' }};
+        '
+      >
+        {{ section.settings.footer_text }}
+      </div>
+    {% endif %}
+  </div>
+</article>
+
+{% stylesheet %}
+  .mh-grid-section {
+    width: 100%;
+    position: relative;
+    padding: var(--mh-section-padding);
+    background-color: var(--mh-section-bg-color, transparent);
+  }
+
+  .mh-grid-section[style*='--mh-section-bg-image'] {
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, var(--mh-section-overlay-opacity, 0)),
+        rgba(0, 0, 0, var(--mh-section-overlay-opacity, 0))
+      ),
+      var(--mh-section-bg-image);
+    background-size: var(--mh-section-bg-size, cover);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .mh-grid-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .mh-grid-section .section-title {
+    margin: 0;
+    font-weight: bold;
+    color: var(--mh-title-color, var(--text));
+    margin-bottom: var(--mh-title-margin-bottom, 30px);
+  }
+
+  .mh-grid-section .text-center {
+    text-align: center;
+  }
+
+  .mh-grid-section .grid-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: var(--mh-grid-columns, repeat(3, 1fr));
+    gap: var(--mh-grid-gap, 20px);
+  }
+
+  .mh-grid-section .grid-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: var(--mh-item-bg-color, transparent);
+    padding: var(--mh-item-padding, 20px);
+    border-radius: var(--mh-item-border-radius, 0px);
+    text-align: var(--mh-item-text-align, left);
+  }
+
+  .mh-grid-section .grid-item-image {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .mh-grid-section .grid-item-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .mh-grid-section .grid-item-title {
+    margin: var(--mh-item-title-margin, 15px 0 10px 0);
+    font-weight: bold;
+    color: var(--mh-item-title-color, var(--headings_text));
+  }
+
+  .mh-grid-section .grid-item-description {
+    flex-grow: 1;
+    color: var(--mh-item-text-color, var(--text));
+    margin: var(--mh-item-description-margin, 0 0 15px 0);
+  }
+
+  .mh-grid-section .grid-item-description p {
+    margin: 0 0 10px 0;
+  }
+
+  .mh-grid-section .grid-item-description p:last-child {
+    margin-bottom: 0;
+  }
+
+  .mh-grid-section .section-footer {
+    width: 100%;
+    text-align: var(--mh-footer-text-align, center);
+    margin-top: var(--mh-footer-margin-top, 40px);
+    color: var(--mh-footer-text-color, var(--text));
+  }
+
+  .mh-grid-section .section-footer p {
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .mh-grid-section .grid-container {
+      grid-template-columns: 1fr !important;
+    }
+
+    .mh-grid-section .container {
+      padding: 0 15px;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 769px) {
+    .mh-grid-section .grid-container[style*='--mh-grid-columns:'] {
+      grid-template-columns: repeat(2, 1fr) !important;
+    }
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "[MH] Grid Section",
+  "max_blocks": 20,
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "General Settings"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_palette",
+      "label": "Color scheme",
+      "default": "scheme-1"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Section title"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_margin_bottom",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "label": "Title bottom margin (px)",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Section Background"
+    },
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "Background type",
+      "options": [
+        { "value": "color", "label": "Color" },
+        { "value": "image", "label": "Image" }
+      ],
+      "default": "color"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "transparent"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background image"
+    },
+    {
+      "type": "select",
+      "id": "background_image_size",
+      "label": "Background image size",
+      "options": [
+        { "value": "cover", "label": "Cover" },
+        { "value": "contain", "label": "Contain" },
+        { "value": "auto", "label": "Original size" }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "Image overlay opacity (%)",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "section_padding",
+      "label": "Section padding (e.g. 40px 20px)",
+      "default": "40px 20px"
+    },
+    {
+      "type": "header",
+      "content": "Grid Settings"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Number of columns",
+      "options": [
+        { "value": "1", "label": "1 column" },
+        { "value": "2", "label": "2 columns" },
+        { "value": "3", "label": "3 columns" }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "label": "Gap between items (px)",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "label": "Item border radius (px)",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Section Footer"
+    },
+    {
+      "type": "richtext",
+      "id": "footer_text",
+      "label": "Footer text"
+    },
+    {
+      "type": "select",
+      "id": "footer_alignment",
+      "label": "Footer alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "footer_text_color",
+      "label": "Footer text color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "footer_margin_top",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "label": "Footer top margin (px)",
+      "default": 40
+    }
+  ],
+  "blocks": [
+    {
+      "type": "grid_item",
+      "name": "Grid Item",
+      "settings": [
+        {
+          "type": "header",
+          "content": "Content"
+        },
+        {
+          "type": "image_picker",
+          "id": "item_image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "item_title",
+          "label": "Title"
+        },
+        {
+          "type": "select",
+          "id": "item_heading_tag",
+          "label": "Heading tag",
+          "options": [
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" }
+          ],
+          "default": "h3"
+        },
+        {
+          "type": "richtext",
+          "id": "item_description",
+          "label": "Description"
+        },
+        {
+          "type": "header",
+          "content": "Styles"
+        },
+        {
+          "type": "select",
+          "id": "text_alignment",
+          "label": "Text alignment",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ],
+          "default": "left"
+        },
+        {
+          "type": "color",
+          "id": "item_background_color",
+          "label": "Item background color",
+          "default": "transparent"
+        },
+        {
+          "type": "text",
+          "id": "item_padding",
+          "label": "Item padding (e.g. 20px)",
+          "default": "20px"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title color",
+          "default": "#000000"
+        },
+        {
+          "type": "text",
+          "id": "title_margin",
+          "label": "Title margin (e.g. 15px 0 10px 0)",
+          "default": "15px 0 10px 0"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#666666"
+        },
+        {
+          "type": "text",
+          "id": "description_margin",
+          "label": "Description margin (e.g. 0 0 15px 0)",
+          "default": "0 0 15px 0"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "[MH] Grid Section",
+      "category": "MH Custom",
+      "settings": {
+        "main_title": "Our Grid",
+        "columns": "3",
+        "grid_gap": 20,
+        "section_padding": "60px 20px",
+        "footer_text": "<p>This is a sample section footer</p>"
+      },
+      "blocks": [
+        {
+          "type": "grid_item",
+          "settings": {
+            "item_title": "Item 1",
+            "item_description": "<p>Description of the first grid item</p>"
+          }
+        },
+        {
+          "type": "grid_item",
+          "settings": {
+            "item_title": "Item 2",
+            "item_description": "<p>Description of the second grid item</p>"
+          }
+        },
+        {
+          "type": "grid_item",
+          "settings": {
+            "item_title": "Item 3",
+            "item_description": "<p>Description of the third grid item</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

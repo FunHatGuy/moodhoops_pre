@@ -1,0 +1,645 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_section_banner_columns_JaACNk": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_MJfmB4": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/seamless-conversion-6.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_aqVUFV": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Classic Hoop features:</h2>",
+            "description": "<ul><li>removable battery design, so you can play all night</li><li><em>rechargeable lithium-ion battery and charger included</em></li><li>smooth, internal battery connection</li><li>hoop wax included with your hoop</li><li>partially collapsible for travel and storage</li><li>simple and durable on/off mechanism, no tiny switches</li><li>counterweight to balance with the battery</li><li>HDPE and Polypro tubing</li><li>no-rattle design</li><li>1 year <a href=\"/pages/warranty\" title=\"/pages/warranty\">warranty</a></li></ul>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_MJfmB4",
+        "image_aqVUFV"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "rgba(0,0,0,0)",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "0.5fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 460,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_EwNfV8": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_p4fXLk": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Hoop Wax for unparalleled grip</h2>",
+            "description": "<p><a href=\"/products/hoopwax\" title=\"hoop wax\">Moodhoops Hoop Wax</a> is a lightweight, removable and transparent alternative to sanding or taping your hoop.</p><p>Hoop wax rubs smoothly on your hoop to provide unparalleled grip, but doesn’t come off on skin or clothing.</p><p>Rub vigorously along the inner ring of your hoop to create a textured surface.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_Jbkmz7": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-hoopwax-labeled-510x510.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "image_mobile": "shopify://shop_images/moodhoops-hoopwax-labeled-510x510.jpg",
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_p4fXLk",
+        "image_Jbkmz7"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.5fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 460,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_Be84LX": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_Pm9mjP": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-14500x3-battery-0259.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_DW8ekN": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Hoop Batteries</h2>",
+            "description": "<p>Each Classic LED Moodhoop comes with one lithium-ion hoop battery, a battery case, and a single charger. Each FutureHoop Shuffle or Remote hoop comes with four lithium-ion batteries, a battery case, and a single charger.</p><p>3/4″ LED hoops use AA size li-ion batteries (14500), 5/8″ Featherweight LED hoops use AAA size li-ion batteries, 7/8″ hoops use large, specialty sized li-ion batteries (18650).</p><p><a href=\"/collections/batteries-chargers\" title=\"Batteries and Chargers\">Additional batteries</a> are available as singles or a 3-pack and ship free with your hoop. Add extra batteries to your cart to make sure you’ll keep consistent glow. Additional chargers are also available.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_Pm9mjP",
+        "image_DW8ekN"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "0.5fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 460,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_4REBhX": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_MJhC9t": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h3><a href=\"/pages/battery-safety/\" title=\"/pages/battery-safety/\">Battery Safety and Care</a> is extremely important.</h3>",
+            "description": "<p>Purchase new batteries when they start to show signs of wear and tear. Moodhoops use specialty Lithium-ion batteries that have 3x the power of a normal battery to be able to light up your hoop. All batteries and battery charging should be done with adult supervision. Do not leave a charging battery unattended. Do not put a lithium-ion battery into any other device.</p><p>Read and follow all provided instructions and warnings about the lithium-ion batteries used in your hoop. Full details about Battery Safety and Care are included with each LED hoop, but you can also read our full <a href=\"/pages/battery-safety/\" title=\"/pages/battery-safety/\">Battery Safety and Care Guide.</a></p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_MJhC9t"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_X7Pqt6": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_zV7wjJ": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Tubing sizes and options</h2>",
+            "description": "<p>Our hoops are measured by the OD (outer diameter of the hoop). This measures across the widest part of the hoop including the width of the tubing.</p><p>Our expertly handcrafted LED hoops come in 3/4″ and 5/8″ OD tubing in both HDPE and Polypro.</p><p><a href=\"/collections/polypro-hoops\" title=\"PolyPro Hoops\"><strong>Polypro day hoops</strong></a> come in numerous colors, in both 3/4″ and 5/8″ OD!</p><p><a href=\"/collections/beginner-hoops\" title=\"Beginner Hoops\"><strong>Beginner Hoops</strong></a> are made of 1″ OD tubing.</p><p><a href=\"/collections/fire-hoops\" title=\"Fire Hoops\"><strong>Fire Hoops</strong></a> come in 3/4″ of 5/8″ HDPE, but can also upgrade your Fire Hoop to color polypro tubing!</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_GWUEM9": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-tubing-Size-Guide1-510x510.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 40,
+            "background_position_y": 30,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_zV7wjJ",
+        "image_GWUEM9"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.8fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 540,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_cMPnH3": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_j3JYJa": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-polypro_03.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_WXgqbE": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Hoop Sizing & Gift Guide</h2>",
+            "description": "<p>Check out our <a href=\"/pages/sizing-guide/\" title=\"/pages/sizing-guide/\"><strong>Hoop Sizing Guide</strong></a> for help choosing a size.</p><p>Check out our <a href=\"/pages/gift-buying-guide/\" title=\"/pages/gift-buying-guide/\"><strong>Gift Buying Guide</strong></a> for assistance in choosing a gift for someone else 🙂</p><p>We also offer <strong>Gift Certificates</strong> and are happy to help with any questions in choosing a hoop! <a href=\"/pages/contact-us/\" title=\"/pages/contact-us/\">Write in to our Customer Service</a> to purchase a Gift Certificate!</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_j3JYJa",
+        "image_WXgqbE"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "0.5fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 460,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 0,
+        "gap_mobile": 0,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_Etne8W": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "page_LG77ah": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-futurehoop-comparison-guide",
+            "page_header_description": "<h2>FutureHoop Comparison Guide</h2>",
+            "page_header_text_align": "center",
+            "page_background_color": "rgba(0,0,0,0)",
+            "custom_padding": "20px 25px 30px 10px"
+          }
+        },
+        "image_GPWbJc": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "<h3>Please <a href=\"/pages/contact-us/\" title=\"/pages/contact-us/\">contact us</a> if you have any questions, we are always happy to help!</h3><h3>You can also check out our <a href=\"/a/docs/docs-category/help\" title=\"/a/docs/docs-category/help\">Frequently Asked Questions page</a> for more info 🙂</h3>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "page_LG77ah",
+        "image_GPWbJc"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 10,
+        "items_width": 3
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_section_banner_columns_JaACNk",
+    "mh_section_banner_columns_EwNfV8",
+    "mh_section_banner_columns_Be84LX",
+    "mh_section_banner_columns_4REBhX",
+    "mh_section_banner_columns_X7Pqt6",
+    "mh_section_banner_columns_cMPnH3",
+    "mh_section_banner_columns_Etne8W"
+  ]
+}

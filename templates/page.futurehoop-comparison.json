@@ -1,0 +1,552 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "start",
+        "text_alignment": "start",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "section_background_ndqhTc": {
+      "type": "section-background",
+      "settings": {
+        "rich_text": "<h1>{{ page.title }}</h1>",
+        "background_image": "{{ page.metafields.custom.image_banner.value }}",
+        "enable_eager_loading": true,
+        "background_position_x": 50,
+        "background_position_y": 0,
+        "color_palette": "scheme-2",
+        "overlay_opacity": 100,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 200,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_D8PEf9": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_dwFEWy": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "<p>If you want the ability to upload custom bitmaps or motion reactivity, get <a href=\"/products/futurehoop-designer\" title=\"FutureHoop Designer\">Futurehoop Designer</a>.</p><p>If you want remote control and customizability without having to use a computer, get <a href=\"/products/futurehoop-pro\" title=\"FutureHoop Pro\">FutureHoop Pro</a>. You’ll love the 44-key remote!</p><p>If you don’t need a remote control and just want a beautiful lower priced smart hoop get a <a href=\"/products/futurehoop-shuffle\" title=\"FutureHoop Shuffle\">FutureHoop Shuffle</a>.</p><p>For most hoopers, the original FutureHoop Pro is a great choice. The FutureHoop Designer is for hoopers who want total control and programmability. Unlike the original Futurehoop, the Designer hoop lets you upload custom patterns and unlock new features as we release them.</p><p>You can plug the Designer hoop into any OSX (Apple)/ Windows/ Linux computer with a USB port and it will show up like a flash drive so you can copy patterns and update files onto it.</p>",
+            "background_color": "#9e6aa6",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 1200,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_dwFEWy"
+      ],
+      "settings": {
+        "color_palette": "scheme-2",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 260,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_HaRQUT": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "page_eyFnEp": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-futurehoop-builds-with-removable-battery",
+            "page_header_description": "<h2><br/>FutureHoop Builds with Removable Battery</h2><p>(on mobile: scroll left or right to see the whole chart)</p>",
+            "page_header_text_align": "center",
+            "page_background_color": "#b46488",
+            "custom_padding": "10px 35px 30px 20px"
+          }
+        },
+        "page_XMCw4R": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-futurehoop-builds-with-internal-battery",
+            "page_header_description": "<h2><br/>FutureHoop Builds with Internal Battery</h2><p>(on mobile: scroll left or right to see the whole chart)</p>",
+            "page_header_text_align": "center",
+            "page_background_color": "#8a22e8",
+            "custom_padding": "10px 35px 30px 20px"
+          }
+        }
+      },
+      "block_order": [
+        "page_eyFnEp",
+        "page_XMCw4R"
+      ],
+      "custom_css": [
+        "@media (max-width: 1024px) {.mh-section-banner-columns .grid-banner-wrapper {grid-template-columns: var(--mh-sbc-grid-columns-tablet, 1fr); gap: var(--mh-sbc-grid-gap-mobile, 15px); }}"
+      ],
+      "settings": {
+        "color_palette": "scheme-2",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_qyah6M": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "page_zHnHhJ": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-futurehoop-battery-guide-hoop-specs",
+            "page_header_description": "<h2>FutureHoop Battery Guide & Hoop Specs</h2><p>(on mobile: scroll left or right to see the whole chart)</p><p>Note: Battery run-times depend heavily on brightness level, pattern selection, and hoop size.</p><p>~~~~~~~</p>",
+            "page_header_text_align": "center",
+            "page_background_color": "#628fad",
+            "custom_padding": "0px 25px 20px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "page_zHnHhJ"
+      ],
+      "settings": {
+        "color_palette": "",
+        "section_title_color": "#000000",
+        "section_bg_color": "#628fad",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "30px 10px 10px 10px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "section_rich_text_jhh6r6": {
+      "type": "section-rich-text",
+      "blocks": {
+        "title_JFwzHw": {
+          "type": "title",
+          "settings": {
+            "title": "<h2>LED Density & Light Gap from the Battery</h2>",
+            "title_underline_style": "none"
+          }
+        },
+        "content_WpXU3c": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h3>FUTUREHOOP UPDATES</h3><p><strong>NEW PHOTOS COMING SOON!</strong></p><p>All FutureHoop Models in 3/4 tubing have NO LIGHT GAP from the battery now, whether the battery is removable or non-removable.Note! We renamed FutureHoop Remote to FutureHoop Pro. We combined them into one product since they use the exact same programming. Get a 5/8 FutureHoop Pro with a removable battery if you’re looking for a ultra-light smart hoop! Only the name has changed, it’s still the exact same hoops. 😊</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "title_JFwzHw",
+        "content_WpXU3c"
+      ],
+      "settings": {
+        "color_palette": "",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "width": "wide",
+        "height_mobile": "xs",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "mh_section_banner_columns_HknLjx": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_xFFHm9": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/futurehoop-designer-standard-hd-led-comparison-labeled.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_wTmcWT": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/8-futurehoop-battery-light-gap-comparison-removable-nonremovable-HD-standard-density-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 85,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_xFFHm9",
+        "image_wTmcWT"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 500,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_PmbXJR": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_wLMYg9": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/futurehoop-designer-HD-removable-v-nonremovable-battery-light-gap-comparison-moodhoops.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 80,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_mbPpGV": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-futurehoop-battery-light-gap-comparson-3.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "#ffffff",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 70,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 10,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_wLMYg9",
+        "image_mbPpGV"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_TMzA3p": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "page_3Q6D8V": {
+          "type": "page",
+          "settings": {
+            "page": "content-block-hoop-weights",
+            "page_header_description": "<h2>Hoop Weights</h2><p><em>*Hoop sizes are measured by the Outer Diameter (OD). This measurement is taken across the widest part of the hoop, including the width of the tubing.</em></p>",
+            "page_header_text_align": "center",
+            "page_background_color": "rgba(0,0,0,0)",
+            "custom_padding": "20px 20px 20px 20px"
+          }
+        }
+      },
+      "block_order": [
+        "page_3Q6D8V"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": false,
+        "custom_height": 300,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 200,
+        "height": "1/1",
+        "gap": 20,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    },
+    "section_rich_text_EGdyfR": {
+      "type": "section-rich-text",
+      "blocks": {
+        "content_xhTbwV": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<p>For HD hoops, add approx. 0.5 oz to the weight of the hoop.<br/>For polypro hoops, subtract approx. 0.2 to 0.4 oz from the weight of the hoop.</p>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        },
+        "image_r3dErr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/questions-vector-66976-247x247.jpg",
+            "image_width": 100,
+            "link_url": "",
+            "image_width_mobile": 60
+          }
+        },
+        "content_W36KmR": {
+          "type": "content",
+          "settings": {
+            "page": "",
+            "text": "<h2>Still have questions about the FutureHoop?</h2><h3><a href=\"/a/docs/docs-category/help\" title=\"/a/docs/docs-category/help\">Click here for the FAQ section</a></h3>",
+            "font": "secondary",
+            "font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "content_xhTbwV",
+        "image_r3dErr",
+        "content_W36KmR"
+      ],
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "overlay_opacity": 100,
+        "text_position": "align-center text-center",
+        "content_width": 1280,
+        "height": "xs",
+        "enable_custom_height": true,
+        "custom_height": 250,
+        "width": "boxed",
+        "height_mobile": "xs",
+        "spacing_desktop": 0,
+        "spacing_mobile": 0,
+        "fix_zindex": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "section_background_ndqhTc",
+    "mh_section_banner_columns_D8PEf9",
+    "mh_section_banner_columns_HaRQUT",
+    "mh_section_banner_columns_qyah6M",
+    "section_rich_text_jhh6r6",
+    "mh_section_banner_columns_HknLjx",
+    "mh_section_banner_columns_PmbXJR",
+    "mh_section_banner_columns_TMzA3p",
+    "section_rich_text_EGdyfR"
+  ]
+}

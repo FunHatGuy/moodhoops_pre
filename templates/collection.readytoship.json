@@ -1,0 +1,386 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "mh_section_banner_button_list_A9cxJV": {
+      "type": "mh-section-banner-button-list",
+      "blocks": {
+        "image_ziNjtf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/futurehoop-moodhoops-lightpainting-rachel-britton-photgraphy-9-1000x667.jpg",
+            "background_position": "center",
+            "background_position_mobile": "center"
+          }
+        },
+        "button_H7YYED": {
+          "type": "button",
+          "settings": {
+            "text": "Shop now",
+            "url": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_ziNjtf",
+        "button_H7YYED"
+      ],
+      "name": "[MH] Banner buttons list",
+      "settings": {
+        "section_bg_color": "transparent",
+        "enable_eager_loading": true,
+        "banner_height": 200,
+        "banner_height_mobile": 300,
+        "overlay_opacity": 0,
+        "overlay_color": "#000000",
+        "buttons_style": "tertiary plain",
+        "text_alignment": "center",
+        "title": "<h4><strong>Last Minute GIFT</strong> Shopping?<br/>Gift Certificates make it easy!</h4>",
+        "title_underline_style": "none",
+        "text": "",
+        "spacing_desktop": 0,
+        "spacing_mobile": 30,
+        "fix_zindex": 0
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "h2",
+            "text_alignment": "center"
+          }
+        },
+        "423fb7f6-2c97-4420-8211-d45378349d2a": {
+          "type": "description",
+          "settings": {
+            "text_alignment": "center",
+            "enable_read_more": false
+          }
+        },
+        "sorting": {
+          "type": "sorting",
+          "settings": {}
+        },
+        "extra_details_TDJBQG": {
+          "type": "extra_details",
+          "settings": {
+            "details_text": "{{ collection.metafields.custom.extra_details_richtext | metafield_tag }}",
+            "details_alignment": "center"
+          }
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {}
+        },
+        "extra_details_dFnXJd": {
+          "type": "extra_details",
+          "settings": {
+            "details_text": "{{ collection.metafields.custom.pre_footer_richtext | metafield_tag }}",
+            "details_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "423fb7f6-2c97-4420-8211-d45378349d2a",
+        "sorting",
+        "extra_details_TDJBQG",
+        "product_grid",
+        "extra_details_dFnXJd"
+      ],
+      "disabled": true,
+      "settings": {
+        "pagination_qty": 48,
+        "pagination_type": "pages",
+        "show_amount_of_products_in_collection": true,
+        "products_per_row": 4,
+        "secondary_products_per_row": 4,
+        "custom_product_image_ratio": 100,
+        "fill_images": true,
+        "images_padding": 0,
+        "images_vertical_position": 0,
+        "enable_image_choice": true,
+        "image_choice_1": "Model",
+        "image_choice_2": "Product",
+        "product_image": "second",
+        "show_collection_image": false,
+        "enable_filters": true,
+        "enable_menu": false,
+        "enable_collections": false,
+        "filters_menu_alignment": "left",
+        "filters_layout": "drawer",
+        "filter_menu": "main-menu",
+        "collections_menu": [],
+        "filter_sticky": true,
+        "filters_show_more_limit": 7,
+        "enable_custom_filters_font_size": true,
+        "filters_font_size": "16px",
+        "image_swatches_size": "xs",
+        "image_swatches_fill_images": true,
+        "image_swatches_show_in_circle": true,
+        "filter_mobile_sticky": true,
+        "fix_zindex": 1
+      }
+    },
+    "mh_featured_products_zfLzda": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h3>Ships Quickly (2-3 Business Days)</h3><p><strong>LED Props in this section are Ready to Ship within 2-3 business day. We will automatically ship your order with Priority Mail unless you have upgraded to Express.</strong></p>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "futurepoi-remote-xl",
+          "pixelhoop",
+          "futurehoop-pro-27-hoop-in-5-8-tubing-non-removable-batteries",
+          "futurehoop-designer-26-hoop-in-5-8-transucent-blush-tubing-hd-leds-removable-batteries",
+          "futurepoi-micro",
+          "futurepoi-shuffle",
+          "futurehoop-designer-29-hoop-in-5-8-tubing-hd-leds-removable-batteries"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_xKQqmM": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h3>Ready To Ship Immediately</h3><p><strong>Items in this section are </strong><span style=\"text-decoration:underline\"><strong>Ready to Ship immediately within 1 business day.</strong></span><strong> We will automatically ship your order with Priority Mail unless you have upgraded to Express.</strong></p>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "web-fire-fans",
+          "lotus-fire-fans",
+          "sushi-roll-fire-poi",
+          "fire-wick"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_LrHhyV": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h3>Ready to Ship Beginner & Fitness Hoops</h3>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "blank-beginner-hoop",
+          "nebula-beginner-hoop",
+          "lucid-beginner-hoop",
+          "orchid-beginner-hoop",
+          "gravity-fitness-hoop",
+          "kids-hoops",
+          "voyager-beginner-hoop",
+          "dragonfly-beginner-hoop"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_3N9JJ4": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h3>Ready to Ship Silk Fans</h3>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "rainbow-silk-veil-fans",
+          "fire-opal-silk-veil-fans",
+          "water-lily-silk-veil-fans",
+          "moonflower-silk-veil-fans",
+          "lavaflow-silk-fans",
+          "oasis-silk-veil-fans",
+          "celestial-silk-veil-fans",
+          "anemone-silk-veil-fans",
+          "paradise-silk-veil-fans",
+          "stargazer-silk-veil-fans",
+          "snowdrop-silk-veil-fans",
+          "nectar-silk-veil-fans",
+          "blue-lotus-silk-veil-fans"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_qjrDqt": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h3>Ready to Ship Leggings</h3>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "mermaid-leggings",
+          "metatrons-galaxy-leggings",
+          "luminary-leggings",
+          "spiral-motion-leggings",
+          "firelily-leggings",
+          "divinity-leggings",
+          "neon-pulse-leggings",
+          "see-stars",
+          "cascade-leggings",
+          "terramorph-leggings",
+          "fluttersby-leggings",
+          "fringe-leggings"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_D3QVTc": {
+      "type": "mh-featured-products",
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "<h3>Ready to Ship Flow Prop Extras</h3>",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [
+          "soft-led-poi",
+          "hoopwax",
+          "3m-grip-tape",
+          "levi-wand-contact-caps",
+          "half-in-hoop-tape",
+          "string-kit",
+          "silicone-grip-tape",
+          "hearts-glasses",
+          "clear-protective-tape",
+          "1-in-hoop-tape",
+          "moodhoops-hat-pin",
+          "poi-leashes",
+          "gyro-hoop-connectors"
+        ],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    },
+    "mh_featured_products_bMa8K9": {
+      "type": "mh-featured-products",
+      "blocks": {
+        "collection_products_QGnJxc": {
+          "type": "collection_products",
+          "settings": {
+            "collection": "on-sale",
+            "show_collection_title": true,
+            "custom_collection_title": "",
+            "title_font_size": 28,
+            "title_alignment": "center",
+            "margin_bottom": 0,
+            "collection_richtext": "<p>Discounted LED Hoops & LED Props in this section will ship within the Standard build times, unless they are listed in the Ready to Ship or Ships Quickly section above. We just want to let you know where to find the deals. ❤️</p>",
+            "collection_richtext_alignment": "center",
+            "show_collection_richtext": true
+          }
+        }
+      },
+      "block_order": [
+        "collection_products_QGnJxc"
+      ],
+      "name": "[MH] Featured Products",
+      "settings": {
+        "section_title_richtext": "",
+        "section_title_richtext_alignment": "center",
+        "section_title_margin_bottom": 20,
+        "color_palette": "",
+        "products": [],
+        "banner_view": false,
+        "hide_cart_banner_view": false,
+        "grid_columns_desktop": 4,
+        "grid_columns_tablet": 2,
+        "grid_columns_mobile": 2,
+        "grid_gap": 20,
+        "grid_gap_mobile": 10,
+        "padding_desktop": "20px 0px",
+        "padding_tablet": "30px 15px",
+        "padding_mobile": "20px 10px"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "mh_section_banner_button_list_A9cxJV",
+    "main-collection",
+    "mh_featured_products_zfLzda",
+    "mh_featured_products_xKQqmM",
+    "mh_featured_products_LrHhyV",
+    "mh_featured_products_3N9JJ4",
+    "mh_featured_products_qjrDqt",
+    "mh_featured_products_D3QVTc",
+    "mh_featured_products_bMa8K9"
+  ]
+}

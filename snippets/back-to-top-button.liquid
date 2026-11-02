@@ -1,0 +1,10 @@
+<p id='totop' class='hidden mh-to-top'>
+  <a
+    href='#root'
+    {% if settings.button_style == 'inv' %}
+      class='inv'
+    {% endif %}
+  >
+    {{ 'general.accessibility.back_to_top' | t }}
+  </a>
+</p>

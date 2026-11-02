@@ -1,0 +1,159 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:static_sections.header.name",
+  "sections": {
+    "header": {
+      "type": "header",
+      "blocks": {
+        "label_sale_XeQeLF": {
+          "type": "label_sale",
+          "settings": {
+            "label_text": "SALE",
+            "label_products": "Fire Wicks",
+            "label_bg_color": "#df3d82",
+            "label_text_color": "#ffffff",
+            "label_enable": true
+          }
+        },
+        "label_new_b4yrnw": {
+          "type": "label_new",
+          "settings": {
+            "label_text": "NEW",
+            "label_products": "Moodhoops Hat Pin",
+            "label_bg_color": "#000000",
+            "label_text_color": "#ffffff",
+            "label_enable": true
+          }
+        },
+        "label_popular_BeHtiQ": {
+          "type": "label_popular",
+          "settings": {
+            "label_text": "POPULAR",
+            "label_products": "Hoop Wax",
+            "label_bg_color": "#a2ec41",
+            "label_text_color": "#ffffff",
+            "label_enable": true
+          }
+        },
+        "top_bar_menu_AEazMy": {
+          "type": "top_bar_menu",
+          "settings": {
+            "menu": "top-header-menu"
+          }
+        }
+      },
+      "block_order": [
+        "label_sale_XeQeLF",
+        "label_new_b4yrnw",
+        "label_popular_BeHtiQ",
+        "top_bar_menu_AEazMy"
+      ],
+      "settings": {
+        "layout": "layout_6",
+        "width": 1600,
+        "header_height": "89px|70px",
+        "top_bar_color": "scheme-5d48df43-9c3d-409c-8b58-11560787f260",
+        "header_color": "white",
+        "menubar_color": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "custom_menubar_bg_color": "#ffffff",
+        "show_top_bar": true,
+        "top_bar_font_size": "16px",
+        "navbar_menu_item_text": "",
+        "navbar_menu_item_link": "",
+        "show_heart_secret": true,
+        "heart_secret_link": "/pages/secret-sacred-cats/",
+        "enable_usp_slider": true,
+        "enable_usp_slider_arrows": false,
+        "enable_usp_slider_autoplay": true,
+        "usp_slider_autoplay_seconds": 3,
+        "logo_width": 115,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "searchbar_font_size": "16px",
+        "searchbar_height": 45,
+        "enable_sticky_header": true,
+        "sticky": "sticky-menu",
+        "cart_icon": "cart-bag-rounded|e97c",
+        "cart_icon_color": "primary",
+        "menubar_menu": "main-menu",
+        "menubar_height": "55px",
+        "menu_layout": "mega",
+        "show_dropdown_images": false,
+        "show_dropdown_images_autofill": false,
+        "menubar_alignment": "left",
+        "menubar_border": true,
+        "menubar_border_width": "wide",
+        "main_menu_items_clickable": true,
+        "menubar_caps": false,
+        "sale_highlight": true,
+        "sale_highlight_item": "",
+        "menu_font": "primary",
+        "menu_font_weight": "500",
+        "menu_font_size": 16,
+        "menu_letter_spacing": -3,
+        "menu_items_limit": 15,
+        "main_menu_show_lines": true,
+        "menu_subs_font": "secondary",
+        "enable_menu_subs_font_size": false,
+        "menu_subs_font_size": 14,
+        "extra_image_width": 100,
+        "extra_image_link": "",
+        "disable_online_store": false,
+        "disable_account_dropdown": true,
+        "logo_width_mobile": 95,
+        "search_compact_mobile": true,
+        "menu_font_size_mobile": 14
+      }
+    },
+    "announcement": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-1": {
+          "type": "text",
+          "settings": {
+            "text": "Shout out your big announcement here!"
+          }
+        },
+        "e968e368-9d9f-42b6-8438-522c47da9a1d": {
+          "type": "text",
+          "settings": {
+            "text": "Shout out your big announcement here!"
+          }
+        },
+        "0a0e859a-524e-4268-bf06-134eee338bb6": {
+          "type": "text",
+          "settings": {
+            "text": "Shout out your big announcement here!"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1",
+        "e968e368-9d9f-42b6-8438-522c47da9a1d",
+        "0a0e859a-524e-4268-bf06-134eee338bb6"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_palette": "dark",
+        "height": "l",
+        "font_size": "14px",
+        "enable_slider_arrows": false,
+        "enable_slider_autoplay": true,
+        "slider_autoplay_seconds": 3
+      }
+    }
+  },
+  "order": [
+    "header",
+    "announcement"
+  ]
+}

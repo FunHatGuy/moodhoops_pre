@@ -1,0 +1,609 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+        "hide_desktop": false,
+        "hide_mobile": false,
+        "enable_share_button": false
+      }
+    },
+    "main-page": {
+      "type": "main-page",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "title_size": "h1"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "content"
+      ],
+      "settings": {
+        "max_width": 1280,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "spacing_desktop": 50,
+        "spacing_mobile": 30
+      }
+    },
+    "mh_section_banner_columns_DRDJFQ": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_MxCdBk": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/gift-buying-guide-scaled.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_twDWRt": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Gifting Guide</h2>",
+            "description": "<p>Please refer to the specific times posted on the <a href=\"/pages/shipping\" title=\"Shipping Information and Delivery Times\"><strong>Shipping page</strong></a> for how soon you’ll need to order and when your package will be delivered.</p><p><strong>Special toys and props like hoops, staff, and poi need extra info and consideration to make sure what is being purchased is exactly what is desired. Ask questions at home *first* then make your purchase.</strong></p><p>Save time and funds by getting your beloved hooper, wander,or poi or staff spinner the size and style they want by asking questions up front, or by purchasing a <a href=\"/products/gift-certificate\" title=\"Gift Certificate\"><strong>Gift Certificate</strong></a>.</p><p>We’re happy to extend <a href=\"/pages/terms-of-use-and-service\" title=\"Terms of Use and Privacy Policy\"><strong>Exchange times</strong></a> for those who write in to us about it, but as always exchanged items need to be in brand new condition – which means not played with (pretty hard to do in the excitement of things), and in brand new, unused condition.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_MxCdBk",
+        "image_twDWRt"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": true,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "0.5fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 440,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 320,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_WfeKgV": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_jFnTBR": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Hoop Gift Guide</h2>",
+            "description": "<p>Hoop sizing can be the most difficult to pinpoint, as there are many options, including the diameter, tubing type, color style, weight and functionality of the hoop.</p><p><strong>Hoop sizing is based largely on the hooping style and skill of the hooper, but knowing what size is the favorite for their main go-to hoop is a great place to start  Do you know the size of the hoop that’s the current favorite?</strong></p><p><strong>Our </strong><a href=\"/pages/sizing-guide\" title=\"Hoop Size Guide\"><strong>Hoop Sizing Guide</strong></a><strong> has more details on how the size of the hoop affects the style and movement of hoop dance, as well as the progression of sizing that comes with continual hoop practice.</strong></p><p><em>When purchasing a hoop like the FutureHoop or an LED hoop as a gift for someone else it’s always best to discuss with them directly about which exact size and tubing type they would like, or at least consult someone close to them who is familiar with what their preferences may be.</em></p><p><strong>The size of the hoop (OD/outer diameter) is often the most important aspect of any big hoop purchase.</strong> As your skill in hooping progresses, smaller hoops can allow you to do more tricks and moves without getting fatigued or hampered by a larger hoop.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_kE6ymR": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-polypro_03.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_jFnTBR",
+        "image_kE6ymR"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.5fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 440,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 320,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_QHir3z": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_8FYVJb": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/featherweight-tubing-comparison.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_TF9JMi": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Where to Start</h2>",
+            "description": "<p><strong>One great place to start would be to measure the size of their favorite hoop. But it’s important to consider that even if you know what size they hoop with now, they may be ready to move to a smaller size.</strong></p><p>Your hooper will probably be wanting a smaller hoop than what they already have, so doing a little bit of questioning will help figure out where they’re at with their hooping goals.</p><p>Another thing to consider is how thick they like their hoop tubing to be. So much, I know! 😉 But this is important too. We have two main tubing sizes, our standard 3/4″ and the ultra-thin 5/8″ “featherweight” tubing. Our larger diameter hoops come in thicker 7/8″ tubing. If you can also get a measurement of the thickness of their hoop tubing, this will an important guide in choosing the right hoop.</p><p>And then there’s the *type of tubing material* to get right too! …read more about that in the next section below.</p><p>Since some hoops are not able to be resized, some hoopers will choose the next size smaller from their usual size so they have something to work towards, and a size they will be happy with for longer. The FutureHoop can be resized for a fee, but Classic hoops cannot.</p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_8FYVJb",
+        "image_TF9JMi"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "0.5fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 440,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 320,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_CJkM8J": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_DfCkQn": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Hoop Tubing Types</h2>",
+            "description": "<p>Aside from how big or small the size of the hoop is, there are two different tubing types hoops are made in, HDPE and Polypro. HDPE is more durable in that it can withstand impacts well, but Polypro is beloved by many hoopers as the more ‘expert’ material to be used.</p><p>Depending on their hooping style, one tubing may be more desirable to them than another. Hooping is a very personal experience and choosing a hoop that will be used for many months or years to come takes a little bit of research if you can’t ask your hooper directly.</p><p><strong>If possible, take a quick snap shot of what their favorite hoop or hoop pile looks like so that we might be able to make recommendations based on what they already have.</strong></p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_Qpi8h3": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/seamless-conversion-6.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_DfCkQn",
+        "image_Qpi8h3"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.5fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 440,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 320,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_wQxmKi": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_nGKrM6": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/moodhoops-gift-certificate-510x510.webp",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_rzGb7L": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Wishlist?</h2>",
+            "description": "<p><strong>Suggest having them pick out the hoop or item on the website and create a Wishlist where you can see exactly the specifications and details they’re hoping to get.</strong> Even better if they can include the link to the exact product page alongside their desired flow prop specs.</p><h3>Gift Certificates put the choosing into the hooper’s hands</h3><p><strong>Consider getting a </strong><a href=\"/products/gift-certificate\" title=\"Gift Certificate\"><strong>Gift Certificate</strong></a><strong> if you’re still unsure what to get your beloved hooper or flow spinner.</strong> Gift Certificates are eligible towards any purchase in the Shop (excluding hoop clothing) and do not expire. We will be happy to assist the receiver of the Gift Certificate with any questions to get them just the hoop or favorite item they are looking for 🙂</p><p><a href=\"/pages/contact-us\" title=\"Contact\">Please ask us any questions</a> up front, we’re more than happy to guide you with your purchase so you can get your sweet hooper or spinner just the hoop they are looking for </p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_nGKrM6",
+        "image_rzGb7L"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "0.5fr 1fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 440,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 320,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 20,
+        "items_width": 3
+      }
+    },
+    "mh_section_banner_columns_heUkr9": {
+      "type": "mh-section-banner-columns",
+      "blocks": {
+        "image_f6DLUn": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "enable_text_shadow": false,
+            "title": "<h2>Poi or Staff Buying Guide</h2>",
+            "description": "<p>FuturePoi and FutureStaff have 4 models (Shuffle, Remote, XL, Designer) with interchangeable light elements that can be detached from the poi handles and attached to a staff connector piece, or vice versa.</p><p>Check out the breakdown of the different models here!<br/><a href=\"/pages/futurepoi-comparison-guide\" title=\"FuturePoi Comparison Guide\"><strong>FuturePoi Comparison Guide</strong></a><br/><a href=\"/pages/futurestaff-comparison-guide\" title=\"FutureStaff Comparison Guide\"><strong>FutureStaff Comparison Guide</strong></a></p>",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "cover",
+            "max_width_description": 900,
+            "max_width_mobile_description": 600,
+            "content_alignment": "center-left",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        },
+        "image_L34rmH": {
+          "type": "image",
+          "settings": {
+            "buttons_style": "primary plain",
+            "action_button_text": "",
+            "action_button_link": "",
+            "wrap_link_url": "",
+            "image": "shopify://shop_images/Poi-web-ready.jpg",
+            "enable_text_shadow": false,
+            "title": "",
+            "description": "",
+            "background_color": "rgba(0,0,0,0)",
+            "block_padding": "0px",
+            "border_thickness": 0,
+            "border_style": "solid",
+            "border_color": "#000000",
+            "background_position_x": 50,
+            "background_position_y": 50,
+            "object_fit": "contain",
+            "max_width_description": 900,
+            "max_width_mobile_description": 320,
+            "content_alignment": "center",
+            "custom_padding": "20px 20px 20px 20px",
+            "overlay_opacity": 0,
+            "object_fit_mobile": "cover",
+            "background_position_x_mobile": 50,
+            "background_position_y_mobile": 50,
+            "content_mobile_padding": "10px 10px 10px 10px"
+          }
+        }
+      },
+      "block_order": [
+        "image_f6DLUn",
+        "image_L34rmH"
+      ],
+      "name": "[MH] Image banner columns",
+      "settings": {
+        "color_palette": "scheme-6882492c-3e95-4f3e-a823-828a5fb09308",
+        "section_title_color": "#000000",
+        "section_bg_color": "rgba(0,0,0,0)",
+        "enable_eager_loading": false,
+        "main_section_title": "",
+        "main_section_heading_tag": "h2",
+        "main_section_title_align": "center",
+        "columns_template": "1fr 0.5fr",
+        "tablet_columns_template": "1fr",
+        "mobile_columns_template": "1fr",
+        "custom_section_padding": "0px 0px 0px 0px",
+        "enable_custom_height": true,
+        "custom_height": 440,
+        "enable_custom_height_mobile": false,
+        "custom_height_mobile": 320,
+        "height": "1/1",
+        "gap": 10,
+        "gap_mobile": 15,
+        "border_radius": 0,
+        "section_margin": 30,
+        "items_width": 3
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-page",
+    "mh_section_banner_columns_DRDJFQ",
+    "mh_section_banner_columns_WfeKgV",
+    "mh_section_banner_columns_QHir3z",
+    "mh_section_banner_columns_CJkM8J",
+    "mh_section_banner_columns_wQxmKi",
+    "mh_section_banner_columns_heUkr9"
+  ]
+}
